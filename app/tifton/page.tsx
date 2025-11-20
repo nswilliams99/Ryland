@@ -172,6 +172,76 @@ export default function CityServices() {
         </div>
       </section>
 
+      {/* Holiday Schedule */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+            <div className="text-center mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mb-3">Holiday Schedule</h2>
+              <p className="text-lg text-gray-600">
+                We are a family owned and operated company and taking care of our employees is important to us. We observe the following holidays so that our employees can spend quality time with their friends and family.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-6">
+              <div className="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span className="text-gray-900 font-medium">New Year's Day</span>
+              </div>
+
+              <div className="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span className="text-gray-900 font-medium">Memorial Day</span>
+              </div>
+
+              <div className="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span className="text-gray-900 font-medium">Thanksgiving</span>
+              </div>
+
+              <div className="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span className="text-gray-900 font-medium">Christmas</span>
+              </div>
+            </div>
+
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+              <div className="flex items-start">
+                <div className="flex-shrink-0">
+                  <svg className="h-5 w-5 text-blue-600 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="ml-3">
+                  <p className="text-sm text-blue-800 font-medium">
+                    <strong>Important:</strong> Service will be one day behind after each holiday.
+                  </p>
+                  <p className="text-sm text-blue-700 mt-1">
+                    For example, if your normal pickup day is Monday and we observe a holiday on Monday, your service will be on Tuesday that week.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Signup Form */}
       <section id="signup" className="py-16 bg-white">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">

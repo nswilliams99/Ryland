@@ -60,9 +60,14 @@ Three-page demo website for Ryland Environmental's Tifton, Georgia location. Bui
 - **Equipment Photos**: Visual showcase of actual equipment
 - **Service Schedule & Routes Map**: Interactive Google My Maps embed
   - Shows pickup days and routes for City of Tifton
+  - Color-coded legend (Red=Monday, Blue=Tuesday, Yellow=Thursday, Purple=Friday)
   - Responsive iframe (500px mobile, 600px desktop)
-  - Centered with max-width 1200px
+  - Centered with max-width 1200px, zoomed in for detail
   - Lazy loading for performance
+- **Holiday Schedule**: Family-focused company values
+  - New Year's Day, Memorial Day, Thanksgiving, Christmas
+  - Important notice: Service runs one day behind after holidays
+  - Professional card layout with icons
 - **Signup Form**: Simple form for residential trash service
   - Fields: Name, Email, Phone, Address, Number of Cans
   - Sends to both City of Tifton and Ryland Environmental
