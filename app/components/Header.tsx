@@ -11,8 +11,9 @@ export default function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between py-4">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="text-2xl font-bold text-primary-600">
+            <Link href="/" className="flex items-center space-x-3">
+              <img src="/images/logo.png" alt="Ryland Environmental" className="h-10 w-auto" />
+              <div className="text-xl font-bold text-gray-900">
                 Ryland Environmental
               </div>
             </Link>
@@ -23,8 +24,8 @@ export default function Header() {
             <Link href="/" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
               Home
             </Link>
-            <Link href="/tifton-trash" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
-              Tifton Trash
+            <Link href="/tifton" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
+              City of Tifton
             </Link>
             <Link href="/tift-co" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
               Tift County
@@ -69,11 +70,11 @@ export default function Header() {
               Home
             </Link>
             <Link 
-              href="/tifton-trash" 
+              href="/tifton" 
               className="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-md"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Tifton Trash
+              City of Tifton
             </Link>
             <Link 
               href="/tift-co" 
