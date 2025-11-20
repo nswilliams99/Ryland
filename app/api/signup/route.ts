@@ -4,7 +4,7 @@ import { sendEmail } from '@/app/utils/replitmail';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, phone, address, serviceType } = body;
+    const { name, email, phone, address, numCans, serviceType } = body;
 
     if (!name || !email || !phone || !address) {
       return NextResponse.json(
@@ -30,6 +30,7 @@ Name: ${name}
 Email: ${email}
 Phone: ${phone}
 Address: ${address}
+Number of Cans: ${numCans || '1'}
 Service Type: ${serviceType || 'Residential Trash Service'}
 
 This request was submitted through the Ryland Environmental website.
