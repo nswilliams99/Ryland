@@ -32,7 +32,7 @@ export default function CityServices() {
             <div className="bg-primary-50 rounded-xl p-6 border-2 border-primary-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Residential Service</h3>
               <p className="text-gray-600 mb-4">Exclusive provider for City of Tifton homes</p>
-              <ul className="space-y-2 text-sm text-gray-700">
+              <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
                   <span>Weekly curbside pickup</span>
@@ -46,13 +46,19 @@ export default function CityServices() {
                   <span>Recycling included</span>
                 </li>
               </ul>
+              <a 
+                href="#signup-form" 
+                className="inline-block w-full text-center px-4 py-2 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors"
+              >
+                Click here to sign up for trash service in Tifton
+              </a>
             </div>
 
             {/* Commercial */}
             <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial Service</h3>
               <p className="text-gray-600 mb-4">Flexible solutions for businesses</p>
-              <ul className="space-y-2 text-sm text-gray-700">
+              <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
                   <span className="text-accent-600 mr-2">✓</span> 
                   <span>96-gallon carts</span>
@@ -66,13 +72,19 @@ export default function CityServices() {
                   <span>Customized pickup schedules</span>
                 </li>
               </ul>
+              <a 
+                href="tel:1234567890" 
+                className="inline-block w-full text-center px-4 py-2 bg-accent-600 text-white font-semibold rounded-lg hover:bg-accent-700 transition-colors"
+              >
+                Call to get your right sized commercial container
+              </a>
             </div>
 
             {/* Roll-offs */}
             <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Roll-Off Containers</h3>
               <p className="text-gray-600 mb-4">Large projects and construction</p>
-              <ul className="space-y-2 text-sm text-gray-700">
+              <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
                   <span className="text-accent-600 mr-2">✓</span> 
                   <span>20-yard containers</span>
@@ -86,6 +98,12 @@ export default function CityServices() {
                   <span>40-yard containers</span>
                 </li>
               </ul>
+              <a 
+                href="tel:1234567890" 
+                className="inline-block w-full text-center px-4 py-2 bg-accent-600 text-white font-semibold rounded-lg hover:bg-accent-700 transition-colors"
+              >
+                Call for roll-off container pricing
+              </a>
             </div>
           </div>
         </div>
@@ -249,7 +267,7 @@ export default function CityServices() {
       </section>
 
       {/* Signup Form */}
-      <section id="signup" className="py-16 bg-white">
+      <section id="signup-form" className="py-16 bg-white">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <SignupForm />
         </div>
