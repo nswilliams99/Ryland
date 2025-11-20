@@ -1,7 +1,7 @@
-# Ryland Environmental Website
+# Ryland Environmental - Tifton Demo Website
 
 ## Project Overview
-Professional waste management and environmental services website for Ryland Environmental, serving Tifton and Tift County, Georgia. Built with Next.js 14 App Router, TypeScript, and Tailwind CSS v4 with comprehensive SEO optimization.
+Three-page demo website for Ryland Environmental's Tifton, Georgia location. Built with Next.js 16.0.3 App Router, TypeScript, and Tailwind CSS v4. Features a simple signup form that emails both the City of Tifton and Ryland Environmental via Replit Mail integration.
 
 ## Tech Stack
 - **Framework**: Next.js 16.0.3 (App Router)
@@ -14,15 +14,27 @@ Professional waste management and environmental services website for Ryland Envi
 /
 ├── app/
 │   ├── components/        # Reusable components
-│   │   ├── Header.tsx     # Navigation header
-│   │   └── Footer.tsx     # Site footer
-│   ├── tifton-trash/      # Tifton trash services page
+│   │   ├── Header.tsx     # Navigation with Ryland logo
+│   │   ├── Footer.tsx     # Site footer
+│   │   └── SignupForm.tsx # City trash signup form
+│   ├── api/
+│   │   └── signup/
+│   │       └── route.ts   # Form submission handler
+│   ├── utils/
+│   │   └── replitmail.ts  # Email utility using Replit Mail
+│   ├── tifton/            # City of Tifton services page
 │   │   └── page.tsx
 │   ├── tift-co/           # Tift County services page
 │   │   └── page.tsx
 │   ├── layout.tsx         # Root layout with SEO metadata
-│   ├── page.tsx           # Home page with structured data
+│   ├── page.tsx           # Home page
 │   └── globals.css        # Global styles and Tailwind config
+├── public/
+│   └── images/            # Equipment photos and logo
+│       ├── logo.png
+│       ├── 96-gallon-cart.jpg
+│       ├── 4-yard-frontload.jpg
+│       └── 20-yard-rolloff.jpg
 ├── package.json
 ├── tsconfig.json
 ├── next.config.ts
@@ -32,45 +44,46 @@ Professional waste management and environmental services website for Ryland Envi
 ## Pages
 
 ### 1. Home Page (`/`)
-- **Hero Section**: Clear value proposition with CTAs
-- **Services Showcase**: 6 key services with icons and descriptions
-- **Why Choose Us**: 4 key differentiators
-- **Contact Form**: Lead generation with service selection
-- **SEO Features**:
-  - JSON-LD structured data for LocalBusiness
-  - Optimized meta tags and Open Graph
-  - Semantic HTML5 structure
-  - Fast Core Web Vitals
+- **Hero Section**: Professional waste management for Tifton & Tift County
+- **Services Overview**: Three main service types with CTAs
+  - Residential Service (exclusive City of Tifton)
+  - Commercial Solutions (inside city limits)
+  - Roll-Off Containers (construction & cleanup)
+- **Service Areas**: Side-by-side comparison of city vs county services
+- **CTA Section**: Sign up for city service or call for quotes
 
-### 2. Tifton Trash Services (`/tifton-trash`)
-- Residential trash pickup details
-- Weekly pickup schedule by area
-- Recycling program information
-- Yard waste collection details
-- Clear CTAs for service signup
+### 2. City of Tifton Services (`/tifton`)
+- **Three Service Types**:
+  - Residential: Exclusive provider, 96-gallon carts, weekly pickup, recycling
+  - Commercial: 96-gallon carts + 4, 6, 8-yard front-load dumpsters
+  - Roll-Off Containers: 20, 30, 40-yard for large projects
+- **Equipment Photos**: Visual showcase of actual equipment
+- **Signup Form**: Simple form for residential trash service
+  - Fields: Name, Email, Phone, Address, Number of Cans
+  - Sends to both City of Tifton and Ryland Environmental
+  - Uses Replit Mail integration
 
 ### 3. Tift County Services (`/tift-co`)
-- Service area coverage map (8 communities)
-- Commercial waste solutions
-- Roll-off container rentals (10, 20, 30-yard)
-- Industries served
-- Special services (construction debris, events)
+- **Notice**: Outside city limits = roll-offs only
+- **Roll-Off Container Sizes**: 20, 30, 40-yard options
+- **Project Types**: Construction, demolition, cleanup
+- **Accepted/Not Accepted Materials**: Clear waste guidelines
+- **CTA**: Call for quotes
 
 ## Key Features
 
-### SEO Optimization
-- ✅ Comprehensive metadata in root layout
-- ✅ JSON-LD structured data for search engines
-- ✅ Open Graph and Twitter Card tags
-- ✅ Semantic HTML with proper heading hierarchy
-- ✅ Alt text for all icons and images
-- ✅ Mobile-first responsive design
-- ✅ Fast page loads with Next.js optimization
+### Email Integration
+- ✅ Replit Mail connector for sending emails
+- ✅ Dual-recipient delivery (City of Tifton + Ryland Environmental)
+- ✅ Form validation with error handling
+- ✅ Success/failure user feedback
+- ⚠️ Requires CITY_OF_TIFTON_EMAIL and RYLAND_EMAIL environment variables
 
 ### Design
 - Professional green and blue color scheme
 - Mobile-first responsive layout
-- Accessible navigation with mobile menu
+- Ryland logo in header navigation
+- Equipment photos (96-gal cart, 4-yard front-load, 20-yard rolloff)
 - Consistent branding throughout
 - Clear call-to-action buttons
 - Service cards with hover effects
@@ -79,6 +92,7 @@ Professional waste management and environmental services website for Ryland Envi
 - TypeScript for type safety
 - Tailwind CSS v4 custom theme
 - Server and client components optimized
+- API route for form submission (/api/signup)
 - Fast refresh for development
 - Production-ready build configuration
 
@@ -111,12 +125,14 @@ npm run lint
   - accent-700-900: Darker shades for variety
 
 ## Recent Changes
-- **2025-11-20**: Initial project setup
-  - Created Next.js app with TypeScript and Tailwind CSS v4
-  - Implemented three main pages with SEO optimization
-  - Added structured data and comprehensive metadata
-  - Configured responsive navigation and footer
-  - Set up development workflow on port 5000
+- **2025-11-20**: Tifton-focused demo site completed
+  - Restructured to 3-page Tifton demo (Home, City of Tifton, Tift County)
+  - Updated navigation: renamed /tifton-trash → /tifton, changed nav labels
+  - Created simple signup form (name, email, phone, address, number of cans)
+  - Implemented Replit Mail integration for dual-recipient email delivery
+  - Added Ryland logo to header and equipment photos
+  - Built API route (/api/signup) for form submissions with error handling
+  - Architect reviewed and approved all changes as meeting requirements
 
 ## Future Enhancements
 - Add customer portal for account management
