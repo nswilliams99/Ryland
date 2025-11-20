@@ -147,6 +147,30 @@ export default function CityServices() {
         </div>
       </section>
 
+      {/* Cart Placement Guidelines */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Cart Placement Guidelines</h2>
+          
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 mb-8">
+            <img 
+              src="/images/cart-placement.png" 
+              alt="Proper cart placement - lid opening towards road" 
+              className="w-full h-auto"
+            />
+          </div>
+
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Proper Spacing and Positioning</h3>
+            <p className="text-xl font-semibold text-primary-600 mb-4">3 Feet Apart, Wheels Towards House</p>
+            <p className="text-gray-700 text-lg max-w-2xl mx-auto">
+              Proper cart placement ensures efficient pickup and helps our drivers serve you better. 
+              Place carts at the curb by 6 AM on your pickup day.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Service Schedule & Routes Map */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

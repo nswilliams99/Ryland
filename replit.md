@@ -148,6 +148,11 @@ npm run lint
     - /tifton equipment section showcases Ryland-branded dumpsters and carts
     - /tift-co displays all 3 rolloff sizes (20/30/40-yard) with dimension diagrams
     - Replaced icon-only placeholders with high-quality product photos
+  - **Enhanced service box styling** with 4px green borders and large shadows for better contrast
+  - **Added Cart Placement Guidelines section** to /tifton page:
+    - Professional Ryland-branded cart image showing proper lid placement
+    - Clear instructions: "3 Feet Apart, Wheels Towards House"
+    - 6 AM curbside placement reminder
   - Architect reviewed and approved all changes as meeting requirements
 
 ## Future Enhancements
