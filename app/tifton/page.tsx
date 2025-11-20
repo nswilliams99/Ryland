@@ -135,7 +135,7 @@ export default function CityServices() {
           <div className="flex justify-center">
             <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
               <iframe 
-                src="https://www.google.com/maps/d/embed?mid=1gZY1wK9ewdqzWZqFtF_8sFxS82rgMM&ehbc=2E312F" 
+                src="https://www.google.com/maps/d/embed?mid=1gZY1wK9ewdqzWZqFEf__8sFxS82rgMM&ehbc=2E312F&noprof=1" 
                 className="w-full h-[500px] md:h-[600px]"
                 style={{ border: 0 }}
                 loading="lazy"
