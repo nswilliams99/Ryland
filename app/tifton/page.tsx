@@ -73,7 +73,7 @@ export default function CityServices() {
                 </li>
               </ul>
               <a 
-                href="tel:1234567890" 
+                href="tel:229-382-4411" 
                 className="inline-block w-full text-center px-4 py-2 bg-accent-600 text-white font-semibold rounded-lg hover:bg-accent-700 transition-colors"
               >
                 Call to get your right sized commercial container
@@ -99,7 +99,7 @@ export default function CityServices() {
                 </li>
               </ul>
               <a 
-                href="tel:1234567890" 
+                href="tel:229-382-4411" 
                 className="inline-block w-full text-center px-4 py-2 bg-accent-600 text-white font-semibold rounded-lg hover:bg-accent-700 transition-colors"
               >
                 Call for roll-off container pricing
