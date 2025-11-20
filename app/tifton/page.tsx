@@ -55,7 +55,7 @@ export default function CityServices() {
             </div>
 
             {/* Commercial */}
-            <div className="bg-white rounded-xl p-6 border-4 border-gray-400 shadow-lg">
+            <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial Service</h3>
               <p className="text-gray-600 mb-4">Flexible solutions for businesses</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
@@ -81,7 +81,7 @@ export default function CityServices() {
             </div>
 
             {/* Roll-offs */}
-            <div className="bg-white rounded-xl p-6 border-4 border-gray-400 shadow-lg">
+            <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Roll-Off Containers</h3>
               <p className="text-gray-600 mb-4">Large projects and construction</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
