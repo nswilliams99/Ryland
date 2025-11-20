@@ -58,6 +58,11 @@ Three-page demo website for Ryland Environmental's Tifton, Georgia location. Bui
   - Commercial: 96-gallon carts + 4, 6, 8-yard front-load dumpsters
   - Roll-Off Containers: 20, 30, 40-yard for large projects
 - **Equipment Photos**: Visual showcase of actual equipment
+- **Service Schedule & Routes Map**: Interactive Google My Maps embed
+  - Shows pickup days and routes for City of Tifton
+  - Responsive iframe (500px mobile, 600px desktop)
+  - Centered with max-width 1200px
+  - Lazy loading for performance
 - **Signup Form**: Simple form for residential trash service
   - Fields: Name, Email, Phone, Address, Number of Cans
   - Sends to both City of Tifton and Ryland Environmental
@@ -132,6 +137,7 @@ npm run lint
   - Implemented Replit Mail integration for dual-recipient email delivery
   - Added Ryland logo to header and equipment photos
   - Built API route (/api/signup) for form submissions with error handling
+  - **Added Google My Maps integration** to /tifton page showing service routes
   - Architect reviewed and approved all changes as meeting requirements
 
 ## Future Enhancements
