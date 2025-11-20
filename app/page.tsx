@@ -62,9 +62,14 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Exclusive trash service provider for City of Tifton homes. Weekly curbside pickup with 96-gallon carts.
               </p>
-              <Link href="/tifton#signup" className="text-primary-600 hover:text-primary-700 font-medium">
-                Sign Up Today →
-              </Link>
+              <div className="flex flex-col gap-2">
+                <Link href="/tifton#signup" className="text-primary-600 hover:text-primary-700 font-medium">
+                  Sign Up Today →
+                </Link>
+                <Link href="/tifton#holiday-schedule" className="text-gray-600 hover:text-gray-700 font-medium text-sm">
+                  View Holiday Schedule →
+                </Link>
+              </div>
             </div>
 
             {/* Commercial */}

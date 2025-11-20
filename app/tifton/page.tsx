@@ -173,7 +173,7 @@ export default function CityServices() {
       </section>
 
       {/* Holiday Schedule */}
-      <section className="py-16 bg-gray-50">
+      <section id="holiday-schedule" className="py-16 bg-gray-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
             <div className="text-center mb-6">
