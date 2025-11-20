@@ -65,7 +65,9 @@ export default function TiftCounty() {
                   20 Yard
                 </div>
               </div>
-              <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll-Off Container" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <div className="w-full h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
+                <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll-Off Container with Dimensions" className="h-full w-auto object-contain" />
+              </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Small to Medium Projects</h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start">
@@ -91,8 +93,8 @@ export default function TiftCounty() {
                 </div>
                 <div className="mt-1 text-xs font-semibold text-accent-700">MOST POPULAR</div>
               </div>
-              <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-gray-500 text-sm">30-Yard Container</span>
+              <div className="w-full h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
+                <img src="/images/30-yard-rolloff.jpg" alt="30-Yard Roll-Off Container with Dimensions" className="h-full w-auto object-contain" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Large Projects</h3>
               <ul className="space-y-2 text-sm text-gray-700">
@@ -118,8 +120,8 @@ export default function TiftCounty() {
                   40 Yard
                 </div>
               </div>
-              <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-gray-500 text-sm">40-Yard Container</span>
+              <div className="w-full h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
+                <img src="/images/40-yard-rolloff.jpg" alt="40-Yard Roll-Off Container with Dimensions" className="h-full w-auto object-contain" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Commercial Projects</h3>
               <ul className="space-y-2 text-sm text-gray-700">

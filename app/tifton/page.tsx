@@ -97,7 +97,9 @@ export default function CityServices() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Equipment</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <img src="/images/96-gallon-cart.png" alt="96-Gallon Cart" className="w-full h-64 object-cover" />
+              <div className="h-64 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4">
+                <img src="/images/96-gallon-cart.png" alt="96-Gallon Cart" className="h-full w-auto object-contain" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">96-Gallon Carts</h3>
                 <p className="text-gray-600 text-sm mt-2">Residential and small business service</p>
@@ -105,7 +107,9 @@ export default function CityServices() {
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <img src="/images/4-yard-frontload.png" alt="Front-Load Dumpster" className="w-full h-64 object-contain bg-gray-100" />
+              <div className="h-64 flex items-center justify-center bg-black p-4">
+                <img src="/images/6-yard-frontload.png" alt="6-Yard Front-Load Dumpster" className="h-full w-auto object-contain" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">Front-Load Dumpsters</h3>
                 <p className="text-gray-600 text-sm mt-2">4, 6, and 8-yard for businesses</p>
@@ -113,7 +117,9 @@ export default function CityServices() {
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <img src="/images/20-yard-rolloff.jpg" alt="Roll-Off Container" className="w-full h-64 object-cover" />
+              <div className="h-64 flex items-center justify-center bg-white p-4 border-b border-gray-200">
+                <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll-Off Container" className="h-full w-auto object-contain" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">Roll-Off Containers</h3>
                 <p className="text-gray-600 text-sm mt-2">20, 30, and 40-yard options</p>

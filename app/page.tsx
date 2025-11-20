@@ -52,56 +52,56 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {/* Residential */}
-            <div className="relative rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
+            <div className="relative rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white">
+              <div className="h-48 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center p-4">
+                <img src="/images/96-gallon-cart.png" alt="96-Gallon Residential Cart" className="h-full w-auto object-contain" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Residential Service</h3>
-              <p className="text-gray-600 mb-4">
-                Exclusive trash service provider for City of Tifton homes. Weekly curbside pickup with 96-gallon carts.
-              </p>
-              <div className="flex flex-col gap-2">
-                <Link href="/tifton#signup" className="text-primary-600 hover:text-primary-700 font-medium">
-                  Sign Up Today →
-                </Link>
-                <Link href="/tifton#holiday-schedule" className="text-gray-600 hover:text-gray-700 font-medium text-sm">
-                  View Holiday Schedule →
-                </Link>
+              <div className="p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Residential Service</h3>
+                <p className="text-gray-600 mb-4">
+                  Exclusive trash service provider for City of Tifton homes. Weekly curbside pickup with 96-gallon carts.
+                </p>
+                <div className="flex flex-col gap-2">
+                  <Link href="/tifton#signup" className="text-primary-600 hover:text-primary-700 font-medium">
+                    Sign Up Today →
+                  </Link>
+                  <Link href="/tifton#holiday-schedule" className="text-gray-600 hover:text-gray-700 font-medium text-sm">
+                    View Holiday Schedule →
+                  </Link>
+                </div>
               </div>
             </div>
 
             {/* Commercial */}
-            <div className="relative rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-accent-100 text-accent-600 mb-4">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
+            <div className="relative rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white">
+              <div className="h-48 bg-gradient-to-br from-accent-50 to-accent-100 flex items-center justify-center p-4">
+                <img src="/images/6-yard-frontload.png" alt="6-Yard Front-Load Dumpster" className="h-full w-auto object-contain" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Commercial Solutions</h3>
-              <p className="text-gray-600 mb-4">
-                Business waste services inside city limits. 96-gallon carts and 4, 6, 8-yard front-load dumpsters.
-              </p>
-              <Link href="/tifton" className="text-accent-600 hover:text-accent-700 font-medium">
-                Learn More →
-              </Link>
+              <div className="p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Commercial Solutions</h3>
+                <p className="text-gray-600 mb-4">
+                  Business waste services inside city limits. 96-gallon carts and 4, 6, 8-yard front-load dumpsters.
+                </p>
+                <Link href="/tifton" className="text-accent-600 hover:text-accent-700 font-medium">
+                  Learn More →
+                </Link>
+              </div>
             </div>
 
             {/* Roll-offs */}
-            <div className="relative rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary-100 text-primary-600 mb-4">
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                </svg>
+            <div className="relative rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white">
+              <div className="h-48 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center p-4">
+                <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll-Off Container" className="h-full w-auto object-contain" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Roll-Off Containers</h3>
-              <p className="text-gray-600 mb-4">
-                Construction and large cleanup projects. 20, 30, and 40-yard containers available.
-              </p>
-              <Link href="/tift-co" className="text-primary-600 hover:text-primary-700 font-medium">
-                Get a Quote →
-              </Link>
+              <div className="p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Roll-Off Containers</h3>
+                <p className="text-gray-600 mb-4">
+                  Construction and large cleanup projects. 20, 30, and 40-yard containers available.
+                </p>
+                <Link href="/tift-co" className="text-primary-600 hover:text-primary-700 font-medium">
+                  Get a Quote →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
