@@ -29,7 +29,7 @@ export default function CityServices() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Residential */}
-            <div className="bg-primary-50 rounded-xl p-6 border-2 border-primary-200">
+            <div className="bg-primary-50 rounded-xl p-6 border-2 border-primary-300 shadow-md">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Residential Service</h3>
               <p className="text-gray-600 mb-4">Exclusive provider for City of Tifton homes</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
@@ -55,7 +55,7 @@ export default function CityServices() {
             </div>
 
             {/* Commercial */}
-            <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+            <div className="bg-white rounded-xl p-6 border-2 border-gray-300 shadow-md">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial Service</h3>
               <p className="text-gray-600 mb-4">Flexible solutions for businesses</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
@@ -81,7 +81,7 @@ export default function CityServices() {
             </div>
 
             {/* Roll-offs */}
-            <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+            <div className="bg-white rounded-xl p-6 border-2 border-gray-300 shadow-md">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Roll-Off Containers</h3>
               <p className="text-gray-600 mb-4">Large projects and construction</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
