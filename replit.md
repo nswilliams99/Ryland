@@ -143,6 +143,11 @@ npm run lint
   - Added Ryland logo to header and equipment photos
   - Built API route (/api/signup) for form submissions with error handling
   - **Added Google My Maps integration** to /tifton page showing service routes
+  - **Upgraded to professional branded equipment photography** across all pages:
+    - Home page service cards now feature real equipment (96-gal cart, 6-yard front-load, 20-yard rolloff)
+    - /tifton equipment section showcases Ryland-branded dumpsters and carts
+    - /tift-co displays all 3 rolloff sizes (20/30/40-yard) with dimension diagrams
+    - Replaced icon-only placeholders with high-quality product photos
   - Architect reviewed and approved all changes as meeting requirements
 
 ## Future Enhancements
@@ -186,4 +191,3 @@ Before deploying to production, update the following placeholder information:
 - Add Open Graph image (/og-image.jpg) for better social media sharing
 - Add Google verification code in metadata if needed
 - Update service schedules on Tifton Trash page with actual pickup days
-- Add real business photos to replace icon-only design
