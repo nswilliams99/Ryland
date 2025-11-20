@@ -153,6 +153,13 @@ npm run lint
     - Professional Ryland-branded cart image showing proper lid placement
     - Clear instructions: "3 Feet Apart, Wheels Towards House"
     - 6 AM curbside placement reminder
+  - **SEO Optimization for Roll-Off Dumpster Keywords**:
+    - Integrated target keywords: "roll off dumpster rental", "roll off rental", "rolloff dumpsters for rent", "roll off dumpsters near me"
+    - Updated meta titles and descriptions across all pages for SEO
+    - Optimized H1, H2 headings with natural keyword placement
+    - Enhanced alt text for all dumpster images with SEO keywords
+    - Strategic keyword placement in body content without stuffing
+    - Focus on /tift-co page as primary landing page for roll-off services
   - Architect reviewed and approved all changes as meeting requirements
 
 ## Future Enhancements

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ryland Environmental - Tifton Waste Management",
-  description: "Professional waste management services in Tifton and Tift County, Georgia. Exclusive residential trash service provider for the City of Tifton.",
+  title: "Ryland Environmental - Tifton Waste Management & Roll Off Dumpster Rental",
+  description: "Professional waste management and roll off dumpster rental in Tifton and Tift County, Georgia. Rolloff dumpsters for rent, exclusive trash service, and roll off rental near me. 20-40 yard roll off dumpsters near me.",
 };
 
 export default function Home() {
@@ -91,12 +91,12 @@ export default function Home() {
             {/* Roll-offs */}
             <div className="relative rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white">
               <div className="h-48 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center p-4">
-                <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll-Off Container" className="h-full w-auto object-contain" />
+                <img src="/images/20-yard-rolloff.jpg" alt="Roll Off Dumpster Rental - Rolloff Dumpsters for Rent" className="h-full w-auto object-contain" />
               </div>
               <div className="p-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Roll-Off Containers</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Roll Off Dumpster Rental</h3>
                 <p className="text-gray-600 mb-4">
-                  Construction and large cleanup projects. 20, 30, and 40-yard containers available.
+                  Roll off rental for construction and large cleanup projects. Rolloff dumpsters for rent - 20, 30, and 40-yard roll off dumpsters near me.
                 </p>
                 <Link href="/tift-co" className="text-primary-600 hover:text-primary-700 font-medium">
                   Get a Quote →

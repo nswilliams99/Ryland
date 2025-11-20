@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import SignupForm from "../components/SignupForm";
 
 export const metadata: Metadata = {
-  title: "City of Tifton Services",
-  description: "Ryland Environmental provides exclusive residential trash service and comprehensive commercial waste solutions within Tifton city limits.",
+  title: "City of Tifton Trash Service & Roll Off Dumpster Rental",
+  description: "Exclusive residential trash service in Tifton. Roll off dumpster rental and rolloff dumpsters for rent - 20, 30, 40-yard roll off rental. Commercial waste solutions and roll off dumpsters near me inside city limits.",
 };
 
 export default function CityServices() {
@@ -82,20 +82,20 @@ export default function CityServices() {
 
             {/* Roll-offs */}
             <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Roll-Off Containers</h3>
-              <p className="text-gray-600 mb-4">Large projects and construction</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Roll Off Dumpster Rental</h3>
+              <p className="text-gray-600 mb-4">Rolloff dumpsters for rent - Large projects and construction</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
-                  <span>20-yard containers</span>
+                  <span>20-yard roll off rental</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
-                  <span>30-yard containers</span>
+                  <span>30-yard roll off dumpsters</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
-                  <span>40-yard containers</span>
+                  <span>40-yard rolloff containers</span>
                 </li>
               </ul>
               <a 
@@ -136,11 +136,11 @@ export default function CityServices() {
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="h-64 flex items-center justify-center bg-white p-4 border-b border-gray-200">
-                <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll-Off Container" className="h-full w-auto object-contain" />
+                <img src="/images/20-yard-rolloff.jpg" alt="Roll Off Dumpster Rental - 20-Yard Rolloff Dumpsters for Rent" className="h-full w-auto object-contain" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900">Roll-Off Containers</h3>
-                <p className="text-gray-600 text-sm mt-2">20, 30, and 40-yard options</p>
+                <h3 className="text-xl font-semibold text-gray-900">Roll Off Dumpster Rental</h3>
+                <p className="text-gray-600 text-sm mt-2">20, 30, and 40-yard roll off dumpsters near me</p>
               </div>
             </div>
           </div>

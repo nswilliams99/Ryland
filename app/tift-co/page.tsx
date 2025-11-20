@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Tift County Services",
-  description: "Roll-off container rentals for Tift County, Georgia. 20, 30, and 40-yard dumpsters for construction, demolition, and large cleanup projects outside city limits.",
+  title: "Roll Off Dumpster Rental - Tift County | Rolloff Dumpsters for Rent",
+  description: "Roll off dumpster rental in Tift County, Georgia. Rolloff dumpsters for rent near me - 20, 30, 40-yard roll off rental for construction, demolition, and cleanup projects. Affordable roll off dumpsters near me.",
 };
 
 export default function TiftCounty() {
@@ -13,10 +13,10 @@ export default function TiftCounty() {
       <section className="bg-gradient-to-r from-accent-700 to-accent-900 text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-            Tift County Services
+            Roll Off Dumpster Rental - Tift County
           </h1>
           <p className="text-xl text-accent-100 max-w-3xl">
-            Roll-off container rentals for projects outside Tifton city limits
+            Rolloff dumpsters for rent near me - Professional roll off rental for construction, demolition, and cleanup projects outside Tifton city limits
           </p>
         </div>
       </section>
@@ -32,9 +32,9 @@ export default function TiftCounty() {
                 </svg>
               </div>
               <div className="ml-3">
-                <h3 className="text-lg font-semibold text-gray-900">Outside City Limits</h3>
+                <h3 className="text-lg font-semibold text-gray-900">Roll Off Dumpsters Near Me - Outside City Limits</h3>
                 <p className="mt-2 text-gray-600">
-                  For properties outside Tifton city limits, Ryland Environmental provides roll-off container services only. 
+                  For properties outside Tifton city limits, Ryland Environmental provides roll off dumpster rental services. Our rolloff dumpsters for rent are perfect for all your project needs.
                   <Link href="/tifton" className="ml-1 text-accent-600 hover:text-accent-700 font-medium">
                     View City of Tifton services →
                   </Link>
@@ -50,10 +50,10 @@ export default function TiftCounty() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Roll-Off Container Rentals
+              Roll Off Dumpster Rental Sizes
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Perfect for construction, demolition, renovation, and large cleanup projects
+              Affordable roll off rental options - Rolloff dumpsters for rent perfect for construction, demolition, renovation, and large cleanup projects
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function TiftCounty() {
                 </div>
               </div>
               <div className="w-full h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
-                <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll-Off Container with Dimensions" className="h-full w-auto object-contain" />
+                <img src="/images/20-yard-rolloff.jpg" alt="20-Yard Roll Off Dumpster Rental - Rolloff Dumpsters for Rent" className="h-full w-auto object-contain" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Small to Medium Projects</h3>
               <ul className="space-y-2 text-sm text-gray-700">
@@ -94,7 +94,7 @@ export default function TiftCounty() {
                 <div className="mt-1 text-xs font-semibold text-accent-700">MOST POPULAR</div>
               </div>
               <div className="w-full h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
-                <img src="/images/30-yard-rolloff.jpg" alt="30-Yard Roll-Off Container with Dimensions" className="h-full w-auto object-contain" />
+                <img src="/images/30-yard-rolloff.jpg" alt="30-Yard Roll Off Rental - Roll Off Dumpsters Near Me" className="h-full w-auto object-contain" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Large Projects</h3>
               <ul className="space-y-2 text-sm text-gray-700">
@@ -121,7 +121,7 @@ export default function TiftCounty() {
                 </div>
               </div>
               <div className="w-full h-48 bg-white rounded-lg mb-4 flex items-center justify-center p-4">
-                <img src="/images/40-yard-rolloff.jpg" alt="40-Yard Roll-Off Container with Dimensions" className="h-full w-auto object-contain" />
+                <img src="/images/40-yard-rolloff.jpg" alt="40-Yard Roll Off Dumpster Rental for Commercial Projects" className="h-full w-auto object-contain" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Commercial Projects</h3>
               <ul className="space-y-2 text-sm text-gray-700">
@@ -189,10 +189,10 @@ export default function TiftCounty() {
       <section className="py-16 bg-accent-600">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Need a Roll-Off Container?
+            Need Roll Off Dumpster Rental Near Me?
           </h2>
           <p className="text-xl text-accent-100 mb-8 max-w-2xl mx-auto">
-            Contact us for a free quote and fast delivery
+            Contact Ryland Environmental for affordable roll off rental - Free quotes and fast delivery on all rolloff dumpsters for rent
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
