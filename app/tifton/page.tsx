@@ -123,6 +123,29 @@ export default function CityServices() {
         </div>
       </section>
 
+      {/* Service Schedule & Routes Map */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Service Schedule & Routes</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Check your pickup day and route on our interactive service map
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+              <iframe 
+                src="https://www.google.com/maps/d/embed?mid=1gZY1wK9ewdqzWZqFtF_8sFxS82rgMM&ehbc=2E312F" 
+                className="w-full h-[500px] md:h-[600px]"
+                style={{ border: 0 }}
+                loading="lazy"
+                title="Tifton Service Schedule and Routes Map"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Signup Form */}
       <section id="signup" className="py-16 bg-white">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
