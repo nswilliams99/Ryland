@@ -48,7 +48,7 @@ export default function CityServices() {
               </ul>
               <a 
                 href="#signup-form" 
-                className="inline-block w-full text-center px-4 py-2 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors"
+                className="inline-block w-full text-center px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
               >
                 Click here to sign up for trash service in Tifton
               </a>
@@ -60,21 +60,21 @@ export default function CityServices() {
               <p className="text-gray-600 mb-4">Flexible solutions for businesses</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
-                  <span className="text-accent-600 mr-2">✓</span> 
+                  <span className="text-primary-600 mr-2">✓</span> 
                   <span>96-gallon carts</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-accent-600 mr-2">✓</span> 
+                  <span className="text-primary-600 mr-2">✓</span> 
                   <span>4, 6, 8-yard front-load dumpsters</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-accent-600 mr-2">✓</span> 
+                  <span className="text-primary-600 mr-2">✓</span> 
                   <span>Customized pickup schedules</span>
                 </li>
               </ul>
               <a 
                 href="tel:229-382-4411" 
-                className="inline-block w-full text-center px-4 py-2 bg-accent-600 text-white font-semibold rounded-lg hover:bg-accent-700 transition-colors"
+                className="inline-block w-full text-center px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
               >
                 Call to get your right sized commercial container
               </a>
@@ -86,23 +86,23 @@ export default function CityServices() {
               <p className="text-gray-600 mb-4">Large projects and construction</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
-                  <span className="text-accent-600 mr-2">✓</span> 
+                  <span className="text-primary-600 mr-2">✓</span> 
                   <span>20-yard containers</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-accent-600 mr-2">✓</span> 
+                  <span className="text-primary-600 mr-2">✓</span> 
                   <span>30-yard containers</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-accent-600 mr-2">✓</span> 
+                  <span className="text-primary-600 mr-2">✓</span> 
                   <span>40-yard containers</span>
                 </li>
               </ul>
               <a 
                 href="tel:229-382-4411" 
-                className="inline-block w-full text-center px-4 py-2 bg-accent-600 text-white font-semibold rounded-lg hover:bg-accent-700 transition-colors"
+                className="inline-block w-full text-center px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
               >
-                Call for roll-off container pricing
+                Call to start your project
               </a>
             </div>
           </div>
