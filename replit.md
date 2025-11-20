@@ -153,13 +153,15 @@ npm run lint
     - Professional Ryland-branded cart image showing proper lid placement
     - Clear instructions: "3 Feet Apart, Wheels Towards House"
     - 6 AM curbside placement reminder
-  - **SEO Optimization for Roll-Off Dumpster Keywords**:
-    - Integrated target keywords: "roll off dumpster rental", "roll off rental", "rolloff dumpsters for rent", "roll off dumpsters near me"
-    - Updated meta titles and descriptions across all pages for SEO
+  - **SEO Optimization for Local Commercial Keywords**:
+    - Primary keywords: "commercial dumpster service Tifton GA", "business trash service Tifton", "local trash companies", "local garbage companies"
+    - Long-tail keywords: "front load dumpster service Tifton GA", "4 yard dumpster Tifton", "commercial waste collection Tift County", "weekly trash pickup for businesses Tifton"
+    - Updated meta titles and descriptions across all 3 pages for local SEO
     - Optimized H1, H2 headings with natural keyword placement
-    - Enhanced alt text for all dumpster images with SEO keywords
-    - Strategic keyword placement in body content without stuffing
-    - Focus on /tift-co page as primary landing page for roll-off services
+    - Enhanced alt text for all equipment images with SEO keywords
+    - Strategic keyword placement in body content without keyword stuffing
+    - Removed all "near me" references for better local targeting
+    - Focus on /tift-co page as primary landing page for commercial waste collection
   - Architect reviewed and approved all changes as meeting requirements
 
 ## Future Enhancements

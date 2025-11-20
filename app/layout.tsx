@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Ryland Environmental - Waste Management & Roll Off Dumpster Rental",
+    default: "Ryland Environmental - Waste Management Tifton GA | Commercial Dumpster Service",
     template: "%s | Ryland Environmental"
   },
-  description: "Roll off dumpster rental and waste management services in Tifton and Tift County, Georgia. Rolloff dumpsters for rent - 20, 30, 40-yard containers. Roll off rental near me for construction, demolition, and cleanup projects.",
-  keywords: ["roll off dumpster rental", "roll off rental", "rolloff dumpsters for rent", "roll off dumpsters near me", "waste management", "trash pickup", "Tifton", "Tift County", "Georgia", "dumpster rental", "construction waste"],
+  description: "Local trash companies and commercial dumpster service in Tifton GA. Business trash service, front load dumpster service, and commercial waste collection in Tift County. Local garbage companies serving Tifton businesses.",
+  keywords: ["commercial dumpster service Tifton GA", "business trash service Tifton", "local trash companies", "local garbage companies", "front load dumpster service Tifton GA", "4 yard dumpster Tifton", "commercial waste collection Tift County", "weekly trash pickup for businesses Tifton"],
   authors: [{ name: "Ryland Environmental" }],
   openGraph: {
     type: "website",

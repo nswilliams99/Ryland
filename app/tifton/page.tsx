@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import SignupForm from "../components/SignupForm";
 
 export const metadata: Metadata = {
-  title: "City of Tifton Trash Service & Roll Off Dumpster Rental",
-  description: "Exclusive residential trash service in Tifton. Roll off dumpster rental and rolloff dumpsters for rent - 20, 30, 40-yard roll off rental. Commercial waste solutions and roll off dumpsters near me inside city limits.",
+  title: "City of Tifton Trash Service | Commercial Dumpster Service Tifton GA",
+  description: "Exclusive residential trash service and commercial dumpster service Tifton GA. Business trash service Tifton, front load dumpster service, and 4 yard dumpster Tifton. Weekly trash pickup for businesses inside city limits.",
 };
 
 export default function CityServices() {
@@ -56,8 +56,8 @@ export default function CityServices() {
 
             {/* Commercial */}
             <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial Service</h3>
-              <p className="text-gray-600 mb-4">Flexible solutions for businesses</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial Dumpster Service Tifton GA</h3>
+              <p className="text-gray-600 mb-4">Business trash service Tifton - Flexible solutions for businesses</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
@@ -65,11 +65,11 @@ export default function CityServices() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
-                  <span>4, 6, 8-yard front-load dumpsters</span>
+                  <span>4 yard dumpster, 6, 8-yard front load dumpster service</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
-                  <span>Customized pickup schedules</span>
+                  <span>Weekly trash pickup for businesses Tifton</span>
                 </li>
               </ul>
               <a 
@@ -83,7 +83,7 @@ export default function CityServices() {
             {/* Roll-offs */}
             <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Roll Off Dumpster Rental</h3>
-              <p className="text-gray-600 mb-4">Rolloff dumpsters for rent - Large projects and construction</p>
+              <p className="text-gray-600 mb-4">Rolloff dumpsters for rent - Large projects and construction in Tifton GA</p>
               <ul className="space-y-2 text-sm text-gray-700 mb-4">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
@@ -91,11 +91,11 @@ export default function CityServices() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
-                  <span>30-yard roll off dumpsters</span>
+                  <span>30-yard rolloff dumpsters</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
-                  <span>40-yard rolloff containers</span>
+                  <span>40-yard containers</span>
                 </li>
               </ul>
               <a 
@@ -129,8 +129,8 @@ export default function CityServices() {
                 <img src="/images/6-yard-frontload.png" alt="6-Yard Front-Load Dumpster" className="h-full w-auto object-contain" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900">Front-Load Dumpsters</h3>
-                <p className="text-gray-600 text-sm mt-2">4, 6, and 8-yard for businesses</p>
+                <h3 className="text-xl font-semibold text-gray-900">Front Load Dumpster Service Tifton GA</h3>
+                <p className="text-gray-600 text-sm mt-2">4 yard dumpster Tifton, 6, and 8-yard for businesses</p>
               </div>
             </div>
 
@@ -140,7 +140,7 @@ export default function CityServices() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900">Roll Off Dumpster Rental</h3>
-                <p className="text-gray-600 text-sm mt-2">20, 30, and 40-yard roll off dumpsters near me</p>
+                <p className="text-gray-600 text-sm mt-2">20, 30, and 40-yard rolloff dumpsters for rent</p>
               </div>
             </div>
           </div>

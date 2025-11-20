@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ryland Environmental - Tifton Waste Management & Roll Off Dumpster Rental",
-  description: "Professional waste management and roll off dumpster rental in Tifton and Tift County, Georgia. Rolloff dumpsters for rent, exclusive trash service, and roll off rental near me. 20-40 yard roll off dumpsters near me.",
+  title: "Local Trash Companies Tifton GA | Commercial Dumpster Service",
+  description: "Local trash companies and local garbage companies in Tifton GA. Commercial dumpster service, business trash service Tifton, and commercial waste collection Tift County. Front load dumpster service and roll off rental.",
 };
 
 export default function Home() {
@@ -78,9 +78,9 @@ export default function Home() {
                 <img src="/images/6-yard-frontload.png" alt="6-Yard Front-Load Dumpster" className="h-full w-auto object-contain" />
               </div>
               <div className="p-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Commercial Solutions</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Commercial Dumpster Service</h3>
                 <p className="text-gray-600 mb-4">
-                  Business waste services inside city limits. 96-gallon carts and 4, 6, 8-yard front-load dumpsters.
+                  Business trash service Tifton inside city limits. 96-gallon carts and 4, 6, 8-yard front load dumpster service.
                 </p>
                 <Link href="/tifton" className="text-accent-600 hover:text-accent-700 font-medium">
                   Learn More →
@@ -96,7 +96,7 @@ export default function Home() {
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Roll Off Dumpster Rental</h3>
                 <p className="text-gray-600 mb-4">
-                  Roll off rental for construction and large cleanup projects. Rolloff dumpsters for rent - 20, 30, and 40-yard roll off dumpsters near me.
+                  Roll off rental for construction and large cleanup projects. Rolloff dumpsters for rent - 20, 30, and 40-yard containers available in Tifton GA.
                 </p>
                 <Link href="/tift-co" className="text-primary-600 hover:text-primary-700 font-medium">
                   Get a Quote →
