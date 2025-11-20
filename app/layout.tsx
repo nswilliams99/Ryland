@@ -21,20 +21,11 @@ export const metadata: Metadata = {
     siteName: "Ryland Environmental",
     title: "Ryland Environmental - Waste Management & Recycling Services",
     description: "Professional waste management, recycling, and environmental services in Tifton and Tift County, Georgia.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Ryland Environmental Services",
-      },
-    ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Ryland Environmental - Waste Management & Recycling Services",
     description: "Professional waste management, recycling, and environmental services in Tifton and Tift County, Georgia.",
-    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -46,9 +37,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: "your-google-verification-code",
   },
 };
 

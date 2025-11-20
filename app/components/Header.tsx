@@ -30,7 +30,7 @@ export default function Header() {
               Tift County
             </Link>
             <Link 
-              href="#contact" 
+              href="/#contact" 
               className="inline-flex items-center justify-center rounded-md bg-primary-600 px-6 py-2.5 text-base font-medium text-white hover:bg-primary-700 transition-colors"
             >
               Contact Us
@@ -83,7 +83,7 @@ export default function Header() {
               Tift County
             </Link>
             <Link 
-              href="#contact" 
+              href="/#contact" 
               className="block px-3 py-2 text-base font-medium bg-primary-600 text-white hover:bg-primary-700 rounded-md text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
