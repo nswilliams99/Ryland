@@ -48,7 +48,7 @@ export default function CityServices() {
               </ul>
               <a 
                 href="#signup-form" 
-                className="inline-block w-full text-center px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
+                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
               >
                 Click here to sign up for trash service in Tifton
               </a>
@@ -74,7 +74,7 @@ export default function CityServices() {
               </ul>
               <a 
                 href="tel:229-382-4411" 
-                className="inline-block w-full text-center px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
+                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
               >
                 Call to get your right sized commercial container
               </a>
@@ -100,7 +100,7 @@ export default function CityServices() {
               </ul>
               <a 
                 href="tel:229-382-4411" 
-                className="inline-block w-full text-center px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
+                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
               >
                 Call to start your project
               </a>
