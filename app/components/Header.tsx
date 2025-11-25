@@ -27,6 +27,9 @@ export default function Header() {
             <Link href="/tifton" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
               City of Tifton
             </Link>
+            <Link href="/recycling" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
+              Recycling
+            </Link>
             <Link href="/tift-co" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
               Tift County
             </Link>
@@ -75,6 +78,13 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               City of Tifton
+            </Link>
+            <Link 
+              href="/recycling" 
+              className="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-md"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Recycling
             </Link>
             <Link 
               href="/tift-co" 

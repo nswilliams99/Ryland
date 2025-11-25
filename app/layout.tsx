@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Ryland Environmental"
   },
   description: "Local trash companies and commercial dumpster service in Tifton GA. Business trash service, front load dumpster service, and commercial waste collection in Tift County. Local garbage companies serving Tifton businesses.",
-  keywords: ["commercial dumpster service Tifton GA", "business trash service Tifton", "local trash companies", "local garbage companies", "front load dumpster service Tifton GA", "4 yard dumpster Tifton", "commercial waste collection Tift County", "weekly trash pickup for businesses Tifton"],
+  keywords: ["commercial dumpster service Tifton GA", "business trash service Tifton", "local trash companies", "local garbage companies", "front load dumpster service Tifton GA", "4 yard dumpster Tifton", "commercial waste collection Tift County", "weekly trash pickup for businesses Tifton", "Tifton GA recycling drop-off", "free recycling Tifton", "recycling center Tifton"],
   authors: [{ name: "Ryland Environmental" }],
   openGraph: {
     type: "website",

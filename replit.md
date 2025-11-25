@@ -1,7 +1,7 @@
 # Ryland Environmental - Tifton Demo Website
 
 ## Project Overview
-Three-page demo website for Ryland Environmental's Tifton, Georgia location. Built with Next.js 16.0.3 App Router, TypeScript, and Tailwind CSS v4. Features a simple signup form that emails both the City of Tifton and Ryland Environmental via Replit Mail integration.
+Four-page demo website for Ryland Environmental's Tifton, Georgia location. Built with Next.js 16.0.3 App Router, TypeScript, and Tailwind CSS v4. Features a simple signup form that emails both the City of Tifton and Ryland Environmental via Replit Mail integration. Includes a modern recycling page promoting free drop-off for Tifton residents.
 
 ## Tech Stack
 - **Framework**: Next.js 16.0.3 (App Router)
@@ -24,6 +24,8 @@ Three-page demo website for Ryland Environmental's Tifton, Georgia location. Bui
 │   │   └── replitmail.ts  # Email utility using Replit Mail
 │   ├── tifton/            # City of Tifton services page
 │   │   └── page.tsx
+│   ├── recycling/         # Free recycling drop-off page
+│   │   └── page.tsx
 │   ├── tift-co/           # Tift County services page
 │   │   └── page.tsx
 │   ├── layout.tsx         # Root layout with SEO metadata
@@ -34,7 +36,8 @@ Three-page demo website for Ryland Environmental's Tifton, Georgia location. Bui
 │       ├── logo.png
 │       ├── 96-gallon-cart.jpg
 │       ├── 4-yard-frontload.jpg
-│       └── 20-yard-rolloff.jpg
+│       ├── 20-yard-rolloff.jpg
+│       └── recycling-center.jpg
 ├── package.json
 ├── tsconfig.json
 ├── next.config.ts
@@ -68,12 +71,30 @@ Three-page demo website for Ryland Environmental's Tifton, Georgia location. Bui
   - New Year's Day, Memorial Day, Thanksgiving, Christmas
   - Important notice: Service runs one day behind after holidays
   - Professional card layout with icons
+- **Free Recycling Section**: Promotes free drop-off with photo and link to /recycling
 - **Signup Form**: Simple form for residential trash service
   - Fields: Name, Email, Phone, Address, Number of Cans
   - Sends to both City of Tifton and Ryland Environmental
   - Uses Replit Mail integration
 
-### 3. Tift County Services (`/tift-co`)
+### 4. Recycling Page (`/recycling`)
+- **Modern Inspiring Design**: "Make a Difference. Recycle Free in Tifton."
+- **Impact Stats Section**: Visual cards showing environmental benefits
+  - 5,000+ gallons gasoline saved by recycling aluminum cans weekly
+  - 33% of landfill waste is paper - recyclable
+  - 100% FREE for Tifton residents
+- **Drop-Off Location Card**: 2508 Carpenter Road S with photo and hours
+- **Accepted Materials Grid**: 4 categories with checkmark lists
+  - Aluminum & Metal (cans, food containers)
+  - Paper (newspapers, magazines, junk mail)
+  - Cardboard (boxes, frozen food boxes)
+  - Plastics #1-#7 (bottles, jugs, detergent)
+- **Items NOT Accepted**: Contamination prevention list (pizza boxes, plastic bags, styrofoam, etc.)
+- **Quick Tips Section**: 3-step process (Rinse It, Sort It, Drop It Off)
+- **City Partnership Section**: Authority link to https://www.tifton.net/263/Recycling
+- **SEO Optimized**: Local recycling keywords (Tifton GA recycling drop-off, free recycling Tifton)
+
+### 5. Tift County Services (`/tift-co`)
 - **Notice**: Outside city limits = roll-offs only
 - **Roll-Off Container Sizes**: 20, 30, 40-yard options
 - **Project Types**: Construction, demolition, cleanup
@@ -163,6 +184,14 @@ npm run lint
     - Removed all "near me" references for better local targeting
     - Focus on /tift-co page as primary landing page for commercial waste collection
   - Architect reviewed and approved all changes as meeting requirements
+- **2025-11-25**: Added Recycling Page
+  - Created dedicated /recycling page with modern, inspiring design
+  - Features: impact stats, accepted materials grid, contamination prevention list
+  - Free drop-off at 2508 Carpenter Road S for Tifton residents
+  - Authority link to City of Tifton recycling page for SEO
+  - Added recycling section to /tifton page with photo and CTA
+  - Updated Header and Footer navigation with Recycling link
+  - SEO keywords: "Tifton GA recycling drop-off", "free recycling Tifton", "recycling center Tifton"
 
 ## Future Enhancements
 - Add customer portal for account management

@@ -38,6 +38,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/recycling" className="text-gray-400 hover:text-white transition-colors">
+                  Recycling
+                </Link>
+              </li>
+              <li>
                 <Link href="/tift-co" className="text-gray-400 hover:text-white transition-colors">
                   Tift County
                 </Link>

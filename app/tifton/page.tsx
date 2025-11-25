@@ -290,8 +290,78 @@ export default function CityServices() {
         </div>
       </section>
 
+      {/* Free Recycling Section */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="p-8 lg:p-12 text-white">
+                <div className="inline-flex items-center bg-white/20 rounded-full px-4 py-2 mb-6">
+                  <span className="text-2xl mr-2">♻️</span>
+                  <span className="text-lg font-bold text-white">FREE FOR TIFTON RESIDENTS</span>
+                </div>
+                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                  Free Recycling Drop-Off
+                </h2>
+                <p className="text-primary-100 text-lg mb-6">
+                  Make a difference for our community! Ryland Environmental provides free recycling 
+                  drop-off for all City of Tifton residents at our Carpenter Road location.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start">
+                    <svg className="w-6 h-6 text-primary-200 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span>Aluminum & metal cans</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-6 h-6 text-primary-200 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span>Paper & cardboard</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-6 h-6 text-primary-200 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span>Plastics #1-#7</span>
+                  </li>
+                </ul>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a 
+                    href="/recycling"
+                    className="inline-flex items-center justify-center bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+                  >
+                    View Full Recycling Guide
+                  </a>
+                  <a 
+                    href="https://maps.google.com/?q=2508+Carpenter+Road+S+Tifton+GA+31793" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-primary-500/30 backdrop-blur-sm text-white border-2 border-white/30 px-6 py-3 rounded-lg font-semibold hover:bg-primary-500/50 transition-colors"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Get Directions
+                  </a>
+                </div>
+              </div>
+              <div className="relative h-64 lg:h-auto">
+                <img 
+                  src="/images/recycling-center.jpg" 
+                  alt="Free recycling drop-off center in Tifton GA at Ryland Environmental" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Signup Form */}
-      <section id="signup-form" className="py-16 bg-white">
+      <section id="signup-form" className="py-16 bg-gray-50">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <SignupForm />
         </div>
