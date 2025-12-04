@@ -1,107 +1,36 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex w-full items-center justify-between py-4">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-3">
-              <img src="/images/logo.png" alt="Ryland Environmental" className="h-10 w-auto" />
-              <div className="text-xl font-bold text-gray-900">
-                Ryland Environmental
-              </div>
-            </Link>
-          </div>
+        <div className="flex w-full items-center justify-between py-3">
+          <Link href="/" className="flex items-center space-x-2">
+            <img src="/images/logo.png" alt="Ryland Environmental" className="h-10 w-auto" />
+            <span className="text-lg font-bold text-gray-900 hidden sm:inline">Ryland Environmental</span>
+          </Link>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link href="/" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
-              Home
+          <div className="flex items-center space-x-4">
+            <Link href="/" className="p-2 text-gray-600 hover:text-primary-600 transition-colors" aria-label="Search">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
             </Link>
-            <Link href="/tifton" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
-              City of Tifton
+            <Link href="/" className="p-2 text-gray-600 hover:text-primary-600 transition-colors" aria-label="Location">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
             </Link>
-            <Link href="/recycling" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
-              Recycling
+            <Link href="/" className="p-2 text-gray-600 hover:text-primary-600 transition-colors" aria-label="Account">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
             </Link>
-            <Link href="/tift-co" className="text-base font-medium text-gray-900 hover:text-primary-600 transition-colors">
-              Tift County
-            </Link>
-            <Link 
-              href="/#contact" 
-              className="inline-flex items-center justify-center rounded-md bg-primary-600 px-6 py-2.5 text-base font-medium text-white hover:bg-primary-700 transition-colors"
-            >
-              Contact Us
-            </Link>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="flex md:hidden">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <span className="sr-only">Open main menu</span>
-              {mobileMenuOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              )}
-            </button>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden pb-4 space-y-2">
-            <Link 
-              href="/" 
-              className="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link 
-              href="/tifton" 
-              className="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              City of Tifton
-            </Link>
-            <Link 
-              href="/recycling" 
-              className="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Recycling
-            </Link>
-            <Link 
-              href="/tift-co" 
-              className="block px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-md"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Tift County
-            </Link>
-            <Link 
-              href="/#contact" 
-              className="block px-3 py-2 text-base font-medium bg-primary-600 text-white hover:bg-primary-700 rounded-md text-center"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Contact Us
-            </Link>
-          </div>
-        )}
       </nav>
     </header>
   );

@@ -1,0 +1,79 @@
+Here's the full Replit prompt:
+
+---
+
+**Build a demo homepage for Ryland Environmental styled like the WM (Waste Management) website layout.**
+
+**Design Style:**
+- Clean, modern, mobile-first design
+- Color scheme: Green (#2d5a27), white background, red accents for CTAs
+- Rounded buttons and cards
+- Professional waste management aesthetic
+
+**Header:**
+- Ryland Environmental logo (left)
+- Search icon, location pin icon, user account icon (right)
+- All clickable → redirect to /
+
+**Hero Section:**
+- Headline: "Waste Management & Recycling Services"
+- Subtext: "Family owned since 2014. You're not just a number, you're our neighbor."
+- "Find Your Service Area" button
+
+**Location Finder:**
+- Text input with placeholder: "Enter your address or zip code..."
+- Search button
+
+**Services Carousel/Cards (swipeable on mobile):**
+Each card has image, title, description, and CTA link:
+
+1. **Residential Waste Pickup** - "Weekly curbside trash and recycling for your home" → "Get Residential Service"
+2. **Commercial Dumpsters** - "Front-load dumpster service for businesses" → "Get Commercial Service"
+3. **Roll-Off Dumpster Rental** - "20, 30, 40-yard containers for construction & cleanouts" → "Get a Quote"
+4. **Municipal Services** - "Partnership solutions for cities and counties" → "Learn More"
+5. **Transfer Station & Recycling** - "Drop-off recycling and waste transfer services" → "Find Locations"
+
+**"My Ryland & More" Section:**
+- "Quick access to your account and popular services"
+- "Log In or Sign Up" button
+- 4 icon buttons in grid:
+  - Make a Payment
+  - Paperless Billing
+  - Enroll in AutoPay
+  - Pickup Schedule
+
+**Service Areas Section:**
+- Headline: "Proudly Serving Georgia"
+- Grid/list of locations with "Location Details" buttons:
+  - **Tifton, GA → links to `/tifton`**
+  - Augusta, GA → links to `/`
+  - Baxley, GA → links to `/`
+  - Dublin, GA → links to `/`
+  - Houston County, GA → links to `/`
+  - Macon, GA → links to `/`
+  - Milledgeville, GA → links to `/`
+  - Sandersville, GA → links to `/`
+  - Savannah, GA → links to `/`
+  - Waycross, GA → links to `/`
+
+**"Need Help?" Section:**
+- "Take care of your issue online or connect with our team."
+- "Contact Support" button
+- Phone: (229) 382-4411
+
+**Expandable Footer Sections (accordion style on mobile):**
+- Products & Services (+)
+- Service Areas (+)
+- Our Company (+)
+- Quick Info (+)
+
+**Bottom Footer:**
+- Social icons (Facebook, etc.)
+- © 2025 Ryland Environmental. All rights reserved.
+- Privacy Policy | Terms of Use links
+
+**All buttons and links redirect to / (homepage) EXCEPT Tifton which goes to /tifton. This is a clickable demo only.**
+
+---
+
+Ready to paste into Replit.

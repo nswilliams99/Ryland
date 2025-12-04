@@ -14,8 +14,11 @@ Four-page demo website for Ryland Environmental's Tifton, Georgia location. Buil
 /
 ├── app/
 │   ├── components/        # Reusable components
-│   │   ├── Header.tsx     # Navigation with Ryland logo
-│   │   ├── Footer.tsx     # Site footer
+│   │   ├── Header.tsx     # WM-style header with utility icons
+│   │   ├── Footer.tsx     # Accordion footer with social links
+│   │   ├── ServicesCarousel.tsx  # Swipeable service cards
+│   │   ├── MyRylandSection.tsx   # Account & quick access section
+│   │   ├── OfficeLocations.tsx   # Georgia office finder grid
 │   │   └── SignupForm.tsx # City trash signup form
 │   ├── api/
 │   │   └── signup/
@@ -46,14 +49,26 @@ Four-page demo website for Ryland Environmental's Tifton, Georgia location. Buil
 
 ## Pages
 
-### 1. Home Page (`/`)
-- **Hero Section**: Professional waste management for Tifton & Tift County
-- **Services Overview**: Three main service types with CTAs
-  - Residential Service (exclusive City of Tifton)
-  - Commercial Solutions (inside city limits)
-  - Roll-Off Containers (construction & cleanup)
-- **Service Areas**: Side-by-side comparison of city vs county services
-- **CTA Section**: Sign up for city service or call for quotes
+### 1. Home Page (`/`) - WM-Style Design
+- **Header**: Logo left, search/location/account icons right (all link to /)
+- **Hero Section**: "Waste Management & Recycling Services" headline
+  - Family-owned tagline: "Since 2014. You're not just a number, you're our neighbor."
+  - Red "Find Your Service Area" CTA button
+- **Location Finder**: Address/zip code input with red Search button
+- **Services Carousel**: 5 swipeable cards (mobile-first)
+  - Residential Waste Pickup
+  - Commercial Dumpsters
+  - Roll-Off Dumpster Rental
+  - Municipal Services
+  - Transfer Station & Recycling
+- **My Ryland & More Section**: Account access
+  - Red "Log In or Sign Up" button
+  - 4 quick-access icons: Payment, Paperless Billing, AutoPay, Schedule
+- **Find Your Local Office**: 10 Georgia office locations
+  - Tifton → /tifton (active)
+  - Augusta, Baxley, Dublin, Houston County, Macon, Milledgeville, Sandersville, Savannah, Waycross → / (demo links)
+- **Need Help? Section**: Red "Contact Support" button + phone (229) 382-4411
+- **Footer**: Accordion-style on mobile, social icons, copyright, Privacy/Terms links
 
 ### 2. City of Tifton Services (`/tifton`)
 - **Three Service Types**:
