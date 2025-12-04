@@ -29,10 +29,10 @@ export default function CityServices() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Residential */}
-            <div className="bg-primary-50 rounded-xl p-6 border-4 border-primary-400 shadow-lg">
+            <div className="bg-primary-50 rounded-xl p-6 border-4 border-primary-400 shadow-lg flex flex-col h-full">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Residential Service</h3>
               <p className="text-gray-600 mb-4">Exclusive provider for City of Tifton homes</p>
-              <ul className="space-y-2 text-sm text-gray-700 mb-4">
+              <ul className="space-y-2 text-sm text-gray-700 mb-4 flex-grow">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
                   <span>Weekly curbside pickup</span>
@@ -48,17 +48,17 @@ export default function CityServices() {
               </ul>
               <a 
                 href="#signup-form" 
-                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
+                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base mt-auto"
               >
                 Click here to sign up for trash service in Tifton
               </a>
             </div>
 
             {/* Commercial */}
-            <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg">
+            <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg flex flex-col h-full">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial Dumpster Service Tifton GA</h3>
               <p className="text-gray-600 mb-4">Business trash service Tifton - Flexible solutions for businesses</p>
-              <ul className="space-y-2 text-sm text-gray-700 mb-4">
+              <ul className="space-y-2 text-sm text-gray-700 mb-4 flex-grow">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
                   <span>96-gallon carts</span>
@@ -74,17 +74,17 @@ export default function CityServices() {
               </ul>
               <a 
                 href="tel:229-382-4411" 
-                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
+                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base mt-auto"
               >
                 Call to get your right sized commercial container
               </a>
             </div>
 
             {/* Roll-offs */}
-            <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg">
+            <div className="bg-white rounded-xl p-6 border-4 border-primary-400 shadow-lg flex flex-col h-full">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Roll Off Dumpster Rental</h3>
               <p className="text-gray-600 mb-4">Rolloff dumpsters for rent - Large projects and construction in Tifton GA</p>
-              <ul className="space-y-2 text-sm text-gray-700 mb-4">
+              <ul className="space-y-2 text-sm text-gray-700 mb-4 flex-grow">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">✓</span> 
                   <span>20-yard roll off rental</span>
@@ -100,7 +100,7 @@ export default function CityServices() {
               </ul>
               <a 
                 href="tel:229-382-4411" 
-                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base"
+                className="flex items-center justify-center w-full text-center px-4 py-3 min-h-[4.5rem] bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-sm sm:text-base mt-auto"
               >
                 Call to start your project
               </a>
