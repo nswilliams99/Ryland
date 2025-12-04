@@ -163,12 +163,12 @@ npm run lint
 
 ## Color Scheme
 - **Primary (Green)**: Environmental, sustainable
-  - primary-600: #16a34a (main brand)
+  - primary-600: #2d5a27 (main brand - WM-style dark green)
   - primary-700-900: Darker shades for gradients
   
-- **Accent (Blue)**: Trust, professionalism
-  - accent-600: #2563eb (secondary actions)
-  - accent-700-900: Darker shades for variety
+- **Accent (Red)**: Call-to-action buttons
+  - accent-600: #dc2626 (CTA buttons)
+  - accent-700-900: Darker shades for hover states
 
 ## Recent Changes
 - **2025-11-20**: Tifton-focused demo site completed
@@ -207,6 +207,18 @@ npm run lint
   - Added recycling section to /tifton page with photo and CTA
   - Updated Header and Footer navigation with Recycling link
   - SEO keywords: "Tifton GA recycling drop-off", "free recycling Tifton", "recycling center Tifton"
+- **2025-12-04**: WM-Style Homepage Redesign
+  - Complete homepage redesign styled like Waste Management (WM) website
+  - New color scheme: dark green (#2d5a27), white backgrounds, red CTAs (#dc2626)
+  - Header: Logo left, search/location/account icons right (all link to /)
+  - Hero: "Waste Management & Recycling Services" with family-owned tagline
+  - Location Finder: Address/zip input with red Search button
+  - Services Carousel: 5 swipeable cards with icons and red CTAs
+  - My Ryland & More: Login button + 4 quick-access icon buttons
+  - Find Your Local Office: 10 Georgia office locations with areas served
+  - Need Help: Red Contact Support button + phone number
+  - Footer: Accordion-style on mobile, social icons, legal links
+  - All links redirect to / except Tifton → /tifton (demo-only clickable prototype)
 
 ## Future Enhancements
 - Add customer portal for account management
