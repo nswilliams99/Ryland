@@ -1,0 +1,506 @@
+**MASTER PROMPT FOR REPLIT - TIFTON SITE FLOW (CONTINUED):**
+
+---
+
+## CURRENT STATE (from Replit)
+
+You have 28 pages built. Now we need to:
+1. Fix the flow between pages
+2. Add address lookup routing
+3. Clarify service areas on each page
+4. Ensure cross-linking works
+5. Add residential content to `/tifton` main page (help guide, not separate page)
+
+---
+
+## STRUCTURE CONFIRMATION
+
+```
+/                               → Homepage
+├── /tifton                     → City of Tifton (includes residential help guide)
+│   ├── /tifton/commercial      → Commercial 4/6/8 yard (CITY ONLY - SALES)
+│   ├── /tifton/roll-off        → Roll-off + Industrial (ALL TIFT COUNTY - SALES)
+│   └── /tifton/faq             → FAQ hub + 20 pages
+├── /tift-county                → County landing (ROLL-OFF + INDUSTRIAL ONLY)
+└── /recycling                  → Free drop-off (CITY RESIDENTS)
+```
+
+---
+
+## SERVICE RULES (CRITICAL)
+
+| Page | What's Sold | Service Area | How to Sign Up |
+|------|-------------|--------------|----------------|
+| /tifton | Residential (help guide only) | City of Tifton | City Hall - NOT Ryland |
+| /tifton/commercial | 4, 6, 8 yard front-load | City of Tifton ONLY | Contact Ryland |
+| /tifton/roll-off | Roll-off, compactors, industrial | ALL of Tift County | Contact Ryland |
+| /tift-county | Roll-off, compactors, industrial | Tift County (outside city) | Contact Ryland |
+| /recycling | Free drop-off | City of Tifton residents | Just show up |
+
+---
+
+## ADDRESS LOOKUP FLOW (Homepage)
+
+Add address search to homepage. When user enters address:
+
+```javascript
+IF address is INSIDE City of Tifton limits:
+    → Route to /tifton
+    → Show message: "You're in the City of Tifton!"
+    → Page explains: residential signup at City Hall, 
+      commercial/roll-off contact Ryland
+
+IF address is OUTSIDE City of Tifton but IN Tift County:
+    → Route to /tift-county
+    → Show message: "You're in Tift County (outside city limits)"
+    → Page shows: Roll-off and industrial services ONLY
+    → For residential: "For residential service outside Tifton city limits, contact the provider servicing your area."
+
+IF address is OUTSIDE Tift County:
+    → Check if in other Ryland service area
+    → If not: "We don't currently service this area. Check our other locations."
+```
+
+---
+
+## PAGE DETAILS
+
+---
+
+### / (Homepage)
+
+Keep existing WM-style layout. Add/confirm:
+
+```
+Address Search:
+- Input: "Enter your address to find services"
+- Button: "Find Services"
+- Routes to correct page based on location
+
+Service Areas Section:
+- Show all 10 Georgia offices
+- Tifton card should say:
+  "Tifton & Tift County"
+  "Residential, Commercial, Roll-Off, Industrial"
+  Button: "View Services" → /tifton
+```
+
+---
+
+### /tifton (City of Tifton Main Page)
+
+**This page does THREE things:**
+1. Residential help guide (NOT a sales page - directs to City Hall)
+2. Links to commercial (sales)
+3. Links to roll-off/industrial (sales)
+
+**Page Structure:**
+
+```
+HERO:
+"Waste Services in Tifton, GA"
+"Residential, commercial, and roll-off services for the City of Tifton and Tift County"
+Phone: (229) 382-4411
+
+---
+
+SECTION 1: RESIDENTIAL TRASH SERVICE (Help Guide)
+
+Background: Light green or gray to differentiate
+
+Headline: "Residential Trash Service"
+Subhead: "Weekly curbside pickup for City of Tifton residents"
+
+⚠️ IMPORTANT NOTICE (Yellow/orange banner):
+"You sign up at City Hall, NOT with Ryland"
+"Trash service is included in your City of Tifton utility bill."
+
+Two columns:
+
+LEFT - "Starting Service?"
+- Go to: City of Tifton Customer Service
+- Address: 130 1st Street East, Tifton, GA 31794
+- Phone: (229) 391-3957
+- Hours: Mon-Fri 8am-5pm
+- "IN-PERSON ONLY - Online signup does not work"
+- [Get Directions Button]
+- [City of Tifton Website Button → tifton.net]
+
+RIGHT - "Already Signed Up?"
+- "Waiting for your cart? Call Ryland: (229) 382-4411"
+- "Have a missed pickup? Call Ryland: (229) 382-4411"
+
+What to Bring to City Hall:
+- Photo ID (Driver's License or Passport)
+- Proof of Residence (Lease or purchase contract)
+
+What Happens Next:
+1. You sign up at City Hall
+2. City notifies Ryland (end of each business day)
+3. We deliver your 96-gallon cart
+4. Service begins on your pickup day
+
+Pickup Days by Zone:
+- Red: Monday
+- Blue: Tuesday
+- Yellow: Thursday
+- Purple: Friday
+- "Put cart out by 6 AM"
+
+Holiday Schedule:
+- New Year's Day, Memorial Day, Thanksgiving, Christmas = +1 day delay
+
+Service Area Note:
+"Residential curbside service is available within City of Tifton limits only."
+"Live outside city limits? See our roll-off services for Tift County."
+
+---
+
+SECTION 2: OTHER SERVICES (Cards)
+
+Three cards:
+
+Card 1: "Commercial Dumpsters"
+"4, 6, and 8 yard dumpsters for Tifton businesses"
+"City of Tifton only"
+Button: "Learn More" → /tifton/commercial
+
+Card 2: "Roll-Off & Industrial"
+"Dumpster rentals and industrial service"
+"Serving ALL of Tift County"
+Button: "Learn More" → /tifton/roll-off
+
+Card 3: "Free Recycling Drop-Off"
+"Drop off recyclables at Carpenter Road"
+"City of Tifton residents"
+Button: "Learn More" → /recycling
+
+---
+
+SECTION 3: CONTACT FOOTER
+
+Dark green background
+"Questions? We're here to help."
+Phone: (229) 382-4411
+Hours: Mon-Fri 8am-5pm
+Address: 2508 Carpenter Road South, Tifton, GA 31793
+[Get Directions Button]
+```
+
+**SEO:**
+```
+Title: "Waste Management Tifton GA | Residential & Commercial | Ryland Environmental"
+Meta: "Residential trash, commercial dumpsters, and roll-off rentals in Tifton GA. City residents sign up at City Hall. Call (229) 382-4411 for commercial and roll-off service."
+H1: "Waste Services in Tifton, GA"
+```
+
+---
+
+### /tifton/commercial (Commercial Dumpsters - SALES PAGE)
+
+**Service Area:** City of Tifton ONLY
+**This IS a sales page** - open market, Ryland sells direct
+
+**Keep existing content but ensure:**
+
+```
+Service Area Notice (prominent):
+"Commercial dumpster service available within City of Tifton limits only."
+"Outside city limits? We offer roll-off and industrial services throughout Tift County."
+Link: "View Roll-Off Services" → /tifton/roll-off
+
+Quote Form:
+- Business Name
+- Contact Name
+- Phone
+- Email
+- Business Address
+- Business Type (dropdown)
+- Dumpster Size (4, 6, 8 yard)
+- Pickup Frequency (1x, 2x, 3x per week)
+- Submit → Contact Ryland
+
+Sizes:
+- 4 Yard: Up to 25 employees
+- 6 Yard: 25-75 employees
+- 8 Yard: 75+ employees
+
+Other Services Links:
+- /tifton (Residential info)
+- /tifton/roll-off (Roll-off & Industrial)
+- /recycling (Free recycling)
+```
+
+**SEO:**
+```
+Title: "Commercial Dumpster Service Tifton GA | Ryland Environmental"
+Meta: "Commercial trash pickup for Tifton businesses. 4, 6, 8 yard dumpsters, up to 3x weekly pickup. Call (229) 382-4411."
+H1: "Commercial Dumpster Service in Tifton, GA"
+```
+
+---
+
+### /tifton/roll-off (Roll-Off + Industrial - SALES PAGE)
+
+**Service Area:** ALL OF TIFT COUNTY (city + county)
+**This IS a sales page** - Ryland sells direct
+
+**Content:**
+
+```
+HERO:
+"Roll-Off & Industrial Services"
+"Serving all of Tift County - Tifton, Omega, Ty Ty, Chula, and surrounding areas"
+
+SERVICES OFFERED:
+1. Roll-Off Dumpsters (temporary rentals) - 20, 30, 40 yard
+2. Compactors (industrial)
+3. Scheduled Industrial Service (weekly or custom)
+
+Quote Form:
+- Name
+- Phone
+- Email
+- Delivery Address
+- Project Type (dropdown)
+- Dumpster Size (dropdown)
+- Rental Length (dropdown)
+- Preferred Delivery Date
+- Submit
+
+Roll-Off Sizes:
+- 20 Yard: Small-medium projects (roofing, deck removal, garage cleanout)
+- 30 Yard: Large projects (home additions, major renovations) - MOST POPULAR
+- 40 Yard: Commercial projects (demolition, construction, industrial)
+
+Industrial & Compactor Section:
+"For warehouses, manufacturing, and high-volume businesses"
+- Compactors: Reduce volume 75%, 2-40 cubic yard
+- Scheduled Roll-Off: Weekly, bi-weekly, custom
+- Custom Industrial Solutions
+CTA: "Call (229) 382-4411 to discuss your industrial needs"
+
+What We Accept / Don't Accept:
+(Use the nice two-column layout from /tift-co)
+
+Accepted:
+- Construction debris
+- Demolition waste
+- Household junk
+- Yard waste
+- Furniture & appliances
+- Roofing materials
+
+Not Accepted:
+- Hazardous materials
+- Chemicals & paint
+- Tires
+- Electronics
+- Batteries
+- Medical waste
+
+Permit Notice:
+"Dumpster on public street? You may need a permit from City of Tifton."
+
+Service Area:
+"Serving ALL of Tift County including Tifton, Omega, Ty Ty, Chula, Eldorado, and surrounding areas."
+
+Other Services Links:
+- /tifton (Residential info)
+- /tifton/commercial (Commercial dumpsters - city only)
+- /recycling (Free recycling)
+```
+
+**SEO:**
+```
+Title: "Roll-Off Dumpsters & Industrial Service Tift County GA | Ryland Environmental"
+Meta: "Roll-off dumpster rentals, compactors, and industrial waste service in Tift County GA. 20-40 yard dumpsters. Call (229) 382-4411."
+H1: "Roll-Off & Industrial Services in Tift County, GA"
+```
+
+---
+
+### /tift-county (County Landing Page)
+
+**Purpose:** Catch "Tift County" searches, show county-wide services
+**Services:** Roll-off + Industrial ONLY
+**NO residential, NO commercial front-load**
+
+**Content:**
+
+```
+HERO:
+"Waste Services in Tift County, GA"
+"Roll-off dumpsters and industrial service throughout Tift County"
+
+SERVICE AREA COMPARISON (Two columns):
+
+LEFT - "Inside City of Tifton"
+"Full-service waste management:"
+✓ Residential curbside pickup
+✓ Commercial dumpsters
+✓ Roll-off rentals
+✓ Industrial service
+Button: "View City of Tifton Services" → /tifton
+
+RIGHT - "Outside City Limits"
+"Roll-off and industrial services:"
+✓ Roll-off dumpster rentals (20, 30, 40 yard)
+✓ Compactors
+✓ Scheduled industrial pickup
+Button: "Get a Quote" → scroll to form or /tifton/roll-off
+
+RESIDENTIAL NOTICE (simple, one line):
+"For residential service outside Tifton city limits, contact the provider servicing your area."
+
+COUNTY SERVICES (3 cards):
+
+Card 1: "Roll-Off Dumpsters"
+"Temporary rentals for construction, renovations, cleanouts"
+"20, 30, 40 yard sizes"
+Button: "Learn More" → /tifton/roll-off
+
+Card 2: "Compactors"
+"Reduce waste volume up to 75%"
+"For warehouses, manufacturing, high-volume operations"
+Button: "Get Quote" → /tifton/roll-off#industrial
+
+Card 3: "Scheduled Industrial"
+"Ongoing service on your schedule"
+"Weekly, bi-weekly, or custom"
+Button: "Get Quote" → /tifton/roll-off#industrial
+
+AREAS SERVED:
+"Serving all of Tift County:"
+- Tifton
+- Omega
+- Ty Ty
+- Chula
+- Eldorado
+- Surrounding unincorporated areas
+
+CONTACT:
+Phone: (229) 382-4411
+Hours: Mon-Fri 8am-5pm
+```
+
+**SEO:**
+```
+Title: "Waste Management Tift County GA | Roll-Off & Industrial | Ryland Environmental"
+Meta: "Roll-off dumpsters and industrial waste service throughout Tift County GA. Serving Tifton, Omega, Ty Ty, Chula. Call (229) 382-4411."
+H1: "Waste Services in Tift County, GA"
+```
+
+---
+
+### /recycling (Free Recycling Drop-Off)
+
+**Service Area:** City of Tifton residents
+**Keep existing content but ensure:**
+
+```
+Location:
+2508 Carpenter Road South
+Tifton, GA 31793
+
+Who Can Use:
+"Free for City of Tifton residents"
+
+Accepted Materials:
+✓ Aluminum & metal cans
+✓ Paper & cardboard
+✓ Plastics #1-7
+
+NOT Accepted:
+(list from recycling guide)
+
+Hours: (add if known)
+
+[Get Directions Button]
+
+Other Services Links:
+- /tifton (All Tifton services)
+- /tifton/roll-off (Need a dumpster?)
+```
+
+**SEO:**
+```
+Title: "Free Recycling Drop-Off Tifton GA | Ryland Environmental"
+Meta: "Free recycling drop-off for City of Tifton residents at 2508 Carpenter Road. Aluminum, paper, cardboard, plastics #1-7."
+H1: "Free Recycling Drop-Off"
+```
+
+---
+
+## CROSS-LINKING RULES
+
+Every page should have "Other Services" section linking to related pages:
+
+```
+/tifton links to:
+→ /tifton/commercial
+→ /tifton/roll-off
+→ /recycling
+
+/tifton/commercial links to:
+→ /tifton (residential info)
+→ /tifton/roll-off (for larger needs or outside city)
+→ /recycling
+
+/tifton/roll-off links to:
+→ /tifton (residential info)
+→ /tifton/commercial (for ongoing business service in city)
+→ /recycling
+
+/tift-county links to:
+→ /tifton (for city services)
+→ /tifton/roll-off (detailed roll-off info)
+
+/recycling links to:
+→ /tifton (all services)
+```
+
+---
+
+## NAVIGATION MENU
+
+```
+Locations
+├── Tifton
+│   ├── Residential (→ /tifton, scrolls to residential section)
+│   ├── Commercial (→ /tifton/commercial)
+│   ├── Roll-Off & Industrial (→ /tifton/roll-off)
+│   ├── Recycling (→ /recycling)
+│   └── FAQs (→ /tifton/faq)
+├── Tift County (→ /tift-county)
+├── Augusta
+├── Dublin
+├── (etc.)
+```
+
+---
+
+## DELETE / REDIRECT
+
+```
+/tift-co → DELETE and redirect to /tift-county
+```
+
+---
+
+## SUMMARY CHECKLIST
+
+- [ ] Homepage address lookup routes correctly
+- [ ] /tifton has residential help guide (NOT a sales page)
+- [ ] /tifton/commercial clearly states "City of Tifton only"
+- [ ] /tifton/roll-off clearly states "All of Tift County"
+- [ ] /tift-county shows roll-off + industrial ONLY
+- [ ] /tift-county has one line for residential: "contact the provider servicing your area"
+- [ ] /recycling is for city residents
+- [ ] All pages cross-link to related services
+- [ ] Navigation menu updated
+- [ ] /tift-co deleted or redirected
+
+---
+
+Ready to implement?
