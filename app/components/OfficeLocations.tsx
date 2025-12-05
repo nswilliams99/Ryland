@@ -57,7 +57,7 @@ const offices = [
 
 export default function OfficeLocations() {
   return (
-    <section id="offices" className="py-12 bg-white">
+    <section id="office-locations" className="py-12 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Proudly Serving Georgia</h2>

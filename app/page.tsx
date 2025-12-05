@@ -3,6 +3,7 @@ import Link from "next/link";
 import ServicesCarousel from "./components/ServicesCarousel";
 import MyRylandSection from "./components/MyRylandSection";
 import OfficeLocations from "./components/OfficeLocations";
+import HeroButtons from "./components/HeroButtons";
 
 export const metadata: Metadata = {
   title: "Ryland Environmental | Waste Management & Recycling Services",
@@ -22,14 +23,7 @@ export default function Home() {
             <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
               Family owned since 2014. You're not just a number, you're our neighbor.
             </p>
-            <div className="mt-8">
-              <Link
-                href="/"
-                className="inline-flex items-center justify-center rounded-full bg-accent-600 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors"
-              >
-                Find Your Service Area
-              </Link>
-            </div>
+            <HeroButtons />
           </div>
         </div>
       </section>
