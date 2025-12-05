@@ -1,0 +1,174 @@
+**PROMPT FOR REPLIT - /tift-county Landing Page:**
+
+---
+
+Create a `/tift-county` landing page that targets "Tift County" search keywords and funnels users to `/tifton/roll-off` for service details.
+
+**Purpose:** Capture searches for "dumpster rental Tift County," "waste management Tift County," "trash service Tift County" and direct them to the right page.
+
+---
+
+**PAGE STRUCTURE:**
+
+---
+
+**SECTION 1: Hero**
+```
+Headline: "Waste Services in Tift County, GA"
+Subhead: "Roll-off dumpsters, compactors, and industrial waste solutions serving all of Tift County—including areas outside Tifton city limits."
+
+CTA Button: "Get a Quote" → scrolls to contact section or links to /tifton/roll-off
+Phone: "Or call (229) 382-4411"
+```
+
+---
+
+**SECTION 2: Service Area Clarification**
+```
+Background: Light gray or light green
+Headline: "Where We Service"
+
+Two columns:
+
+LEFT - "Inside City of Tifton"
+Icon: City/buildings
+"Full-service waste management:"
+✓ Residential curbside pickup
+✓ Commercial dumpsters (4, 6, 8 yard)
+✓ Roll-off rentals
+✓ Industrial & compactors
+Button: "View Tifton City Services" → /tifton
+
+RIGHT - "Outside City Limits (Tift County)"
+Icon: Map/rural
+"Roll-off and industrial services:"
+✓ Roll-off dumpster rentals (20, 30, 40 yard)
+✓ Compactors
+✓ Scheduled industrial pickup
+✓ Construction & demolition
+Button: "View Roll-Off & Industrial" → /tifton/roll-off
+```
+
+---
+
+**SECTION 3: County Services Overview**
+```
+Headline: "Services Available County-Wide"
+Subhead: "Serving Tifton, Omega, Ty Ty, Chula, and all of Tift County"
+
+3 cards:
+
+Card 1: "Roll-Off Dumpsters"
+Icon: Dumpster
+"Temporary rentals for construction, renovations, cleanouts, roofing, and demolition. 20, 30, and 40 yard sizes."
+Button: "Learn More" → /tifton/roll-off
+
+Card 2: "Compactors"
+Icon: Compactor/industrial
+"Reduce waste volume up to 75%. Perfect for warehouses, manufacturing, and high-volume operations."
+Button: "Get Quote" → /tifton/roll-off#industrial
+
+Card 3: "Scheduled Industrial"
+Icon: Calendar/truck
+"Ongoing service on your schedule—weekly, bi-weekly, or custom. For industrial facilities and large operations."
+Button: "Get Quote" → /tifton/roll-off#industrial
+```
+
+---
+
+**SECTION 4: Quick Note for City Residents**
+```
+Background: Light blue or white with border
+Icon: Info
+
+"Live inside Tifton city limits?"
+"You have access to residential curbside pickup and commercial dumpster service—not just roll-offs."
+
+Button: "View City of Tifton Services" → /tifton
+```
+
+---
+
+**SECTION 5: Contact / CTA**
+```
+Background: Dark green (#2d5a27)
+
+Headline: "Need Service in Tift County?"
+Text: "Call us for a free quote. We'll help you find the right solution."
+
+Phone (large): "(229) 382-4411"
+Hours: "Monday - Friday, 8am - 5pm"
+
+Or simple form:
+- Name
+- Phone
+- Project/Service Needed (dropdown: Roll-Off Rental, Compactor, Industrial Service, Not Sure)
+- Message
+Button: "Request Quote"
+```
+
+---
+
+**SECTION 6: Areas We Serve**
+```
+Headline: "Serving All of Tift County"
+
+List or map showing:
+- Tifton
+- Omega
+- Ty Ty
+- Chula
+- Eldorado
+- And surrounding unincorporated areas
+
+"Not sure if we service your area? Call (229) 382-4411"
+```
+
+---
+
+**FOOTER:** Standard Ryland footer
+
+---
+
+**SEO:**
+```
+Title: "Waste Management & Dumpster Rental Tift County GA | Ryland Environmental"
+Meta description: "Roll-off dumpsters, compactors, and industrial waste services throughout Tift County GA. Serving Tifton, Omega, Ty Ty, Chula. Call (229) 382-4411 for a free quote."
+H1: "Waste Services in Tift County, GA"
+```
+
+**Target keywords:**
+- dumpster rental Tift County GA
+- waste management Tift County
+- roll off dumpster Tift County
+- trash service Tift County GA
+- garbage company Tift County
+
+---
+
+**NAVIGATION:**
+
+Add "Tift County" to main nav:
+```
+Locations
+├── Tifton
+│   ├── Residential
+│   ├── Commercial
+│   ├── Roll-Off & Industrial
+│   └── Recycling
+├── Tift County → /tift-county
+├── Augusta
+├── Dublin
+└── (etc.)
+```
+
+---
+
+**REDIRECT:**
+```
+/tift-co → 301 redirect to /tift-county
+```
+
+---
+
+Want me to also write a prompt to update the main navigation across the site?
