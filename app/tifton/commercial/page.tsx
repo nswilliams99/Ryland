@@ -220,7 +220,7 @@ export default function CommercialPage() {
                     <td className="px-6 py-3 font-medium text-gray-900">Pickup Frequency</td>
                     <td className="px-6 py-3 text-center text-gray-600">Up to 5x/week</td>
                     <td className="px-6 py-3 text-center text-gray-600">Up to 5x/week</td>
-                    <td className="px-6 py-3 text-center text-gray-600">Up to 5x/week</td>
+                    <td className="px-6 py-3 text-center text-gray-600">Up to 3x/week</td>
                   </tr>
                 </tbody>
               </table>
