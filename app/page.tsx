@@ -28,28 +28,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location Finder */}
-      <section className="py-8 bg-white border-b">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="flex gap-2">
-            <input
-              type="text"
-              placeholder="Enter your address or zip code..."
-              className="flex-1 rounded-full border border-gray-300 px-6 py-3 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-            />
-            <Link
-              href="/"
-              className="inline-flex items-center justify-center rounded-full bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors"
-            >
-              <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              Search
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Services Carousel */}
       <ServicesCarousel />
 
