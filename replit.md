@@ -20,9 +20,23 @@ The project is built with Next.js 16.0.3 using the App Router, TypeScript for ty
 - **Residential Service Help Guide** (`/tifton/residential`): Complete City Hall signup guide with breadcrumb navigation. Includes City Hall address (130 1st Street East), phone, hours, directions button, required documents (Photo ID + Proof of Residence), step-by-step process, pickup day color schedule, holiday schedule, and a callout for customers who already signed up but haven't received their cart.
 - **Commercial Services** (`/tifton/commercial`): Business dumpster services for City of Tifton. Container sizes (4, 6, 8 yard), pickup frequency options, commercial rates.
 - **Roll-Off & Industrial Services** (`/tifton/roll-off`): Construction dumpsters and industrial compactors for all of Tift County. Container sizes (10-40 yard), material guidelines, industrial equipment options.
-- **Recycling Page** (`/recycling`): Modern design promoting free recycling drop-off in Tifton. Includes impact statistics, drop-off location (2508 Carpenter Rd S), accepted materials grid, items not accepted, and quick recycling tips.
+- **Recycling Page** (`/tifton/recycling`): Modern design promoting free recycling drop-off in Tifton. Includes impact statistics, drop-off location (2508 Carpenter Rd S), accepted materials grid, items not accepted, and quick recycling tips.
 - **Tift County Services Page** (`/tift-county`): Roll-off container services for areas outside city limits, with notice that residential curbside service is City of Tifton only.
 - **FAQ Hub** (`/tifton/faq`): 20 individual FAQ pages covering various service aspects, accessible from the Tifton office page.
+
+### Breadcrumb Navigation
+All subpages include breadcrumb navigation with JSON-LD schema markup for SEO. Breadcrumbs are rendered using the reusable `components/Breadcrumb.tsx` component.
+
+**Breadcrumb format by page:**
+- `/tifton/residential`: Tifton Office > Residential
+- `/tifton/commercial`: Tifton Office > Commercial Dumpsters
+- `/tifton/roll-off`: Tifton Office > Roll-Off & Industrial
+- `/tifton/recycling`: Tifton Office > Recycling
+- `/tifton/faq`: Tifton Office > FAQs
+- `/tifton/faq/[slug]`: Tifton Office > FAQs > [FAQ Title]
+- `/tift-county`: Home > Tift County
+
+**Not applicable:** Home page (`/`) and Tifton Office page (`/tifton`) do not have breadcrumbs as they are top-level pages.
 
 ### System Design Choices
 The application uses Next.js API routes for backend logic, such as form submissions, ensuring a streamlined full-stack development approach within the Next.js framework. The project structure is organized for maintainability, separating components, API routes, and page-specific content. Environment variables are used for sensitive information like email addresses.

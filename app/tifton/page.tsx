@@ -99,7 +99,7 @@ export default function TiftonPage() {
               <p className="text-gray-600 mb-2 flex-grow">Drop off recyclables at Carpenter Road</p>
               <p className="text-primary-600 text-sm font-medium mb-4">City of Tifton residents</p>
               <Link
-                href="/recycling"
+                href="/tifton/recycling"
                 className="inline-flex items-center justify-center bg-primary-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
               >
                 Learn More

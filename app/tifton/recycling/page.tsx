@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Free Recycling Drop-Off Tifton GA | Recycling Center",
@@ -10,16 +11,12 @@ export const metadata: Metadata = {
 export default function RecyclingPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-gray-100 border-b border-gray-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
-          <nav className="flex items-center gap-2 text-sm">
-            <Link href="/tifton" className="text-primary-600 hover:text-primary-700 hover:underline">Tifton Office</Link>
-            <span className="text-gray-400">&gt;</span>
-            <span className="text-gray-600">Recycling</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb
+        items={[
+          { label: "Tifton Office", href: "/tifton" },
+          { label: "Recycling" },
+        ]}
+      />
 
       {/* Hero Section - Inspiring & Modern */}
       <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 overflow-hidden">

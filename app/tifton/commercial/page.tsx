@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Commercial Dumpster Service Tifton GA | Ryland Environmental",
@@ -9,16 +10,12 @@ export const metadata: Metadata = {
 export default function CommercialPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-gray-100 border-b border-gray-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
-          <nav className="flex items-center gap-2 text-sm">
-            <Link href="/tifton" className="text-primary-600 hover:text-primary-700 hover:underline">Tifton Office</Link>
-            <span className="text-gray-400">&gt;</span>
-            <span className="text-gray-600">Commercial Dumpsters</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb
+        items={[
+          { label: "Tifton Office", href: "/tifton" },
+          { label: "Commercial Dumpsters" },
+        ]}
+      />
 
       {/* Hero */}
       <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-16 lg:py-20">
@@ -377,7 +374,7 @@ export default function CommercialPage() {
             <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Free Recycling Drop-Off</h3>
               <p className="text-gray-600 mb-4">Drop off recyclables free at our Carpenter Road location.</p>
-              <a href="/recycling" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+              <a href="/tifton/recycling" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
             </div>
           </div>
         </div>
