@@ -229,30 +229,34 @@ export default function RollOffPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Compactors */}
-            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
-              <div className="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-                </svg>
+            <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
+              <div className="bg-gray-900 p-4">
+                <img 
+                  src="/images/rolloff/stationary-compactor.png" 
+                  alt="Stationary Compactor for industrial waste management" 
+                  className="w-full h-48 object-contain"
+                />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Compactors</h3>
-              <p className="text-gray-600 mb-4">
-                Reduce waste volume up to 75%. Perfect for warehouses, manufacturing, retail, and high-volume operations.
-              </p>
-              <ul className="space-y-2 text-gray-700 mb-6">
-                <li className="flex items-center gap-2">
-                  <span className="text-primary-600">✓</span>
-                  2-40 cubic yard sizes
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary-600">✓</span>
-                  Stationary & self-contained units
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary-600">✓</span>
-                  Reduce hauling frequency & costs
-                </li>
-              </ul>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Stationary Compactors</h3>
+                <p className="text-gray-600 mb-4">
+                  Reduce waste volume up to 75%. Perfect for warehouses, manufacturing, retail, and high-volume operations.
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    2-40 cubic yard sizes
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Stationary & self-contained units
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Reduce hauling frequency & costs
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Scheduled Industrial */}
