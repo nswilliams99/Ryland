@@ -1,0 +1,46 @@
+09:19:38.485 Running build in Washington, D.C., USA (East) – iad1
+09:19:38.486 Build machine configuration: 4 cores, 8 GB
+09:19:38.585 Cloning github.com/nswilliams99/Ryland (Branch: main, Commit: 5cbdc2c)
+09:19:38.586 Previous build caches not available.
+09:19:40.445 Cloning completed: 1.859s
+09:19:40.791 Running "vercel build"
+09:19:41.210 Vercel CLI 48.12.1
+09:19:41.532 Installing dependencies...
+09:19:50.685 
+09:19:50.686 added 62 packages in 9s
+09:19:50.686 
+09:19:50.686 19 packages are looking for funding
+09:19:50.686   run `npm fund` for details
+09:19:50.733 Detected Next.js version: 16.0.3
+09:19:50.736 Running "npm run build"
+09:19:50.875 
+09:19:50.875 > ryland-environmental@1.0.0 build
+09:19:50.875 > next build
+09:19:50.875 
+09:19:51.201 [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+09:19:51.907 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+09:19:51.908 This information is used to shape Next.js' roadmap and prioritize features.
+09:19:51.908 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+09:19:51.908 https://nextjs.org/telemetry
+09:19:51.908 
+09:19:51.923    ▲ Next.js 16.0.3 (Turbopack)
+09:19:51.924 
+09:19:52.058    Creating an optimized production build ...
+09:19:52.412 [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+09:19:57.069  ✓ Compiled successfully in 4.3s
+09:19:57.071    Running TypeScript ...
+09:20:02.222 Failed to compile.
+09:20:02.223 
+09:20:02.223 ./app/utils/replitmail.ts:47:48
+09:20:02.223 Type error: Type 'string | undefined' is not assignable to type 'string'.
+09:20:02.223   Type 'undefined' is not assignable to type 'string'.
+09:20:02.223 
+09:20:02.223 [0m [90m 45 |[39m   }
+09:20:02.223  [90m 46 |[39m
+09:20:02.223 [31m[1m>[22m[39m[90m 47 |[39m   [36mreturn[39m { authToken[33m:[39m [32m`Bearer ${replitToken}`[39m[33m,[39m hostname }[33m;[39m
+09:20:02.224  [90m    |[39m                                                [31m[1m^[22m[39m
+09:20:02.224  [90m 48 |[39m }
+09:20:02.224  [90m 49 |[39m
+09:20:02.224  [90m 50 |[39m [36mexport[39m [36masync[39m [36mfunction[39m sendEmail(message[33m:[39m [33mSmtpMessage[39m)[33m:[39m [33mPromise[39m[33m<[39m{[0m
+09:20:02.259 Next.js build worker exited with code: 1 and signal: null
+09:20:02.311 Error: Command "npm run build" exited with 1

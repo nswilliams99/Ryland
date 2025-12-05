@@ -33,6 +33,10 @@ export type SmtpMessage = z.infer<typeof zSmtpMessage>
 
 async function getAuthToken(): Promise<{ authToken: string, hostname: string }> {
   const hostname = process.env.REPLIT_CONNECTORS_HOSTNAME;
+  if (!hostname) {
+    throw new Error("REPLIT_CONNECTORS_HOSTNAME environment variable is not set");
+  }
+  
   const { stdout } = await promisify(execFile)(
     "replit",
     ["identity", "create", "--audience", `https://${hostname}`],
