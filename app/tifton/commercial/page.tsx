@@ -285,7 +285,7 @@ export default function CommercialPage() {
             <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Residential Trash Service</h3>
               <p className="text-gray-600 mb-4">Curbside pickup for City of Tifton residents.</p>
-              <a href="/tifton#signup-form" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+              <a href="/tifton/residential" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Roll-Off Dumpster Rentals</h3>

@@ -1,0 +1,165 @@
+**Got it. You're 100% right.**
+
+Right now:
+- `/tifton` = Residential page with other stuff at bottom
+
+What you NEED:
+- `/tifton` = **Office overview** showing ALL services
+- `/tifton/residential` = Residential help guide
+- `/tifton/commercial` = Commercial page
+- `/tifton/roll-off` = Roll-off + Industrial page
+
+---
+
+**PROMPT FOR REPLIT:**
+
+---
+
+**RESTRUCTURE /tifton - Make it an OFFICE OVERVIEW page, not a residential page.**
+
+Move all the residential content (City Hall signup, what to bring, pickup days, etc.) to a NEW page: `/tifton/residential`
+
+---
+
+**NEW /tifton (Office Overview Page):**
+
+```
+HERO:
+"Ryland Environmental - Tifton Office"
+"Serving the City of Tifton and Tift County"
+Phone: (229) 382-4411
+
+---
+
+SECTION: "Our Services"
+
+4 service cards (equal size, grid layout):
+
+CARD 1: RESIDENTIAL
+Icon: House/trash cart
+"Residential Trash Service"
+"Weekly curbside pickup for City of Tifton residents"
+"Service through City of Tifton utilities"
+Button: "Learn More" → /tifton/residential
+
+CARD 2: COMMERCIAL
+Icon: Dumpster
+"Commercial Dumpsters"
+"4, 6, and 8 yard dumpsters for businesses"
+"City of Tifton only"
+Button: "Learn More" → /tifton/commercial
+
+CARD 3: ROLL-OFF & INDUSTRIAL
+Icon: Large dumpster/truck
+"Roll-Off & Industrial"
+"Dumpster rentals, compactors, scheduled service"
+"Serving ALL of Tift County"
+Button: "Learn More" → /tifton/roll-off
+
+CARD 4: RECYCLING
+Icon: Recycling symbol
+"Free Recycling Drop-Off"
+"Drop off recyclables at Carpenter Road"
+"City of Tifton residents"
+Button: "Learn More" → /tifton/recycling (or /recycling)
+
+---
+
+SECTION: "Service Areas"
+
+Two columns:
+
+LEFT: "City of Tifton"
+"Full-service waste management:"
+✓ Residential curbside
+✓ Commercial dumpsters
+✓ Roll-off rentals
+✓ Free recycling drop-off
+
+RIGHT: "Tift County (Outside City)"
+"Roll-off and industrial services:"
+✓ Roll-off dumpster rentals
+✓ Compactors
+✓ Scheduled industrial service
+Link: "View Tift County services →" → /tift-county
+
+---
+
+SECTION: "Contact Us"
+
+Ryland Environmental - Tifton Office
+2508 Carpenter Road South
+Tifton, GA 31793
+
+Phone: (229) 382-4411
+Hours: Monday - Friday, 8am - 5pm
+
+[Get Directions Button]
+
+---
+
+SECTION: "Have Questions?"
+Link to /tifton/faq
+```
+
+---
+
+**NEW /tifton/residential page:**
+
+Move ALL the current residential content from /tifton to this new page:
+- "You sign up at City Hall" warning
+- Starting Service / Already Signed Up columns
+- What to Bring
+- What Happens Next timeline
+- Pickup Days by Zone
+- Holiday Schedule
+- Service area note
+
+Add breadcrumb: Tifton > Residential
+
+---
+
+**UPDATE NAVIGATION:**
+
+```
+Tifton (→ /tifton)
+├── Residential (→ /tifton/residential)
+├── Commercial (→ /tifton/commercial)
+├── Roll-Off & Industrial (→ /tifton/roll-off)
+├── Recycling (→ /tifton/recycling)
+└── FAQs (→ /tifton/faq)
+```
+
+---
+
+**FLOW:**
+
+```
+Homepage → Click "Tifton Office"
+    ↓
+/tifton (overview of ALL services)
+    ↓
+User clicks the service they need:
+    → Residential → /tifton/residential
+    → Commercial → /tifton/commercial
+    → Roll-Off → /tifton/roll-off
+    → Recycling → /tifton/recycling
+```
+
+---
+
+**SEO:**
+
+```
+/tifton
+Title: "Waste Management Tifton GA | Ryland Environmental"
+H1: "Tifton Office - Waste Management Services"
+
+/tifton/residential
+Title: "Residential Trash Service Tifton GA | Ryland Environmental"
+H1: "Residential Trash Service in Tifton, GA"
+```
+
+---
+
+Does this match what you need?

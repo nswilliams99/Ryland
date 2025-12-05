@@ -430,7 +430,7 @@ export default function RecyclingPage() {
             <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Residential Trash Service</h3>
               <p className="text-gray-600 mb-4">Curbside pickup for City of Tifton residents. Learn how to start service.</p>
-              <Link href="/tifton" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</Link>
+              <Link href="/tifton/residential" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</Link>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Commercial Dumpsters</h3>
