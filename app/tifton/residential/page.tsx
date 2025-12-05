@@ -145,22 +145,52 @@ export default function ResidentialPage() {
           {/* What Happens Next */}
           <div className="mb-10">
             <h3 className="text-xl font-bold text-gray-900 mb-4">What Happens Next</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-2 lg:gap-0">
+              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200 flex-1 w-full lg:w-auto">
                 <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold mb-3">1</div>
                 <p className="font-semibold text-gray-900">You sign up at City Hall</p>
               </div>
-              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+              <div className="hidden lg:flex items-center justify-center px-2">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div className="lg:hidden flex items-center justify-center py-1">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200 flex-1 w-full lg:w-auto">
                 <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold mb-3">2</div>
                 <p className="font-semibold text-gray-900">City notifies Ryland</p>
                 <p className="text-sm text-gray-600">End of each business day</p>
               </div>
-              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+              <div className="hidden lg:flex items-center justify-center px-2">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div className="lg:hidden flex items-center justify-center py-1">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200 flex-1 w-full lg:w-auto">
                 <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold mb-3">3</div>
                 <p className="font-semibold text-gray-900">We deliver your cart</p>
                 <p className="text-sm text-gray-600">96-gallon trash cart</p>
               </div>
-              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+              <div className="hidden lg:flex items-center justify-center px-2">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div className="lg:hidden flex items-center justify-center py-1">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-md border border-gray-200 flex-1 w-full lg:w-auto">
                 <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold mb-3">4</div>
                 <p className="font-semibold text-gray-900">Service begins</p>
                 <p className="text-sm text-gray-600">On your pickup day</p>
