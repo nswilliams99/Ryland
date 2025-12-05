@@ -8,91 +8,28 @@ export const metadata: Metadata = {
 export default function CommercialPage() {
   return (
     <>
-      {/* Hero + Quote Form */}
-      <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-12 lg:py-16">
+      {/* Hero */}
+      <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-            {/* Left - Hero Content */}
-            <div className="pt-4">
-              <span className="inline-block px-3 py-1 bg-primary-500 rounded-full text-sm font-semibold mb-4">
-                City of Tifton
-              </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-                Commercial Dumpster Service in Tifton, GA
-              </h1>
-              <p className="text-xl text-primary-100 mb-6">
-                Reliable trash pickup for businesses in the City of Tifton.
-              </p>
-              <div className="flex items-center gap-4 text-primary-100">
-                <a href="tel:229-382-4411" className="flex items-center gap-2 hover:text-white">
-                  <span>📞</span> (229) 382-4411
-                </a>
-                <span>Mon-Fri 8am-5pm</span>
-              </div>
+          <div className="max-w-3xl">
+            <span className="inline-block px-3 py-1 bg-primary-500 rounded-full text-sm font-semibold mb-4">
+              City of Tifton
+            </span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+              Commercial Dumpster Service in Tifton, GA
+            </h1>
+            <p className="text-xl text-primary-100 mb-6">
+              Reliable trash pickup for businesses in the City of Tifton. 4, 6, and 8 yard front-load dumpsters with flexible pickup schedules.
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="tel:229-382-4411" className="inline-flex items-center gap-2 bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <span>📞</span> (229) 382-4411
+              </a>
+              <a href="#request-quote" className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                Request a Quote
+              </a>
             </div>
-
-            {/* Right - Quote Form */}
-            <div className="bg-white rounded-xl shadow-2xl p-6 lg:p-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Request Commercial Service</h2>
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Name *</label>
-                  <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Contact Name *</label>
-                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
-                    <input type="tel" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                  <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Address *</label>
-                  <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Type</label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                    <option value="">Select type...</option>
-                    <option value="restaurant">Restaurant</option>
-                    <option value="retail">Retail</option>
-                    <option value="office">Office</option>
-                    <option value="industrial">Industrial</option>
-                    <option value="church">Church/Nonprofit</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Dumpster Size</label>
-                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                      <option value="">Not sure</option>
-                      <option value="4">4 Yard</option>
-                      <option value="6">6 Yard</option>
-                      <option value="8">8 Yard</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Pickup Frequency</label>
-                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                      <option value="1">1x per week</option>
-                      <option value="2">2x per week</option>
-                      <option value="3">3x per week</option>
-                    </select>
-                  </div>
-                </div>
-                <button type="submit" className="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors">
-                  Request Quote
-                </button>
-              </form>
-            </div>
+            <p className="text-primary-200 text-sm mt-4">Mon-Fri 8am-5pm</p>
           </div>
         </div>
       </section>
@@ -302,32 +239,107 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Questions? Let's Talk.</h2>
-            <p className="text-gray-600">Not sure which size you need? We'll help you figure it out.</p>
-          </div>
+      {/* Request Quote Section */}
+      <section id="request-quote" className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Request Commercial Service</h2>
+              <p className="text-gray-600 mb-6">Fill out the form and we'll get back to you within one business day with a quote for your business.</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-700">No long-term contracts required</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-700">Flexible pickup schedules (1-5x per week)</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-700">Local service with real people who answer the phone</p>
+                </div>
+              </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="text-center lg:text-left">
-              <a href="tel:229-382-4411" className="text-4xl font-bold text-primary-600 hover:text-primary-700">(229) 382-4411</a>
-              <p className="text-gray-600 mt-2">Monday - Friday, 8am - 5pm</p>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <p className="text-gray-700 mb-2"><strong>Prefer to call?</strong></p>
+                <a href="tel:229-382-4411" className="text-2xl font-bold text-primary-600 hover:text-primary-700">(229) 382-4411</a>
+                <p className="text-gray-600 text-sm mt-1">Monday - Friday, 8am - 5pm</p>
+              </div>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6">
+
+            <div className="bg-gray-50 rounded-xl p-6 lg:p-8 shadow-lg">
               <form className="space-y-4">
                 <div>
-                  <input type="text" placeholder="Your Name" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Name *</label>
+                  <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Contact Name *</label>
+                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
+                    <input type="tel" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                  </div>
                 </div>
                 <div>
-                  <input type="tel" placeholder="Phone Number" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                  <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
                 </div>
                 <div>
-                  <textarea placeholder="Message" rows={3} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"></textarea>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Address *</label>
+                  <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Type</label>
+                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                    <option value="">Select type...</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="retail">Retail</option>
+                    <option value="office">Office</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="church">Church/Nonprofit</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Dumpster Size</label>
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                      <option value="">Not sure</option>
+                      <option value="4">4 Yard</option>
+                      <option value="6">6 Yard</option>
+                      <option value="8">8 Yard</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Pickup Frequency</label>
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                      <option value="1">1x per week</option>
+                      <option value="2">2x per week</option>
+                      <option value="3">3x per week</option>
+                      <option value="4">4x per week</option>
+                      <option value="5">5x per week</option>
+                    </select>
+                  </div>
                 </div>
                 <button type="submit" className="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors">
-                  Send Message
+                  Request Quote
                 </button>
               </form>
             </div>
