@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Roll-Off Dumpster Rental Tift County GA | Ryland Environmental",
-  description: "Roll-off dumpster rentals in Tift County GA. 10-40 yard dumpsters for construction, cleanouts, renovations. Same-day delivery available. Call (229) 382-4411.",
+  title: "Roll-Off Dumpsters & Industrial Service Tift County GA | Ryland Environmental",
+  description: "Roll-off dumpster rentals, compactors, and industrial waste service in Tift County GA. 20-40 yard dumpsters. Call (229) 382-4411.",
 };
 
 export default function RollOffPage() {
@@ -18,10 +18,10 @@ export default function RollOffPage() {
                 All of Tift County
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-                Roll-Off Dumpster Rentals in Tift County, GA
+                Roll-Off & Industrial Services in Tift County, GA
               </h1>
               <p className="text-xl text-primary-100 mb-6">
-                Temporary dumpsters for construction, renovations, cleanouts, and more. Serving all of Tift County.
+                Roll-off dumpsters, compactors, and industrial waste solutions. Serving all of Tift County—Tifton, Omega, Ty Ty, Chula, and surrounding areas.
               </p>
               <div className="flex items-center gap-4 text-primary-100">
                 <a href="tel:229-382-4411" className="flex items-center gap-2 hover:text-white">
@@ -279,6 +279,85 @@ export default function RollOffPage() {
 
           <div className="text-center mt-8">
             <p className="text-gray-600">Not sure which size? Call <a href="tel:229-382-4411" className="text-primary-600 font-semibold">(229) 382-4411</a> and describe your project. We'll recommend the right dumpster.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Industrial & Compactor Section */}
+      <section id="industrial" className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-4">
+              For Warehouses, Manufacturing & High-Volume Operations
+            </span>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Industrial & Compactor Services</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Reduce waste volume up to 75% and streamline your operations with our industrial waste solutions.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Compactors */}
+            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+              <div className="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Compactors</h3>
+              <p className="text-gray-600 mb-4">
+                Reduce waste volume up to 75%. Perfect for warehouses, manufacturing, retail, and high-volume operations.
+              </p>
+              <ul className="space-y-2 text-gray-700 mb-6">
+                <li className="flex items-center gap-2">
+                  <span className="text-primary-600">✓</span>
+                  2-40 cubic yard sizes
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-primary-600">✓</span>
+                  Stationary & self-contained units
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-primary-600">✓</span>
+                  Reduce hauling frequency & costs
+                </li>
+              </ul>
+            </div>
+
+            {/* Scheduled Industrial */}
+            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+              <div className="w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Scheduled Industrial Service</h3>
+              <p className="text-gray-600 mb-4">
+                Ongoing roll-off service on your schedule. For industrial facilities and large operations that generate consistent waste.
+              </p>
+              <ul className="space-y-2 text-gray-700 mb-6">
+                <li className="flex items-center gap-2">
+                  <span className="text-primary-600">✓</span>
+                  Weekly, bi-weekly, or custom schedules
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-primary-600">✓</span>
+                  Dedicated containers on-site
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-primary-600">✓</span>
+                  Custom industrial solutions
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-primary-600 rounded-xl p-8 text-center text-white">
+            <h3 className="text-2xl font-bold mb-4">Need Industrial or Compactor Service?</h3>
+            <p className="text-primary-100 mb-6">Call us to discuss your specific needs. We'll design a custom solution for your operation.</p>
+            <a href="tel:229-382-4411" className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <span>📞</span> Call (229) 382-4411
+            </a>
           </div>
         </div>
       </section>

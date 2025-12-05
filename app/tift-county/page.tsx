@@ -116,6 +116,23 @@ export default function TiftCountyPage() {
               </Link>
             </div>
           </div>
+
+          {/* Residential Notice for Outside City Limits */}
+          <div className="mt-8 bg-amber-50 border border-amber-200 rounded-xl p-6">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <svg className="w-6 h-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-amber-800 font-medium">Looking for residential trash service outside Tifton city limits?</p>
+                <p className="text-amber-700 text-sm mt-1">
+                  Ryland Environmental does not provide residential curbside pickup outside the City of Tifton. For residential service in other areas of Tift County, contact the waste provider servicing your area.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -422,6 +422,30 @@ export default function RecyclingPage() {
         </div>
       </section>
 
+      {/* Other Services */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Other Services in Tifton</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Residential Trash Service</h3>
+              <p className="text-gray-600 mb-4">Curbside pickup for City of Tifton residents. Learn how to start service.</p>
+              <Link href="/tifton" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</Link>
+            </div>
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Commercial Dumpsters</h3>
+              <p className="text-gray-600 mb-4">4, 6, 8 yard dumpsters for Tifton businesses. Up to 3x weekly pickup.</p>
+              <Link href="/tifton/commercial" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</Link>
+            </div>
+            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Roll-Off Dumpster Rentals</h3>
+              <p className="text-gray-600 mb-4">20-40 yard dumpsters for construction, renovations, cleanouts. All of Tift County.</p>
+              <Link href="/tifton/roll-off" className="text-primary-600 font-semibold hover:text-primary-700">Learn More →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 bg-gradient-to-b from-primary-600 to-primary-800 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
