@@ -169,66 +169,124 @@ export default function CommercialPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Dumpster Sizes For Any Business</h2>
+            <p className="text-gray-600">All front-load dumpsters include plastic lids and scheduled pickup up to 5x per week.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* 4 Yard */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl font-bold text-primary-600">4</div>
-                  <div className="text-lg font-semibold text-gray-600">YARD</div>
-                </div>
+              <div className="h-56 bg-gray-900 flex items-center justify-center p-4">
+                <img 
+                  src="/images/equipment/4_yard_dumpster_FL_1764909784527.png" 
+                  alt="4 Yard Commercial Dumpster with Ryland Environmental branding" 
+                  className="h-full w-auto object-contain"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">4 Yard Commercial Dumpster</h3>
                 <ul className="space-y-2 text-sm text-gray-600 mb-4">
-                  <li><strong>Dimensions:</strong> 6' L x 4.5' W x 4' H</li>
-                  <li><strong>Holds:</strong> 800 lbs (about 24 trash bags)</li>
+                  <li><strong>Dimensions:</strong> 5'10" W x 5'1" H x 4'2" D</li>
+                  <li><strong>Capacity:</strong> 800 lbs / 27 trash bags</li>
+                  <li><strong>Weight:</strong> 709 lbs (empty)</li>
                 </ul>
                 <div className="bg-primary-50 rounded-lg p-3">
-                  <p className="text-sm text-primary-800"><strong>Best For:</strong> Small restaurants, retail shops, offices up to 25 employees</p>
+                  <p className="text-sm text-primary-800"><strong>Best For:</strong> Smaller companies with up to 25 employees</p>
                 </div>
               </div>
             </div>
 
             {/* 6 Yard */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl font-bold text-primary-600">6</div>
-                  <div className="text-lg font-semibold text-gray-600">YARD</div>
-                </div>
+              <div className="h-56 bg-gray-900 flex items-center justify-center p-4">
+                <img 
+                  src="/images/equipment/6_yard_dumpster_FL_1764909781374.png" 
+                  alt="6 Yard Commercial Dumpster with Ryland Environmental branding" 
+                  className="h-full w-auto object-contain"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">6 Yard Commercial Dumpster</h3>
                 <ul className="space-y-2 text-sm text-gray-600 mb-4">
-                  <li><strong>Dimensions:</strong> 6' L x 5' W x 5' H</li>
-                  <li><strong>Holds:</strong> 1,200 lbs (about 36 trash bags)</li>
+                  <li><strong>Dimensions:</strong> 6'0" W x 5'10" H x 5'8" D</li>
+                  <li><strong>Capacity:</strong> 1,200 lbs / 41 trash bags</li>
+                  <li><strong>Weight:</strong> 900 lbs (empty)</li>
                 </ul>
                 <div className="bg-primary-50 rounded-lg p-3">
-                  <p className="text-sm text-primary-800"><strong>Best For:</strong> Mid-size restaurants, grocery stores, offices up to 75 employees</p>
+                  <p className="text-sm text-primary-800"><strong>Best For:</strong> Mid to large businesses with up to 250 employees</p>
                 </div>
               </div>
             </div>
 
             {/* 8 Yard */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl font-bold text-primary-600">8</div>
-                  <div className="text-lg font-semibold text-gray-600">YARD</div>
-                </div>
+              <div className="h-56 bg-gray-900 flex items-center justify-center p-4">
+                <img 
+                  src="/images/equipment/8_yard_dumpster_FL_1764909777874.png" 
+                  alt="8 Yard Commercial Dumpster with Ryland Environmental branding" 
+                  className="h-full w-auto object-contain"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">8 Yard Commercial Dumpster</h3>
                 <ul className="space-y-2 text-sm text-gray-600 mb-4">
-                  <li><strong>Dimensions:</strong> 6' L x 6' W x 6' H</li>
-                  <li><strong>Holds:</strong> 1,600 lbs (about 48 trash bags)</li>
+                  <li><strong>Dimensions:</strong> 6'10" W x 6'2" H x 6'10" D</li>
+                  <li><strong>Capacity:</strong> 1,800 lbs / 54 trash bags</li>
+                  <li><strong>Weight:</strong> 1,103 lbs (empty)</li>
                 </ul>
                 <div className="bg-primary-50 rounded-lg p-3">
-                  <p className="text-sm text-primary-800"><strong>Best For:</strong> Large restaurants, hotels, manufacturing, 75+ employees</p>
+                  <p className="text-sm text-primary-800"><strong>Best For:</strong> Large businesses with up to 500 employees</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Specifications Table */}
+          <div className="mt-12 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div className="bg-primary-800 text-white px-6 py-4">
+              <h3 className="text-lg font-bold">Front Load Dumpster Specifications</h3>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead className="bg-gray-100 border-b border-gray-200">
+                  <tr>
+                    <th className="text-left px-6 py-3 font-semibold text-gray-900">Specification</th>
+                    <th className="text-center px-6 py-3 font-semibold text-gray-900">4 Yard</th>
+                    <th className="text-center px-6 py-3 font-semibold text-gray-900">6 Yard</th>
+                    <th className="text-center px-6 py-3 font-semibold text-gray-900">8 Yard</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  <tr>
+                    <td className="px-6 py-3 font-medium text-gray-900">Plastic Lid Standard</td>
+                    <td className="px-6 py-3 text-center text-gray-600">37" x 58" single wall</td>
+                    <td className="px-6 py-3 text-center text-gray-600">37" x 58" single wall</td>
+                    <td className="px-6 py-3 text-center text-gray-600">37" x 58" single wall</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-6 py-3 font-medium text-gray-900">Sides</td>
+                    <td className="px-6 py-3 text-center text-gray-600">12 gauge</td>
+                    <td className="px-6 py-3 text-center text-gray-600">12 gauge</td>
+                    <td className="px-6 py-3 text-center text-gray-600">12 gauge</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-3 font-medium text-gray-900">Bottom</td>
+                    <td className="px-6 py-3 text-center text-gray-600">10 gauge</td>
+                    <td className="px-6 py-3 text-center text-gray-600">10 gauge</td>
+                    <td className="px-6 py-3 text-center text-gray-600">10 gauge</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-6 py-3 font-medium text-gray-900">Weight (empty)</td>
+                    <td className="px-6 py-3 text-center text-gray-600">709 lbs</td>
+                    <td className="px-6 py-3 text-center text-gray-600">900 lbs</td>
+                    <td className="px-6 py-3 text-center text-gray-600">1,103 lbs</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-3 font-medium text-gray-900">Pickup Frequency</td>
+                    <td className="px-6 py-3 text-center text-gray-600">Up to 5x/week</td>
+                    <td className="px-6 py-3 text-center text-gray-600">Up to 5x/week</td>
+                    <td className="px-6 py-3 text-center text-gray-600">Up to 5x/week</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
