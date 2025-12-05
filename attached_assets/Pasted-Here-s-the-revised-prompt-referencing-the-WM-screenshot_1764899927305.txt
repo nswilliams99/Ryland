@@ -1,0 +1,198 @@
+Here's the revised prompt referencing the WM screenshot:
+
+---
+
+**PROMPT FOR REPLIT:**
+
+---
+
+Create a `/tifton/commercial` page for commercial dumpster service. **Reference the uploaded WM screenshot (www_wm_com_us_en_business_business-waste-recycling-pickup.png) as the layout template.** Use the same design system as the existing `/tifton` and `/tifton/residential` pages (green #2d5a27, mobile-first, same header/footer).
+
+---
+
+**PAGE STRUCTURE (following WM layout):**
+
+---
+
+**SECTION 1: Hero + Lead Form (like WM's top section)**
+```
+Left side:
+Headline: "Commercial Dumpster Service in Tifton, GA"
+Subhead: "Reliable trash pickup for businesses in the City of Tifton."
+
+Right side - Quote Form:
+Title: "Request Commercial Service"
+Fields:
+- Business Name (required)
+- Contact Name (required)
+- Phone (required)
+- Email (required)
+- Business Address (required)
+- Business Type (dropdown: Restaurant, Retail, Office, Industrial, Church/Nonprofit, Other)
+- Dumpster Size Needed (dropdown: "Not sure", "4 Yard", "6 Yard", "8 Yard")
+- Pickup Frequency (dropdown: "1x per week", "2x per week", "3x per week")
+
+Submit Button: "Request Quote"
+```
+
+---
+
+**SECTION 2: Three Value Props (like WM's "One-Year Service Agreement" row)**
+```
+3 horizontal cards:
+
+Card 1: "Locally Owned Since 2014"
+Text: "Family-owned with 60 years combined experience. You're not just a number—you're our neighbor."
+
+Card 2: "Flexible Scheduling"  
+Text: "Pickup up to 3 times per week. Need to adjust? Just call."
+
+Card 3: "Personal Service"
+Text: "Talk to real people who live in your community. No call centers."
+```
+
+---
+
+**SECTION 3: "Better Waste Service in 3 Simple Steps" (copy WM's layout exactly)**
+```
+Headline: "Commercial Service in 3 Simple Steps"
+
+STEP 1: "Request a Quote"
+Text: "Fill out our form or call (229) 382-4411. We'll recommend the right dumpster size for your business."
+
+STEP 2: "We Deliver"
+Text: "Once approved, we deliver your dumpster and place it in a convenient location."
+
+STEP 3: "Reliable Pickup"
+Text: "We empty your dumpster on your scheduled days. Manage your account through My Ryland."
+```
+
+---
+
+**SECTION 4: "Dumpster Sizes For Any Business" (copy WM's dumpster cards layout)**
+```
+Headline: "Dumpster Sizes For Any Business"
+
+3 cards with dumpster images (use placeholder images):
+
+4 Yard Commercial Dumpster:
+- Dimensions: 6' L x 4.5' W x 4' H
+- Holds: 800 lbs (about 24 trash bags)
+- Best For: Small restaurants, retail shops, offices up to 25 employees
+
+6 Yard Commercial Dumpster:
+- Dimensions: 6' L x 5' W x 5' H
+- Holds: 1,200 lbs (about 36 trash bags)
+- Best For: Mid-size restaurants, grocery stores, offices up to 75 employees
+
+8 Yard Commercial Dumpster:
+- Dimensions: 6' L x 6' W x 6' H
+- Holds: 1,600 lbs (about 48 trash bags)
+- Best For: Large restaurants, hotels, manufacturing, 75+ employees
+
+Below cards:
+"Need something larger? We offer roll-off dumpsters for construction and high-volume waste."
+Button: "View Roll-Off Dumpsters" → /tifton/roll-off
+```
+
+---
+
+**SECTION 5: Second Contact Section (like WM's "Want to know more?")**
+```
+Headline: "Questions? Let's Talk."
+Text: "Not sure which size you need? We'll help you figure it out."
+
+Phone (large): "(229) 382-4411"
+Hours: "Monday - Friday, 8am - 5pm"
+
+Or simple contact form:
+- Name
+- Phone
+- Message
+Button: "Send Message"
+```
+
+---
+
+**SECTION 6: "Other Business Waste Services" (like WM's bottom cards)**
+```
+Headline: "Other Services in Tifton"
+
+3 horizontal cards with images:
+
+Card 1: "Residential Trash Service"
+Text: "Curbside pickup for City of Tifton residents."
+Button: "Learn More" → /tifton/residential
+
+Card 2: "Roll-Off Dumpster Rentals"
+Text: "10-40 yard dumpsters for construction, renovations, cleanouts. All of Tift County."
+Button: "Learn More" → /tifton/roll-off
+
+Card 3: "Free Recycling Drop-Off"
+Text: "Drop off recyclables free at our Carpenter Road location."
+Button: "Learn More" → /tifton/recycling
+```
+
+---
+
+**SECTION 7: Service Area Notice**
+```
+Background: Light gray
+Icon: Map pin
+Text: "Commercial service available within City of Tifton limits only. Not sure if you qualify? Call (229) 382-4411."
+Secondary: "Outside city limits? We offer roll-off rentals throughout Tift County."
+```
+
+---
+
+**SECTION 8: Holiday Schedule**
+```
+Headline: "Holiday Pickup Schedule"
+Text: "Commercial pickup delayed one day after:"
+- New Year's Day
+- Memorial Day
+- Thanksgiving Day
+- Christmas Day
+```
+
+---
+
+**SECTION 9: FAQ Accordion (like WM's FAQ section)**
+```
+Headline: "Commercial Trash Service FAQs"
+
+Q: "What size dumpster does my business need?"
+A: "4 yard for up to 25 employees, 6 yard for 25-75 employees, 8 yard for 75+ employees. Restaurants typically need larger sizes. Not sure? Call (229) 382-4411 and we'll help."
+
+Q: "How often will my dumpster be emptied?"
+A: "You choose: 1, 2, or 3 times per week. Most small businesses start with once per week."
+
+Q: "What can't go in my commercial dumpster?"
+A: "No hazardous materials, electronics, batteries, tires, appliances with refrigerant, medical waste, concrete, brick, or dirt."
+
+Q: "Where will the dumpster be placed?"
+A: "We'll work with you to find the best accessible location, usually behind your building or in your parking lot."
+
+Q: "How do I pay my bill?"
+A: "Online through My Ryland, by phone at (229) 382-4411, or by mail. Autopay available."
+
+Q: "What if I need an extra pickup?"
+A: "Call (229) 382-4411. We can usually accommodate within 1-2 business days. Additional fees may apply."
+```
+
+---
+
+**SEO:**
+```
+Title: "Commercial Dumpster Service Tifton GA | Ryland Environmental"
+Meta description: "Commercial trash pickup for Tifton businesses. 4, 6, 8 yard dumpsters, up to 3x weekly pickup. Locally owned since 2014. Call (229) 382-4411 for a quote."
+H1: "Commercial Dumpster Service in Tifton, GA"
+```
+
+---
+
+**FOOTER:** Same as other Tifton pages with Ryland contact info.
+
+---
+
+Ready for the `/tifton/roll-off` prompt next?

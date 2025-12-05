@@ -1,0 +1,256 @@
+**PROMPT FOR REPLIT:**
+
+---
+
+Create a `/tifton/roll-off` page for roll-off dumpster rentals. **Reference the uploaded WM screenshot as the layout template.** Use the same design system as `/tifton/commercial` and other Tifton pages (green #2d5a27, mobile-first, same header/footer).
+
+---
+
+**PAGE STRUCTURE:**
+
+---
+
+**SECTION 1: Hero + Lead Form**
+```
+Left side:
+Headline: "Roll-Off Dumpster Rentals in Tift County, GA"
+Subhead: "Temporary dumpsters for construction, renovations, cleanouts, and more. Serving all of Tift County."
+
+Right side - Quote Form:
+Title: "Request a Roll-Off Dumpster"
+Fields:
+- Name (required)
+- Phone (required)
+- Email (required)
+- Delivery Address (required)
+- Project Type (dropdown: "Home Cleanout", "Renovation/Remodel", "Construction", "Roofing", "Landscaping/Yard Debris", "Commercial Project", "Other")
+- Dumpster Size Needed (dropdown: "Not sure - help me choose", "10 Yard", "15 Yard", "20 Yard", "30 Yard", "40 Yard")
+- Estimated Rental Length (dropdown: "1-3 days", "1 week", "2 weeks", "1 month", "Ongoing/Not sure")
+- Preferred Delivery Date (date picker)
+- Additional Notes (textarea, optional)
+
+Submit Button: "Get Quote"
+
+Below form: "Need it fast? Call (229) 382-4411 for same-day or next-day delivery (subject to availability)."
+```
+
+---
+
+**SECTION 2: Three Value Props**
+```
+3 horizontal cards:
+
+Card 1: "Serving All of Tift County"
+Text: "Unlike our other services, roll-off dumpsters are available anywhere in Tift County—city limits or not."
+
+Card 2: "Flexible Rental Periods"
+Text: "Keep it as long as you need. Daily, weekly, or monthly rentals available."
+
+Card 3: "Fast Delivery"
+Text: "Same-day and next-day delivery available. Call for rush orders."
+```
+
+---
+
+**SECTION 3: "Roll-Off Rental in 3 Simple Steps"**
+```
+Headline: "Dumpster Rental in 3 Simple Steps"
+
+STEP 1: "Choose Your Size"
+Text: "Tell us about your project and we'll recommend the right dumpster. Not sure? We'll help you pick."
+
+STEP 2: "We Deliver"
+Text: "We drop the dumpster at your location. You fill it up on your schedule."
+
+STEP 3: "We Haul It Away"
+Text: "When you're done, call us. We pick it up and dispose of everything properly."
+```
+
+---
+
+**SECTION 4: "Dumpster Sizes For Any Project"**
+```
+Headline: "Roll-Off Dumpster Sizes"
+Subhead: "From small cleanouts to major construction—we have the right size."
+
+5 cards with dumpster images (use placeholders):
+
+10 Yard Dumpster:
+- Dimensions: 12' L x 8' W x 4' H
+- Capacity: 10 cubic yards (about 3 pickup truck loads)
+- Best For: Small cleanouts, garage cleanups, small bathroom remodel
+- Weight Limit: 2 tons
+
+15 Yard Dumpster:
+- Dimensions: 14' L x 8' W x 4.5' H
+- Capacity: 15 cubic yards (about 4-5 pickup truck loads)
+- Best For: Medium cleanouts, flooring removal, deck removal
+- Weight Limit: 3 tons
+
+20 Yard Dumpster:
+- Dimensions: 22' L x 8' W x 4.5' H
+- Capacity: 20 cubic yards (about 6 pickup truck loads)
+- Best For: Large cleanouts, kitchen/bath remodel, roofing (up to 25 squares)
+- Weight Limit: 4 tons
+- Note: "Our most popular size"
+
+30 Yard Dumpster:
+- Dimensions: 22' L x 8' W x 6' H
+- Capacity: 30 cubic yards (about 9 pickup truck loads)
+- Best For: Major renovations, new construction debris, large estate cleanouts
+- Weight Limit: 5 tons
+
+40 Yard Dumpster:
+- Dimensions: 22' L x 8' W x 8' H
+- Capacity: 40 cubic yards (about 12 pickup truck loads)
+- Best For: Commercial construction, large demolition, industrial projects
+- Weight Limit: 6 tons
+
+Below cards:
+"Not sure which size? Call (229) 382-4411 and describe your project. We'll recommend the right dumpster."
+```
+
+---
+
+**SECTION 5: "What Can Go In a Roll-Off Dumpster?"**
+```
+Headline: "What You Can (and Can't) Put In"
+
+Two columns:
+
+GREEN Column - "Accepted Items":
+✓ Household junk and furniture
+✓ Construction debris (wood, drywall, siding)
+✓ Roofing shingles
+✓ Yard waste and brush
+✓ Concrete, brick, dirt (separate load required - call first)
+✓ Appliances (no refrigerant)
+✓ Mattresses and box springs
+
+RED Column - "NOT Accepted":
+✗ Hazardous materials (paint, oil, chemicals, solvents)
+✗ Appliances with refrigerant (AC units, refrigerators, freezers)
+✗ Tires
+✗ Batteries
+✗ Electronics (TVs, computers, monitors)
+✗ Medical waste
+✗ Asbestos
+
+Note below: "Heavy materials like concrete, brick, and dirt can only go in 10-yard dumpsters and must be scheduled separately. Call for details."
+```
+
+---
+
+**SECTION 6: Second Contact Section**
+```
+Headline: "Ready to Rent? Let's Talk."
+Text: "Get a quote in minutes. Tell us about your project."
+
+Phone (large): "(229) 382-4411"
+Hours: "Monday - Friday, 8am - 5pm"
+
+Or simple form:
+- Name
+- Phone  
+- Project Description
+Button: "Get Quote"
+```
+
+---
+
+**SECTION 7: "Other Services in Tifton"**
+```
+Headline: "Other Services We Offer"
+
+3 horizontal cards:
+
+Card 1: "Residential Trash Service"
+Text: "Weekly curbside pickup for City of Tifton residents."
+Button: "Learn More" → /tifton/residential
+
+Card 2: "Commercial Dumpsters"
+Text: "Permanent dumpsters for businesses. 4, 6, and 8 yard sizes."
+Button: "Learn More" → /tifton/commercial
+
+Card 3: "Free Recycling Drop-Off"
+Text: "Drop off recyclables free at our Carpenter Road location."
+Button: "Learn More" → /tifton/recycling
+```
+
+---
+
+**SECTION 8: Permit Notice**
+```
+Background: Light yellow/warning color
+Icon: Info or document icon
+Headline: "Do I Need a Permit?"
+Text: "If the dumpster will be placed on a public street, sidewalk, or right-of-way, you may need a permit from the City of Tifton. Dumpsters placed on private property (your driveway, yard, or parking lot) typically don't require a permit."
+
+"Not sure? Contact Tifton City Hall at (229) 391-3957 or call us and we'll help you figure it out."
+```
+
+---
+
+**SECTION 9: FAQ Accordion**
+```
+Headline: "Roll-Off Dumpster FAQs"
+
+Q: "What size dumpster do I need?"
+A: "It depends on your project:
+• 10 yard: Small garage cleanout, single room renovation
+• 15 yard: Multi-room cleanout, deck removal
+• 20 yard: Whole house cleanout, large remodel, roofing (most popular)
+• 30 yard: Major renovation, new construction
+• 40 yard: Commercial construction, demolition
+Not sure? Call (229) 382-4411 and describe your project."
+
+Q: "How much does a roll-off dumpster cost?"
+A: "Pricing depends on dumpster size, rental length, and debris type. Call (229) 382-4411 for a quote—we'll give you a flat rate with no hidden fees."
+
+Q: "How long can I keep the dumpster?"
+A: "Standard rental is 7 days. Need it longer? Just let us know. We offer daily, weekly, and monthly rates. Extensions are easy—just call before your rental period ends."
+
+Q: "How quickly can I get a dumpster?"
+A: "We offer same-day and next-day delivery when available. Call (229) 382-4411 for rush delivery. For scheduled projects, book a few days ahead to guarantee your preferred date."
+
+Q: "Where will you put the dumpster?"
+A: "Wherever works best for you—driveway, yard, parking lot, job site. Just make sure there's clear access for our truck (about 60 feet of clearance). We'll place it exactly where you want it."
+
+Q: "Do I need a permit for a dumpster?"
+A: "Not if it's on your private property. If you need it on a public street or right-of-way, you may need a permit from the City of Tifton. Call us if you're unsure."
+
+Q: "What if I fill it up before my rental ends?"
+A: "Call us! We can swap it for an empty one or pick it up and bring it back. Additional haul fees apply."
+
+Q: "Can I put concrete or dirt in the dumpster?"
+A: "Yes, but it requires a special 10-yard 'heavy debris' dumpster. Concrete, brick, dirt, and asphalt are very heavy and can't be mixed with regular trash. Call for pricing."
+```
+
+---
+
+**SECTION 10: Service Area Callout**
+```
+Background: Light green
+Icon: Map pin
+Headline: "Serving All of Tift County"
+Text: "Roll-off dumpsters available throughout Tift County including Tifton, Omega, Ty Ty, Chula, and surrounding areas."
+
+"For residential or commercial service inside City of Tifton limits, see our other services."
+```
+
+---
+
+**SEO:**
+```
+Title: "Roll-Off Dumpster Rental Tift County GA | Ryland Environmental"
+Meta description: "Roll-off dumpster rentals in Tift County GA. 10-40 yard dumpsters for construction, cleanouts, renovations. Same-day delivery available. Call (229) 382-4411."
+H1: "Roll-Off Dumpster Rentals in Tift County, GA"
+```
+
+---
+
+**FOOTER:** Same as other Tifton pages.
+
+---
+
+Want me to do the FAQ hub page (`/tifton/faq`) next, or the individual FAQ pages?
