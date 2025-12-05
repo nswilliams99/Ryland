@@ -17,102 +17,27 @@ export default function RollOffPage() {
         ]}
       />
 
-      {/* Hero + Quote Form */}
+      {/* Hero */}
       <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-            {/* Left - Hero Content */}
-            <div className="pt-4">
-              <span className="inline-block px-3 py-1 bg-primary-500 rounded-full text-sm font-semibold mb-4">
-                All of Tift County
-              </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-                Roll-Off & Industrial Services in Tift County, GA
-              </h1>
-              <p className="text-xl text-primary-100 mb-6">
-                Roll-off dumpsters, compactors, and industrial waste solutions. Serving all of Tift County—Tifton, Omega, Ty Ty, Chula, and surrounding areas.
-              </p>
-              <div className="flex items-center gap-4 text-primary-100">
-                <a href="tel:229-382-4411" className="flex items-center gap-2 hover:text-white">
-                  <span>📞</span> (229) 382-4411
-                </a>
-                <span>Mon-Fri 8am-5pm</span>
-              </div>
-            </div>
-
-            {/* Right - Quote Form */}
-            <div className="bg-white rounded-xl shadow-2xl p-6 lg:p-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Request a Roll-Off Dumpster</h2>
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
-                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
-                    <input type="tel" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-                  <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Delivery Address *</label>
-                  <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Project Type</label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                    <option value="">Select project type...</option>
-                    <option value="cleanout">Home Cleanout</option>
-                    <option value="renovation">Renovation/Remodel</option>
-                    <option value="construction">Construction</option>
-                    <option value="roofing">Roofing</option>
-                    <option value="landscaping">Landscaping/Yard Debris</option>
-                    <option value="commercial">Commercial Project</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Dumpster Size</label>
-                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                      <option value="">Not sure - help me choose</option>
-                      <option value="10">10 Yard</option>
-                      <option value="15">15 Yard</option>
-                      <option value="20">20 Yard</option>
-                      <option value="30">30 Yard</option>
-                      <option value="40">40 Yard</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Rental Length</label>
-                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                      <option value="3">1-3 days</option>
-                      <option value="7">1 week</option>
-                      <option value="14">2 weeks</option>
-                      <option value="30">1 month</option>
-                      <option value="ongoing">Ongoing/Not sure</option>
-                    </select>
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Delivery Date</label>
-                  <input type="date" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Additional Notes</label>
-                  <textarea rows={2} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" placeholder="Tell us about your project..."></textarea>
-                </div>
-                <button type="submit" className="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors">
-                  Get Quote
-                </button>
-              </form>
-              <p className="text-sm text-gray-500 mt-4 text-center">
-                Need it fast? Call <a href="tel:229-382-4411" className="text-primary-600 font-semibold">(229) 382-4411</a> for same-day or next-day delivery.
-              </p>
+          <div className="max-w-3xl">
+            <span className="inline-block px-3 py-1 bg-primary-500 rounded-full text-sm font-semibold mb-4">
+              All of Tift County
+            </span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+              Roll-Off & Industrial Services in Tift County, GA
+            </h1>
+            <p className="text-xl text-primary-100 mb-6">
+              Roll-off dumpsters, compactors, and industrial waste solutions. Serving all of Tift County—Tifton, Omega, Ty Ty, Chula, and surrounding areas.
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="#quote-form" className="inline-flex items-center justify-center bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                Get a Quote
+              </a>
+              <a href="tel:229-382-4411" className="inline-flex items-center gap-2 text-primary-100 hover:text-white">
+                <span>📞</span> (229) 382-4411
+              </a>
+              <span className="text-primary-200">Mon-Fri 8am-5pm</span>
             </div>
           </div>
         </div>
@@ -465,34 +390,113 @@ export default function RollOffPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Quote Form Section */}
+      <section id="quote-form" className="py-16 bg-gray-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Rent? Let's Talk.</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Request a Roll-Off Dumpster</h2>
             <p className="text-gray-600">Get a quote in minutes. Tell us about your project.</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="text-center lg:text-left">
-              <a href="tel:229-382-4411" className="text-4xl font-bold text-primary-600 hover:text-primary-700">(229) 382-4411</a>
-              <p className="text-gray-600 mt-2">Monday - Friday, 8am - 5pm</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div className="space-y-6">
+              <div>
+                <a href="tel:229-382-4411" className="text-4xl font-bold text-primary-600 hover:text-primary-700">(229) 382-4411</a>
+                <p className="text-gray-600 mt-2">Monday - Friday, 8am - 5pm</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+                <h3 className="font-bold text-gray-900 mb-3">Why Choose Ryland?</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Family-owned since 1964
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Same-day & next-day delivery
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Flat-rate pricing, no hidden fees
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Serving all of Tift County
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border border-gray-200">
               <form className="space-y-4">
-                <div>
-                  <input type="text" placeholder="Your Name" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                    <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
+                    <input type="tel" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                  </div>
                 </div>
                 <div>
-                  <input type="tel" placeholder="Phone Number" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                  <input type="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
                 </div>
                 <div>
-                  <textarea placeholder="Describe your project..." rows={3} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"></textarea>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Delivery Address *</label>
+                  <input type="text" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Project Type</label>
+                  <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                    <option value="">Select project type...</option>
+                    <option value="cleanout">Home Cleanout</option>
+                    <option value="renovation">Renovation/Remodel</option>
+                    <option value="construction">Construction</option>
+                    <option value="roofing">Roofing</option>
+                    <option value="landscaping">Landscaping/Yard Debris</option>
+                    <option value="commercial">Commercial Project</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Dumpster Size</label>
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                      <option value="">Not sure - help me choose</option>
+                      <option value="10">10 Yard</option>
+                      <option value="15">15 Yard</option>
+                      <option value="20">20 Yard</option>
+                      <option value="30">30 Yard</option>
+                      <option value="40">40 Yard</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Rental Length</label>
+                    <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                      <option value="3">1-3 days</option>
+                      <option value="7">1 week</option>
+                      <option value="14">2 weeks</option>
+                      <option value="30">1 month</option>
+                      <option value="ongoing">Ongoing/Not sure</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Delivery Date</label>
+                  <input type="date" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Additional Notes</label>
+                  <textarea rows={2} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500" placeholder="Tell us about your project..."></textarea>
                 </div>
                 <button type="submit" className="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors">
                   Get Quote
                 </button>
               </form>
+              <p className="text-sm text-gray-500 mt-4 text-center">
+                Need it fast? Call <a href="tel:229-382-4411" className="text-primary-600 font-semibold">(229) 382-4411</a> for same-day or next-day delivery.
+              </p>
             </div>
           </div>
         </div>
