@@ -357,32 +357,8 @@ export default function CityServices() {
             </p>
           </div>
 
-          {/* Route Color Legend */}
-          <div className="flex justify-center mb-6">
-            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 inline-block">
-              <h3 className="text-sm font-semibold text-gray-700 mb-3 text-center">Pickup Days by Route Color</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 rounded-full bg-red-600"></div>
-                  <span className="text-sm font-medium text-gray-900">Monday</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 rounded-full bg-blue-600"></div>
-                  <span className="text-sm font-medium text-gray-900">Tuesday</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 rounded-full bg-yellow-400"></div>
-                  <span className="text-sm font-medium text-gray-900">Thursday</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 rounded-full bg-purple-600"></div>
-                  <span className="text-sm font-medium text-gray-900">Friday</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-center mb-6">
+          {/* Zone Map */}
+          <div className="flex justify-center mb-8">
             <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
               <iframe 
                 src="https://www.google.com/maps/d/embed?mid=1gZY1wK9ewdqzWZqFEf__8sFxS82rgMM&ehbc=2E312F&noprof=1&z=14" 
@@ -391,6 +367,59 @@ export default function CityServices() {
                 loading="lazy"
                 title="Tifton Service Schedule and Routes Map"
               ></iframe>
+            </div>
+          </div>
+
+          {/* Pickup Days Table */}
+          <div className="max-w-md mx-auto mb-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-4">Pickup Days by Route Color:</h3>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gray-50 border-b border-gray-200">
+                    <th className="text-left px-6 py-3 font-bold text-gray-900">Color</th>
+                    <th className="text-left px-6 py-3 font-bold text-gray-900">Day</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-6 py-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-red-600"></div>
+                        <span className="text-gray-700">Red</span>
+                      </div>
+                    </td>
+                    <td className="px-6 py-3 text-gray-900">Monday</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-6 py-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-blue-600"></div>
+                        <span className="text-gray-700">Blue</span>
+                      </div>
+                    </td>
+                    <td className="px-6 py-3 text-gray-900">Tuesday</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-6 py-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-yellow-400"></div>
+                        <span className="text-gray-700">Yellow</span>
+                      </div>
+                    </td>
+                    <td className="px-6 py-3 text-gray-900">Thursday</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-purple-600"></div>
+                        <span className="text-gray-700">Purple</span>
+                      </div>
+                    </td>
+                    <td className="px-6 py-3 text-gray-900">Friday</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
