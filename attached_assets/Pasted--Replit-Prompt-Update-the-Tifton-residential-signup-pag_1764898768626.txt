@@ -1,0 +1,169 @@
+**Replit Prompt:**
+
+---
+
+**Update the Tifton residential signup page (`/tifton`) with proper City of Tifton signup info.**
+
+---
+
+**Important:** The online application does NOT work. Customers MUST go in person to City Hall. Make this very clear on the page.
+
+---
+
+**Style Guidelines:**
+- Match the WM-style design from the homepage
+- Use Ryland green (#2d5a27) for headers and accents
+- Red buttons for primary CTAs
+- Clean white card/box for the City Hall info
+- Mobile-first, easy to scan
+- Use icons where appropriate (📍 🕗 📞 📋)
+
+---
+
+**Page Content:**
+
+**H1:** Welcome to Tifton from Ryland Environmental
+
+**Intro paragraph:**
+Ryland Environmental is proud to be the exclusive residential trash provider for the City of Tifton. Whether you're new to town or just getting set up, we're here to help you get started with curbside service.
+
+---
+
+**Callout Box (green background, white text):**
+
+```
+🏠 Already signed up for utilities but haven't received your cart?
+
+Contact Ryland Environmental:
+📞 (229) 382-4411
+Mon-Fri 8am-5pm
+
+We'll check on your delivery status.
+```
+
+---
+
+**H2:** How to Start Residential Trash Service
+
+Trash service in Tifton is included on your City of Tifton utility bill. You must sign up with the city first — Ryland will then deliver your cart.
+
+---
+
+**Callout Box (styled as white card with yellow/orange warning accent):**
+
+```
+⚠️ IN-PERSON SIGNUP REQUIRED
+
+You must visit City Hall to start service.
+Online applications are not available at this time.
+```
+
+---
+
+**H2:** Where to Sign Up
+
+**City Hall Info Card (styled prominently with white background and shadow):**
+
+```
+📍 City of Tifton Customer Service
+   130 1st Street East
+   Tifton, GA 31794
+   (Inside City Hall main entrance)
+
+📞 (229) 391-3957
+
+🕗 Monday – Friday
+   8:00 AM – 5:00 PM
+```
+
+**Button:** [Get Directions →] (link to Google Maps)
+
+**Button:** [City of Tifton Website →](https://tifton.net/184/Customer-Service)
+
+---
+
+**H2:** What to Bring
+
+You will need the following documents:
+
+| Document | Details |
+|----------|---------|
+| **Photo ID** | Driver's License or Passport |
+| **Proof of Residence** | Lease agreement OR home purchase contract |
+
+**Tip:** Make sure your documents show the service address where you need trash pickup.
+
+---
+
+**H2:** What Happens Next
+
+1. **You sign up at City Hall** — Complete the Utility Service Application and select "Sanitation Service"
+
+2. **City notifies Ryland** — New signups are sent to Ryland Environmental at the end of each business day
+
+3. **We deliver your cart** — Your 96-gallon trash cart will be delivered within a few business days
+
+4. **Service begins** — Pickup starts on your next scheduled service day (see map below)
+
+---
+
+**H2:** Find Your Pickup Day
+
+[Embed the zone map from the Tifton page]
+
+| Zone | Pickup Day |
+|------|------------|
+| Yellow | [Day] |
+| Pink/Red | [Day] |
+| Blue | [Day] |
+
+**Pro Tip:** Place your cart at the curb by **6:00 AM** on your pickup day. Wheels against curb, handle facing your house.
+
+---
+
+**H2:** Holiday Schedule
+
+Pickup is delayed by ONE day after these holidays:
+- New Year's Day
+- Memorial Day
+- Thanksgiving
+- Christmas
+
+Example: If the holiday is Monday, Monday pickup moves to Tuesday, Tuesday to Wednesday, and so on through Saturday.
+
+---
+
+**H2:** Common Questions
+
+- [What time does the trash truck come?](/tifton/faq/what-time-does-trash-truck-come)
+- [Where should I place my cart?](/tifton/faq/where-to-place-trash-can-for-pickup)
+- [What's the holiday pickup schedule?](/tifton/faq/holiday-pickup-schedule)
+- [What can I put in my trash?](/tifton/faq/what-can-i-put-in-trash)
+- [How do I get rid of the smell in my trash can?](/tifton/faq/how-to-get-rid-of-trash-can-smell)
+
+---
+
+**H2:** Service Area
+
+Residential curbside service is available **inside Tifton city limits only** through our exclusive contract with the city.
+
+Not sure if you're in the city? Check the service area map above or call City Hall at (229) 391-3957.
+
+**Live outside city limits?** We offer [roll-off dumpster rentals](/tifton/roll-off) throughout Tift County.
+
+---
+
+**Footer CTA (dark green background):**
+
+```
+Questions? We're here to help.
+
+Ryland Environmental - Tifton Office
+📞 (229) 382-4411
+📍 2508 Carpenter Rd, Tifton, GA 31793
+🕗 Mon-Fri 8am-5pm
+```
+
+---
+
+Ready to paste.

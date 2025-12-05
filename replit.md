@@ -1,7 +1,7 @@
 # Ryland Environmental - Tifton Demo Website
 
 ## Overview
-This project is a four-page demo website for Ryland Environmental's Tifton, Georgia location, showcasing their waste management and recycling services. It aims to provide a modern, user-friendly interface for residents and businesses to learn about services, sign up, and access essential information. The site features a simple signup form with email integration, a dedicated recycling page, and detailed service information for both the City of Tifton and Tift County. The business vision is to establish a strong online presence for Ryland Environmental, emphasizing their family-owned values and commitment to the local community, with market potential in expanding their digital reach and streamlining customer interactions.
+This project is a four-page demo website for Ryland Environmental's Tifton, Georgia location, showcasing their waste management and recycling services. It aims to provide a modern, user-friendly interface for residents and businesses to learn about services, sign up, and access essential information. The site features comprehensive signup instructions directing customers to City Hall (online signup not available), a dedicated recycling page, and detailed service information for both the City of Tifton and Tift County. The business vision is to establish a strong online presence for Ryland Environmental, emphasizing their family-owned values and commitment to the local community, with market potential in expanding their digital reach and streamlining customer interactions.
 
 ## User Preferences
 I prefer simple language and clear explanations. I want iterative development with regular updates. Please ask before making major architectural changes or implementing new features. Ensure all new code adheres to the existing TypeScript and Tailwind CSS v4 conventions. Do not make changes to the existing folder structure unless explicitly discussed.
@@ -16,7 +16,8 @@ The project is built with Next.js 16.0.3 using the App Router, TypeScript for ty
 
 ### Feature Specifications
 - **Home Page**: WM-style design with a hero section, location finder, services carousel, quick account access, Georgia office locations, and contact information.
-- **City of Tifton Services Page**: Details residential, commercial, and roll-off services. Includes equipment photos, an interactive Google My Maps embed for service routes, a holiday schedule, a free recycling promotion, and a residential signup form. Features a comprehensive FAQ hub with 20 individual FAQ pages covering various service aspects.
+- **City of Tifton Services Page**: Details residential, commercial, and roll-off services. Includes equipment photos, an interactive Google My Maps embed for service routes, a holiday schedule, a free recycling promotion, and comprehensive signup information directing customers to City Hall (online signup not available). Features a comprehensive FAQ hub with 20 individual FAQ pages covering various service aspects.
+  - **Residential Signup Section** (`/tifton#signup-form`): Clear instructions that customers must visit City Hall in person to start service. Includes City Hall address (130 1st Street East), phone, hours, directions button, required documents (Photo ID + Proof of Residence), step-by-step process, and a callout for customers who already signed up but haven't received their cart.
 - **Recycling Page**: Modern design promoting free recycling drop-off in Tifton. Includes impact statistics, drop-off location details, a grid of accepted materials, a list of items not accepted, and quick recycling tips.
 - **Tift County Services Page**: Focuses on roll-off container services for areas outside city limits, detailing container sizes and material guidelines.
 

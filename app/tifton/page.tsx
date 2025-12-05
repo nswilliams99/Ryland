@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import SignupForm from "../components/SignupForm";
 
 export const metadata: Metadata = {
   title: "City of Tifton Trash Service | Commercial Dumpster Service Tifton GA",
@@ -171,11 +170,188 @@ export default function CityServices() {
         </div>
       </section>
 
+      {/* Residential Signup Section */}
+      <section id="signup-form" className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          {/* Welcome Header */}
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Welcome to Tifton from Ryland Environmental
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Ryland Environmental is proud to be the exclusive residential trash provider for the City of Tifton. 
+              Whether you're new to town or just getting set up, we're here to help you get started with curbside service.
+            </p>
+          </div>
+
+          {/* Already Signed Up Callout */}
+          <div className="bg-primary-600 text-white rounded-xl p-6 mb-8 shadow-lg">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl flex-shrink-0">🏠</span>
+              <div>
+                <h3 className="text-lg font-bold mb-2">
+                  Already signed up for utilities but haven't received your cart?
+                </h3>
+                <p className="text-primary-100 mb-3">Contact Ryland Environmental:</p>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+                  <a href="tel:229-382-4411" className="flex items-center gap-2 text-white font-semibold hover:text-primary-200">
+                    <span>📞</span> (229) 382-4411
+                  </a>
+                  <span className="text-primary-200">Mon-Fri 8am-5pm</span>
+                </div>
+                <p className="text-primary-100 mt-2 text-sm">We'll check on your delivery status.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* How to Start Service */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">How to Start Residential Trash Service</h3>
+            <p className="text-gray-600 text-lg">
+              Trash service in Tifton is included on your City of Tifton utility bill. You must sign up with the city first — Ryland will then deliver your cart.
+            </p>
+          </div>
+
+          {/* In-Person Required Warning */}
+          <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-6 mb-8">
+            <div className="flex items-start gap-4">
+              <span className="text-2xl flex-shrink-0">⚠️</span>
+              <div>
+                <h4 className="text-lg font-bold text-amber-800 mb-1">IN-PERSON SIGNUP REQUIRED</h4>
+                <p className="text-amber-700">
+                  You must visit City Hall to start service.<br />
+                  <strong>Online applications are not available at this time.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Where to Sign Up - City Hall Card */}
+          <div className="mb-10">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Where to Sign Up</h3>
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <span className="text-xl flex-shrink-0">📍</span>
+                  <div>
+                    <p className="font-bold text-gray-900">City of Tifton Customer Service</p>
+                    <p className="text-gray-600">130 1st Street East</p>
+                    <p className="text-gray-600">Tifton, GA 31794</p>
+                    <p className="text-gray-500 text-sm">(Inside City Hall main entrance)</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-xl flex-shrink-0">📞</span>
+                  <a href="tel:229-391-3957" className="text-primary-600 font-semibold hover:text-primary-700">(229) 391-3957</a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-xl flex-shrink-0">🕗</span>
+                  <div>
+                    <p className="font-medium text-gray-900">Monday – Friday</p>
+                    <p className="text-gray-600">8:00 AM – 5:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 mt-6 pt-6 border-t border-gray-200">
+                <a 
+                  href="https://maps.google.com/?q=130+1st+Street+East+Tifton+GA+31794"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-red-600 text-white px-5 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                >
+                  Get Directions
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+                <a 
+                  href="https://tifton.net/184/Customer-Service"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-primary-600 text-white px-5 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                >
+                  City of Tifton Website
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* What to Bring */}
+          <div className="mb-10">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">What to Bring</h3>
+            <p className="text-gray-600 mb-4">You will need the following documents:</p>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gray-50 border-b border-gray-200">
+                    <th className="text-left px-6 py-4 font-bold text-gray-900">Document</th>
+                    <th className="text-left px-6 py-4 font-bold text-gray-900">Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Photo ID</td>
+                    <td className="px-6 py-4 text-gray-600">Driver's License or Passport</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-semibold text-gray-900">Proof of Residence</td>
+                    <td className="px-6 py-4 text-gray-600">Lease agreement OR home purchase contract</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray-500 mt-3 flex items-start gap-2">
+              <span>💡</span>
+              <span><strong>Tip:</strong> Make sure your documents show the service address where you need trash pickup.</span>
+            </p>
+          </div>
+
+          {/* What Happens Next */}
+          <div className="mb-10">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">What Happens Next</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                <div>
+                  <p className="font-bold text-gray-900">You sign up at City Hall</p>
+                  <p className="text-gray-600">Complete the Utility Service Application and select "Sanitation Service"</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                <div>
+                  <p className="font-bold text-gray-900">City notifies Ryland</p>
+                  <p className="text-gray-600">New signups are sent to Ryland Environmental at the end of each business day</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                <div>
+                  <p className="font-bold text-gray-900">We deliver your cart</p>
+                  <p className="text-gray-600">Your 96-gallon trash cart will be delivered within a few business days</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                <div>
+                  <p className="font-bold text-gray-900">Service begins</p>
+                  <p className="text-gray-600">Pickup starts on your next scheduled service day (see map below)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Schedule & Routes Map */}
-      <section className="py-16 bg-white">
+      <section id="pickup-schedule" className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Service Schedule & Routes</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Your Pickup Day</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Check your pickup day and route on our interactive service map
             </p>
@@ -206,7 +382,7 @@ export default function CityServices() {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-6">
             <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
               <iframe 
                 src="https://www.google.com/maps/d/embed?mid=1gZY1wK9ewdqzWZqFEf__8sFxS82rgMM&ehbc=2E312F&noprof=1&z=14" 
@@ -215,6 +391,15 @@ export default function CityServices() {
                 loading="lazy"
                 title="Tifton Service Schedule and Routes Map"
               ></iframe>
+            </div>
+          </div>
+
+          {/* Pro Tip */}
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
+              <p className="text-primary-800">
+                <strong>Pro Tip:</strong> Place your cart at the curb by <strong>6:00 AM</strong> on your pickup day. Wheels against curb, handle facing your house.
+              </p>
             </div>
           </div>
         </div>
@@ -226,8 +411,8 @@ export default function CityServices() {
           <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-200">
             <div className="text-center mb-6">
               <h2 className="text-3xl font-bold text-gray-900 mb-3">Holiday Schedule</h2>
-              <p className="text-lg text-gray-600">
-                We are a family owned and operated company and taking care of our employees is important to us. We observe the following holidays so that our employees can spend quality time with their friends and family.
+              <p className="text-gray-600">
+                Pickup is delayed by ONE day after these holidays:
               </p>
             </div>
 
@@ -277,16 +462,69 @@ export default function CityServices() {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <p className="text-sm text-blue-800 font-medium">
-                    <strong>Important:</strong> Service will be one day behind after each holiday.
-                  </p>
-                  <p className="text-sm text-blue-700 mt-1">
-                    For example, if your normal pickup day is Monday and we observe a holiday on Monday, your service will be on Tuesday that week.
+                  <p className="text-sm text-blue-800">
+                    <strong>Example:</strong> If the holiday is Monday, Monday pickup moves to Tuesday, Tuesday to Wednesday, and so on through Saturday.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Common Questions */}
+      <section className="py-12 bg-white border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Common Questions</h2>
+          <div className="space-y-2">
+            <a href="/tifton/faq/what-time-does-trash-truck-come" className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <span className="text-primary-600">→</span>
+              <span className="text-gray-900 group-hover:text-primary-600">What time does the trash truck come?</span>
+            </a>
+            <a href="/tifton/faq/where-to-place-trash-can-for-pickup" className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <span className="text-primary-600">→</span>
+              <span className="text-gray-900 group-hover:text-primary-600">Where should I place my cart?</span>
+            </a>
+            <a href="/tifton/faq/holiday-pickup-schedule" className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <span className="text-primary-600">→</span>
+              <span className="text-gray-900 group-hover:text-primary-600">What's the holiday pickup schedule?</span>
+            </a>
+            <a href="/tifton/faq/what-can-i-put-in-trash" className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <span className="text-primary-600">→</span>
+              <span className="text-gray-900 group-hover:text-primary-600">What can I put in my trash?</span>
+            </a>
+            <a href="/tifton/faq/how-to-get-rid-of-trash-can-smell" className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <span className="text-primary-600">→</span>
+              <span className="text-gray-900 group-hover:text-primary-600">How do I get rid of the smell in my trash can?</span>
+            </a>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="/tifton/faq" 
+              className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700"
+            >
+              View All FAQs
+              <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Area */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Service Area</h2>
+          <p className="text-gray-600 mb-4">
+            Residential curbside service is available <strong>inside Tifton city limits only</strong> through our exclusive contract with the city.
+          </p>
+          <p className="text-gray-600 mb-4">
+            Not sure if you're in the city? Check the service area map above or call City Hall at <a href="tel:229-391-3957" className="text-primary-600 font-semibold hover:text-primary-700">(229) 391-3957</a>.
+          </p>
+          <p className="text-gray-600">
+            <strong>Live outside city limits?</strong> We offer <a href="/tift-co" className="text-primary-600 font-semibold hover:text-primary-700">roll-off dumpster rentals</a> throughout Tift County.
+          </p>
         </div>
       </section>
 
@@ -360,50 +598,26 @@ export default function CityServices() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-12 bg-white border-t border-gray-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Frequently Asked Questions</h2>
-            <p className="text-gray-600">Get answers to common questions about trash service in Tifton</p>
+      {/* Footer CTA */}
+      <section className="py-12 bg-primary-700">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-bold text-white mb-6">Questions? We're here to help.</h2>
+          <div className="bg-primary-800/50 rounded-xl p-6 inline-block">
+            <p className="text-lg font-bold text-white mb-3">Ryland Environmental - Tifton Office</p>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-primary-100">
+              <a href="tel:229-382-4411" className="flex items-center gap-2 hover:text-white">
+                <span>📞</span> (229) 382-4411
+              </a>
+              <span className="hidden sm:inline text-primary-400">|</span>
+              <span className="flex items-center gap-2">
+                <span>📍</span> 2508 Carpenter Rd, Tifton, GA 31793
+              </span>
+              <span className="hidden sm:inline text-primary-400">|</span>
+              <span className="flex items-center gap-2">
+                <span>🕗</span> Mon-Fri 8am-5pm
+              </span>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            <a href="/tifton/faq/what-time-does-trash-truck-come" className="p-4 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
-              <h3 className="font-semibold text-gray-900 group-hover:text-primary-600">What time does the trash truck come?</h3>
-            </a>
-            <a href="/tifton/faq/holiday-pickup-schedule" className="p-4 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
-              <h3 className="font-semibold text-gray-900 group-hover:text-primary-600">What's the holiday pickup schedule?</h3>
-            </a>
-            <a href="/tifton/faq/where-to-place-trash-can-for-pickup" className="p-4 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
-              <h3 className="font-semibold text-gray-900 group-hover:text-primary-600">Where should I place my trash can?</h3>
-            </a>
-          </div>
-          <div className="text-center mt-6">
-            <a 
-              href="/tifton/faq" 
-              className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700"
-            >
-              View All FAQs
-              <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Signup Form */}
-      <section id="signup-form" className="py-16 bg-gray-50">
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-          <SignupForm />
-        </div>
-      </section>
-
-      {/* Contact CTA */}
-      <section className="py-12 bg-primary-600">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-white mb-3">Questions?</h2>
-          <p className="text-primary-100 mb-6">Call us at (229) 382-4411</p>
         </div>
       </section>
     </>
