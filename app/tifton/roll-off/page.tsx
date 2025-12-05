@@ -116,97 +116,94 @@ export default function RollOffPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Roll-Off Dumpster Sizes</h2>
-            <p className="text-gray-600">From small cleanouts to major construction—we have the right size.</p>
+            <p className="text-gray-600">Three sizes to fit any project—from home cleanouts to major construction.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            {/* 10 Yard */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary-600">10</div>
-                  <div className="text-sm font-semibold text-gray-600">YARD</div>
-                </div>
-              </div>
-              <div className="p-4">
-                <ul className="space-y-1 text-xs text-gray-600 mb-3">
-                  <li>12' L x 8' W x 4' H</li>
-                  <li>~3 pickup truck loads</li>
-                  <li>Weight: 2 tons</li>
-                </ul>
-                <p className="text-xs text-primary-700 font-medium">Best For: Small cleanouts, garage cleanup</p>
-              </div>
-            </div>
-
-            {/* 15 Yard */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary-600">15</div>
-                  <div className="text-sm font-semibold text-gray-600">YARD</div>
-                </div>
-              </div>
-              <div className="p-4">
-                <ul className="space-y-1 text-xs text-gray-600 mb-3">
-                  <li>14' L x 8' W x 4.5' H</li>
-                  <li>~4-5 pickup truck loads</li>
-                  <li>Weight: 3 tons</li>
-                </ul>
-                <p className="text-xs text-primary-700 font-medium">Best For: Medium cleanouts, flooring removal</p>
-              </div>
-            </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* 20 Yard - Most Popular */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-primary-500 relative">
-              <div className="absolute top-0 left-0 right-0 bg-primary-600 text-white text-xs font-bold py-1 text-center">MOST POPULAR</div>
-              <div className="h-32 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center mt-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary-600">20</div>
-                  <div className="text-sm font-semibold text-gray-600">YARD</div>
-                </div>
+              <div className="absolute top-0 left-0 right-0 bg-primary-600 text-white text-xs font-bold py-1 text-center z-10">MOST POPULAR</div>
+              <div className="pt-8">
+                <img 
+                  src="/images/rolloff/20-yard.jpg" 
+                  alt="20 Yard Roll-Off Dumpster - 15' L x 8' W x 4' H" 
+                  className="w-full h-48 object-contain bg-white"
+                />
               </div>
-              <div className="p-4">
-                <ul className="space-y-1 text-xs text-gray-600 mb-3">
-                  <li>22' L x 8' W x 4.5' H</li>
-                  <li>~6 pickup truck loads</li>
-                  <li>Weight: 4 tons</li>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">20 Yard Container</h3>
+                <ul className="space-y-2 text-gray-600 mb-4">
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    15' L x 8' W x 4' H
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    ~6 pickup truck loads
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    Weight limit: 4 tons
+                  </li>
                 </ul>
-                <p className="text-xs text-primary-700 font-medium">Best For: Large cleanouts, remodels, roofing</p>
+                <p className="text-primary-700 font-medium">Best For: Home cleanouts, remodeling projects, roofing jobs</p>
               </div>
             </div>
 
             {/* 30 Yard */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary-600">30</div>
-                  <div className="text-sm font-semibold text-gray-600">YARD</div>
-                </div>
+              <div>
+                <img 
+                  src="/images/rolloff/30-yard.jpg" 
+                  alt="30 Yard Roll-Off Dumpster - 22' L x 8' W x 6' H" 
+                  className="w-full h-48 object-contain bg-white"
+                />
               </div>
-              <div className="p-4">
-                <ul className="space-y-1 text-xs text-gray-600 mb-3">
-                  <li>22' L x 8' W x 6' H</li>
-                  <li>~9 pickup truck loads</li>
-                  <li>Weight: 5 tons</li>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">30 Yard Container</h3>
+                <ul className="space-y-2 text-gray-600 mb-4">
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    22' L x 8' W x 6' H
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    ~9 pickup truck loads
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    Weight limit: 5 tons
+                  </li>
                 </ul>
-                <p className="text-xs text-primary-700 font-medium">Best For: Major renovations, new construction</p>
+                <p className="text-primary-700 font-medium">Best For: Major renovations, new construction, large cleanouts</p>
               </div>
             </div>
 
             {/* 40 Yard */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-              <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary-600">40</div>
-                  <div className="text-sm font-semibold text-gray-600">YARD</div>
-                </div>
+              <div>
+                <img 
+                  src="/images/rolloff/40-yard.jpg" 
+                  alt="40 Yard Roll-Off Dumpster - 22' L x 8' W x 8' H" 
+                  className="w-full h-48 object-contain bg-white"
+                />
               </div>
-              <div className="p-4">
-                <ul className="space-y-1 text-xs text-gray-600 mb-3">
-                  <li>22' L x 8' W x 8' H</li>
-                  <li>~12 pickup truck loads</li>
-                  <li>Weight: 6 tons</li>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">40 Yard Container</h3>
+                <ul className="space-y-2 text-gray-600 mb-4">
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    22' L x 8' W x 8' H
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    ~12 pickup truck loads
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600 font-bold">•</span>
+                    Weight limit: 6 tons
+                  </li>
                 </ul>
-                <p className="text-xs text-primary-700 font-medium">Best For: Commercial, large demolition</p>
+                <p className="text-primary-700 font-medium">Best For: Commercial projects, demolition, large-scale construction</p>
               </div>
             </div>
           </div>
@@ -464,8 +461,6 @@ export default function RollOffPage() {
                     <label className="block text-sm font-medium text-gray-700 mb-1">Dumpster Size</label>
                     <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
                       <option value="">Not sure - help me choose</option>
-                      <option value="10">10 Yard</option>
-                      <option value="15">15 Yard</option>
                       <option value="20">20 Yard</option>
                       <option value="30">30 Yard</option>
                       <option value="40">40 Yard</option>
@@ -561,15 +556,13 @@ export default function RollOffPage() {
                 </svg>
               </summary>
               <div className="px-6 pb-4 text-gray-600">
-                <p className="mb-2">It depends on your project:</p>
+                <p className="mb-2">We offer three sizes to fit any project:</p>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>10 yard: Small garage cleanout, single room renovation</li>
-                  <li>15 yard: Multi-room cleanout, deck removal</li>
-                  <li>20 yard: Whole house cleanout, large remodel, roofing (most popular)</li>
-                  <li>30 yard: Major renovation, new construction</li>
-                  <li>40 yard: Commercial construction, demolition</li>
+                  <li><strong>20 yard:</strong> Home cleanouts, remodeling, roofing jobs (most popular)</li>
+                  <li><strong>30 yard:</strong> Major renovations, new construction, large cleanouts</li>
+                  <li><strong>40 yard:</strong> Commercial projects, demolition, large-scale construction</li>
                 </ul>
-                <p className="mt-2">Not sure? Call (229) 382-4411 and describe your project.</p>
+                <p className="mt-2">Not sure? Call (229) 382-4411 and describe your project—we'll recommend the right size.</p>
               </div>
             </details>
 
