@@ -1,263 +1,29 @@
 # Ryland Environmental - Tifton Demo Website
 
-## Project Overview
-Four-page demo website for Ryland Environmental's Tifton, Georgia location. Built with Next.js 16.0.3 App Router, TypeScript, and Tailwind CSS v4. Features a simple signup form that emails both the City of Tifton and Ryland Environmental via Replit Mail integration. Includes a modern recycling page promoting free drop-off for Tifton residents.
+## Overview
+This project is a four-page demo website for Ryland Environmental's Tifton, Georgia location, showcasing their waste management and recycling services. It aims to provide a modern, user-friendly interface for residents and businesses to learn about services, sign up, and access essential information. The site features a simple signup form with email integration, a dedicated recycling page, and detailed service information for both the City of Tifton and Tift County. The business vision is to establish a strong online presence for Ryland Environmental, emphasizing their family-owned values and commitment to the local community, with market potential in expanding their digital reach and streamlining customer interactions.
 
-## Tech Stack
-- **Framework**: Next.js 16.0.3 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4 with @tailwindcss/postcss
-- **Runtime**: Node.js 20
+## User Preferences
+I prefer simple language and clear explanations. I want iterative development with regular updates. Please ask before making major architectural changes or implementing new features. Ensure all new code adheres to the existing TypeScript and Tailwind CSS v4 conventions. Do not make changes to the existing folder structure unless explicitly discussed.
 
-## Project Structure
-```
-/
-├── app/
-│   ├── components/        # Reusable components
-│   │   ├── Header.tsx     # WM-style header with utility icons
-│   │   ├── Footer.tsx     # Accordion footer with social links
-│   │   ├── ServicesCarousel.tsx  # Swipeable service cards
-│   │   ├── MyRylandSection.tsx   # Account & quick access section
-│   │   ├── OfficeLocations.tsx   # Georgia office finder grid
-│   │   └── SignupForm.tsx # City trash signup form
-│   ├── api/
-│   │   └── signup/
-│   │       └── route.ts   # Form submission handler
-│   ├── utils/
-│   │   └── replitmail.ts  # Email utility using Replit Mail
-│   ├── tifton/            # City of Tifton services page
-│   │   └── page.tsx
-│   ├── recycling/         # Free recycling drop-off page
-│   │   └── page.tsx
-│   ├── tift-co/           # Tift County services page
-│   │   └── page.tsx
-│   ├── layout.tsx         # Root layout with SEO metadata
-│   ├── page.tsx           # Home page
-│   └── globals.css        # Global styles and Tailwind config
-├── public/
-│   └── images/            # Equipment photos and logo
-│       ├── logo.png
-│       ├── 96-gallon-cart.jpg
-│       ├── 4-yard-frontload.jpg
-│       ├── 20-yard-rolloff.jpg
-│       └── recycling-center.jpg
-├── package.json
-├── tsconfig.json
-├── next.config.ts
-└── postcss.config.mjs
-```
+## System Architecture
 
-## Pages
+### UI/UX Decisions
+The design follows a professional green and blue color scheme, inspired by Waste Management (WM) for a familiar and trustworthy aesthetic. Call-to-action buttons are prominently red. The site is mobile-first responsive with consistent branding, including the Ryland logo and authentic equipment photos. Key UI elements include a WM-style header, an accordion-style footer, swipeable service cards, and a dedicated section for account access.
 
-### 1. Home Page (`/`) - WM-Style Design
-- **Header**: Logo left, search/location/account icons right (all link to /)
-- **Hero Section**: "Waste Management & Recycling Services" headline
-  - Family-owned tagline: "Since 2014. You're not just a number, you're our neighbor."
-  - Red "Find Your Service Area" CTA button
-- **Location Finder**: Address/zip code input with red Search button
-- **Services Carousel**: 5 swipeable cards (mobile-first)
-  - Residential Waste Pickup
-  - Commercial Dumpsters
-  - Roll-Off Dumpster Rental
-  - Municipal Services
-  - Transfer Station & Recycling
-- **My Ryland & More Section**: Account access
-  - Red "Log In or Sign Up" button
-  - 4 quick-access icons: Payment, Paperless Billing, AutoPay, Schedule
-- **Find Your Local Office**: 10 Georgia office locations
-  - Tifton → /tifton (active)
-  - Augusta, Baxley, Dublin, Houston County, Macon, Milledgeville, Sandersville, Savannah, Waycross → / (demo links)
-- **Need Help? Section**: Red "Contact Support" button + phone (229) 382-4411
-- **Footer**: Accordion-style on mobile, social icons, copyright, Privacy/Terms links
+### Technical Implementations
+The project is built with Next.js 16.0.3 using the App Router, TypeScript for type safety, and Tailwind CSS v4 for styling. It leverages server and client components for optimized performance. An API route (`/api/signup`) handles form submissions. Google My Maps is integrated for interactive service route visualization, and all equipment photos are high-quality, branded images. SEO is optimized for local commercial keywords, ensuring visibility for "commercial dumpster service Tifton GA" and similar queries.
 
-### 2. City of Tifton Services (`/tifton`)
-- **Three Service Types**:
-  - Residential: Exclusive provider, 96-gallon carts, weekly pickup, recycling
-  - Commercial: 96-gallon carts + 4, 6, 8-yard front-load dumpsters
-  - Roll-Off Containers: 20, 30, 40-yard for large projects
-- **Equipment Photos**: Visual showcase of actual equipment
-- **Service Schedule & Routes Map**: Interactive Google My Maps embed
-  - Shows pickup days and routes for City of Tifton
-  - Color-coded legend (Red=Monday, Blue=Tuesday, Yellow=Thursday, Purple=Friday)
-  - Responsive iframe (500px mobile, 600px desktop)
-  - Centered with max-width 1200px, zoomed in for detail
-  - Lazy loading for performance
-- **Holiday Schedule**: Family-focused company values
-  - New Year's Day, Memorial Day, Thanksgiving, Christmas
-  - Important notice: Service runs one day behind after holidays
-  - Professional card layout with icons
-- **Free Recycling Section**: Promotes free drop-off with photo and link to /recycling
-- **Signup Form**: Simple form for residential trash service
-  - Fields: Name, Email, Phone, Address, Number of Cans
-  - Sends to both City of Tifton and Ryland Environmental
-  - Uses Replit Mail integration
+### Feature Specifications
+- **Home Page**: WM-style design with a hero section, location finder, services carousel, quick account access, Georgia office locations, and contact information.
+- **City of Tifton Services Page**: Details residential, commercial, and roll-off services. Includes equipment photos, an interactive Google My Maps embed for service routes, a holiday schedule, a free recycling promotion, and a residential signup form. Features a comprehensive FAQ hub with 20 individual FAQ pages covering various service aspects.
+- **Recycling Page**: Modern design promoting free recycling drop-off in Tifton. Includes impact statistics, drop-off location details, a grid of accepted materials, a list of items not accepted, and quick recycling tips.
+- **Tift County Services Page**: Focuses on roll-off container services for areas outside city limits, detailing container sizes and material guidelines.
 
-### 4. Recycling Page (`/recycling`)
-- **Modern Inspiring Design**: "Make a Difference. Recycle Free in Tifton."
-- **Impact Stats Section**: Visual cards showing environmental benefits
-  - 5,000+ gallons gasoline saved by recycling aluminum cans weekly
-  - 33% of landfill waste is paper - recyclable
-  - 100% FREE for Tifton residents
-- **Drop-Off Location Card**: 2508 Carpenter Road S with photo and hours
-- **Accepted Materials Grid**: 4 categories with checkmark lists
-  - Aluminum & Metal (cans, food containers)
-  - Paper (newspapers, magazines, junk mail)
-  - Cardboard (boxes, frozen food boxes)
-  - Plastics #1-#7 (bottles, jugs, detergent)
-- **Items NOT Accepted**: Contamination prevention list (pizza boxes, plastic bags, styrofoam, etc.)
-- **Quick Tips Section**: 3-step process (Rinse It, Sort It, Drop It Off)
-- **City Partnership Section**: Authority link to https://www.tifton.net/263/Recycling
-- **SEO Optimized**: Local recycling keywords (Tifton GA recycling drop-off, free recycling Tifton)
+### System Design Choices
+The application uses Next.js API routes for backend logic, such as form submissions, ensuring a streamlined full-stack development approach within the Next.js framework. The project structure is organized for maintainability, separating components, API routes, and page-specific content. Environment variables are used for sensitive information like email addresses.
 
-### 5. Tift County Services (`/tift-co`)
-- **Notice**: Outside city limits = roll-offs only
-- **Roll-Off Container Sizes**: 20, 30, 40-yard options
-- **Project Types**: Construction, demolition, cleanup
-- **Accepted/Not Accepted Materials**: Clear waste guidelines
-- **CTA**: Call for quotes
-
-## Key Features
-
-### Email Integration
-- ✅ Replit Mail connector for sending emails
-- ✅ Dual-recipient delivery (City of Tifton + Ryland Environmental)
-- ✅ Form validation with error handling
-- ✅ Success/failure user feedback
-- ⚠️ Requires CITY_OF_TIFTON_EMAIL and RYLAND_EMAIL environment variables
-
-### Design
-- Professional green and blue color scheme
-- Mobile-first responsive layout
-- Ryland logo in header navigation
-- Equipment photos (96-gal cart, 4-yard front-load, 20-yard rolloff)
-- Consistent branding throughout
-- Clear call-to-action buttons
-- Service cards with hover effects
-
-### Technical
-- TypeScript for type safety
-- Tailwind CSS v4 custom theme
-- Server and client components optimized
-- API route for form submission (/api/signup)
-- Fast refresh for development
-- Production-ready build configuration
-
-## Development
-
-### Running Locally
-```bash
-npm run dev
-```
-App runs on port 5000 (configured for Replit webview)
-
-### Building for Production
-```bash
-npm run build
-npm start
-```
-
-### Linting
-```bash
-npm run lint
-```
-
-## Color Scheme
-- **Primary (Green)**: Environmental, sustainable
-  - primary-600: #2d5a27 (main brand - WM-style dark green)
-  - primary-700-900: Darker shades for gradients
-  
-- **Accent (Red)**: Call-to-action buttons
-  - accent-600: #dc2626 (CTA buttons)
-  - accent-700-900: Darker shades for hover states
-
-## Recent Changes
-- **2025-11-20**: Tifton-focused demo site completed
-  - Restructured to 3-page Tifton demo (Home, City of Tifton, Tift County)
-  - Updated navigation: renamed /tifton-trash → /tifton, changed nav labels
-  - Created simple signup form (name, email, phone, address, number of cans)
-  - Implemented Replit Mail integration for dual-recipient email delivery
-  - Added Ryland logo to header and equipment photos
-  - Built API route (/api/signup) for form submissions with error handling
-  - **Added Google My Maps integration** to /tifton page showing service routes
-  - **Upgraded to professional branded equipment photography** across all pages:
-    - Home page service cards now feature real equipment (96-gal cart, 6-yard front-load, 20-yard rolloff)
-    - /tifton equipment section showcases Ryland-branded dumpsters and carts
-    - /tift-co displays all 3 rolloff sizes (20/30/40-yard) with dimension diagrams
-    - Replaced icon-only placeholders with high-quality product photos
-  - **Enhanced service box styling** with 4px green borders and large shadows for better contrast
-  - **Added Cart Placement Guidelines section** to /tifton page:
-    - Professional Ryland-branded cart image showing proper lid placement
-    - Clear instructions: "3 Feet Apart, Wheels Towards House"
-    - 6 AM curbside placement reminder
-  - **SEO Optimization for Local Commercial Keywords**:
-    - Primary keywords: "commercial dumpster service Tifton GA", "business trash service Tifton", "local trash companies", "local garbage companies"
-    - Long-tail keywords: "front load dumpster service Tifton GA", "4 yard dumpster Tifton", "commercial waste collection Tift County", "weekly trash pickup for businesses Tifton"
-    - Updated meta titles and descriptions across all 3 pages for local SEO
-    - Optimized H1, H2 headings with natural keyword placement
-    - Enhanced alt text for all equipment images with SEO keywords
-    - Strategic keyword placement in body content without keyword stuffing
-    - Removed all "near me" references for better local targeting
-    - Focus on /tift-co page as primary landing page for commercial waste collection
-  - Architect reviewed and approved all changes as meeting requirements
-- **2025-11-25**: Added Recycling Page
-  - Created dedicated /recycling page with modern, inspiring design
-  - Features: impact stats, accepted materials grid, contamination prevention list
-  - Free drop-off at 2508 Carpenter Road S for Tifton residents
-  - Authority link to City of Tifton recycling page for SEO
-  - Added recycling section to /tifton page with photo and CTA
-  - Updated Header and Footer navigation with Recycling link
-  - SEO keywords: "Tifton GA recycling drop-off", "free recycling Tifton", "recycling center Tifton"
-- **2025-12-04**: WM-Style Homepage Redesign
-  - Complete homepage redesign styled like Waste Management (WM) website
-  - New color scheme: dark green (#2d5a27), white backgrounds, red CTAs (#dc2626)
-  - Header: Logo left, search/location/account icons right (all link to /)
-  - Hero: "Waste Management & Recycling Services" with family-owned tagline
-  - Location Finder: Address/zip input with red Search button
-  - Services Carousel: 5 swipeable cards with icons and red CTAs
-  - My Ryland & More: Login button + 4 quick-access icon buttons
-  - Find Your Local Office: 10 Georgia office locations with areas served
-  - Need Help: Red Contact Support button + phone number
-  - Footer: Accordion-style on mobile, social icons, legal links
-  - All links redirect to / except Tifton → /tifton (demo-only clickable prototype)
-
-## Future Enhancements
-- Add customer portal for account management
-- Implement online service request system
-- Interactive service area map with address lookup
-- Blog/news section for updates
-- Analytics integration for conversion tracking
-- Contact form backend integration
-- Image optimization with Next.js Image component
-- Add actual business photos and testimonials
-
-## Notes
-- Uses Tailwind CSS v4 syntax (@import "tailwindcss" and @theme)
-- Port 5000 required for Replit webview integration
-- LSP diagnostics can be ignored - they're Tailwind v4 compatibility warnings
-- All forms are frontend-only (need backend integration for production)
-
-## Production Checklist
-Before deploying to production, update the following placeholder information:
-
-### Contact Information (Update in multiple locations)
-1. **Footer Component** (`app/components/Footer.tsx`):
-   - Phone number: Currently "(123) 456-7890"
-   - Email: Currently "info@rylandenvironmental.us"
-   - Address details
-
-2. **Home Page Contact Section** (`app/page.tsx`):
-   - Phone number in contact info
-   - Email address
-   - Service area details
-
-3. **JSON-LD Structured Data** (`app/page.tsx`):
-   - streetAddress (currently blank)
-   - postalCode (currently blank)
-   - telephone
-   - business hours if different
-   - geo coordinates (currently set to Tifton approximate location)
-
-### Optional Enhancements
-- Add Open Graph image (/og-image.jpg) for better social media sharing
-- Add Google verification code in metadata if needed
-- Update service schedules on Tifton Trash page with actual pickup days
+## External Dependencies
+- **Replit Mail**: Used for sending emails from the signup form to multiple recipients. Requires `CITY_OF_TIFTON_EMAIL` and `RYLAND_EMAIL` environment variables.
+- **Google My Maps**: Integrated on the City of Tifton services page to display interactive service schedules and routes.
+- **Tailwind CSS v4 with @tailwindcss/postcss**: For utility-first CSS styling.

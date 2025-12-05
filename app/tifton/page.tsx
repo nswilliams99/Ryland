@@ -360,6 +360,38 @@ export default function CityServices() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-12 bg-white border-t border-gray-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Frequently Asked Questions</h2>
+            <p className="text-gray-600">Get answers to common questions about trash service in Tifton</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <a href="/tifton/faq/what-time-does-trash-truck-come" className="p-4 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <h3 className="font-semibold text-gray-900 group-hover:text-primary-600">What time does the trash truck come?</h3>
+            </a>
+            <a href="/tifton/faq/holiday-pickup-schedule" className="p-4 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <h3 className="font-semibold text-gray-900 group-hover:text-primary-600">What's the holiday pickup schedule?</h3>
+            </a>
+            <a href="/tifton/faq/where-to-place-trash-can-for-pickup" className="p-4 bg-gray-50 rounded-lg hover:bg-primary-50 transition-colors group">
+              <h3 className="font-semibold text-gray-900 group-hover:text-primary-600">Where should I place my trash can?</h3>
+            </a>
+          </div>
+          <div className="text-center mt-6">
+            <a 
+              href="/tifton/faq" 
+              className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700"
+            >
+              View All FAQs
+              <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Signup Form */}
       <section id="signup-form" className="py-16 bg-gray-50">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">

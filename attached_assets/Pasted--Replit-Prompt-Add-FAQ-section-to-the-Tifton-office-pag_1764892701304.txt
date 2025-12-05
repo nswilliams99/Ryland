@@ -1,0 +1,110 @@
+**Replit Prompt:**
+
+---
+
+**Add FAQ section to the Tifton office page (`/tifton`)**
+
+**Create a FAQ hub page at `/tifton/faq` and 20 individual FAQ pages.**
+
+---
+
+**Tifton Service Area Rules (use throughout FAQs):**
+- **Residential:** City of Tifton limits only (exclusive contract)
+- **Commercial:** City of Tifton limits only
+- **Roll-Off Dumpsters:** All of Tift County (inside and outside city)
+- **Porta Potties:** All of Tift County
+
+---
+
+**Holiday Schedule (applies to residential & commercial only):**
+
+Pickup is delayed by ONE day for the rest of the week after these holidays:
+- New Year's Day
+- Memorial Day
+- Thanksgiving
+- Christmas
+
+Example: If the holiday falls on Monday, Monday pickup moves to Tuesday, Tuesday to Wednesday, etc. through Saturday.
+
+---
+
+**FAQ #1 - Write full content for this page:**
+
+**URL:** `/tifton/faq/what-time-does-trash-truck-come`
+
+**H1:** What Time Does the Trash Truck Come in Tifton?
+
+**Quick Answer:**
+Trash trucks in Tifton begin routes at 6:30 AM. Your cart should be at the curb by 6:00 AM on your scheduled pickup day.
+
+**The Details:**
+Ryland Environmental services the City of Tifton under an exclusive residential contract. Pickup times vary depending on where you are on the route - some homes are serviced early morning, others mid-day or afternoon. The only guarantee is that your trash will be collected on your scheduled day, so make sure your cart is out by 6:00 AM.
+
+Routes may run later than usual due to weather, holidays, or heavy volume. If it's past 6:00 PM and your trash hasn't been picked up, report a missed pickup by calling our Tifton office.
+
+**Holiday Delays:**
+Pickup is pushed back one day after these holidays:
+- New Year's Day
+- Memorial Day
+- Thanksgiving
+- Christmas
+
+If your normal pickup is Wednesday and the holiday falls on Monday, your pickup moves to Thursday that week.
+
+**Pro Tips:**
+- Set your cart out the night before if you leave for work early
+- Wheels against the curb, handle facing your house
+- Keep 3 feet of space between your trash and recycling carts
+- Don't block mailboxes, fire hydrants, or parked cars
+
+**Related Questions:**
+- What if my trash wasn't picked up?
+- Where should I place my trash can for pickup?
+- What's the holiday pickup schedule?
+
+**CTA:** Still have questions? Call our Tifton office at (229) 382-4411
+
+---
+
+**Remaining 19 FAQ pages - create the page structure and placeholder content:**
+
+**General:**
+2. `/tifton/faq/what-if-trash-wasnt-picked-up`
+3. `/tifton/faq/holiday-pickup-schedule`
+4. `/tifton/faq/how-to-pay-bill-online`
+
+**Residential (City of Tifton only):**
+5. `/tifton/faq/how-to-get-rid-of-trash-can-smell`
+6. `/tifton/faq/how-to-keep-animals-out-of-trash`
+7. `/tifton/faq/where-to-place-trash-can-for-pickup`
+8. `/tifton/faq/what-can-i-put-in-trash`
+9. `/tifton/faq/what-cant-go-in-trash`
+10. `/tifton/faq/how-to-schedule-bulk-pickup`
+
+**Commercial (City of Tifton only):**
+11. `/tifton/faq/what-size-dumpster-for-business`
+12. `/tifton/faq/how-often-dumpster-emptied`
+13. `/tifton/faq/what-cant-go-in-commercial-dumpster`
+
+**Roll-Off (All of Tift County):**
+14. `/tifton/faq/what-size-dumpster-do-i-need`
+15. `/tifton/faq/dumpster-rental-cost`
+16. `/tifton/faq/how-long-can-i-keep-dumpster`
+17. `/tifton/faq/do-i-need-permit-for-dumpster`
+18. `/tifton/faq/what-cant-go-in-rolloff-dumpster`
+
+**Porta Potties (All of Tift County):**
+19. `/tifton/faq/how-many-porta-potties-for-event`
+20. `/tifton/faq/how-often-porta-potties-cleaned`
+
+---
+
+**Hub Page `/tifton/faq`:**
+
+Group all 20 questions by category with 1-sentence answers. Each links to its full page. Add note at top:
+
+"Residential and commercial service available inside Tifton city limits. Roll-off dumpsters and porta potties available throughout Tift County."
+
+---
+
+Ready to paste into Replit.
