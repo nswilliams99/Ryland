@@ -142,14 +142,19 @@ const faqCategories = [
 export default function FAQHub() {
   return (
     <>
+      {/* Breadcrumb */}
+      <div className="bg-gray-100 border-b border-gray-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+          <nav className="flex items-center gap-2 text-sm">
+            <Link href="/tifton" className="text-primary-600 hover:text-primary-700 hover:underline">Tifton Office</Link>
+            <span className="text-gray-400">&gt;</span>
+            <span className="text-gray-600">FAQs</span>
+          </nav>
+        </div>
+      </div>
+
       <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Link href="/tifton" className="inline-flex items-center text-primary-200 hover:text-white mb-4 text-sm">
-            <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Tifton Services
-          </Link>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
             Frequently Asked Questions
           </h1>

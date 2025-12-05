@@ -1,0 +1,112 @@
+**PROMPT FOR REPLIT:**
+
+---
+
+**Add breadcrumb navigation to all Tifton subpages and /tift-county.**
+
+---
+
+**What is a breadcrumb:**
+A small text navigation trail at the top of the page showing the user where they are and letting them click back to parent pages.
+
+---
+
+**Placement:**
+Below the header, above the hero section. Small text, subtle but visible.
+
+---
+
+**Breadcrumbs for each page:**
+
+```
+/tifton/residential:
+Tifton Office  >  Residential
+    ↑ link            ↑ not a link (current page)
+
+/tifton/commercial:
+Tifton Office  >  Commercial Dumpsters
+    ↑ link            ↑ not a link
+
+/tifton/roll-off:
+Tifton Office  >  Roll-Off & Industrial
+    ↑ link            ↑ not a link
+
+/tifton/recycling:
+Tifton Office  >  Recycling
+    ↑ link            ↑ not a link
+
+/tifton/faq:
+Tifton Office  >  FAQs
+    ↑ link            ↑ not a link
+
+/tifton/faq/what-time-does-trash-truck-come (and all FAQ pages):
+Tifton Office  >  FAQs  >  What Time Does Trash Truck Come
+    ↑ link          ↑ link       ↑ not a link
+
+/tift-county:
+Home  >  Tift County
+  ↑ link     ↑ not a link
+```
+
+---
+
+**Links:**
+- "Home" → /
+- "Tifton Office" → /tifton
+- "FAQs" → /tifton/faq
+- Current page = plain text, no link
+
+---
+
+**Styling:**
+
+```
+Font size: Small (14px or 0.875rem)
+Color: Gray (#666) for links, darker for current page
+Hover: Underline on links
+Separator: " > " with spaces
+Padding: 10-15px vertical
+Background: White or very light gray
+```
+
+---
+
+**Example visual:**
+
+```
+┌──────────────────────────────────────────────────────┐
+│  Ryland Logo              🔍  📍  👤                 │
+├──────────────────────────────────────────────────────┤
+│  Tifton Office  >  Commercial Dumpsters              │  ← Breadcrumb
+├──────────────────────────────────────────────────────┤
+│  ┌────────────────────────────────────────────────┐  │
+│  │  City of Tifton                                │  │
+│  │  Commercial Dumpster Service in Tifton, GA     │  │  ← Hero
+│  │                                                │  │
+│  └────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────┘
+```
+
+---
+
+**SEO bonus:**
+Add breadcrumb schema markup (JSON-LD) so Google shows the breadcrumb trail in search results.
+
+---
+
+**Apply to these pages:**
+- /tifton/residential
+- /tifton/commercial
+- /tifton/roll-off
+- /tifton/recycling
+- /tifton/faq
+- /tifton/faq/[all 20 FAQ pages]
+- /tift-county
+
+**Do NOT add breadcrumb to:**
+- / (homepage)
+- /tifton (this is the parent, no breadcrumb needed)
+
+---
+
+Does this make sense?

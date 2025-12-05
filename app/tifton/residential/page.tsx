@@ -13,8 +13,8 @@ export default function ResidentialPage() {
       <div className="bg-gray-100 border-b border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm">
-            <Link href="/tifton" className="text-primary-600 hover:text-primary-700">Tifton</Link>
-            <span className="text-gray-400">/</span>
+            <Link href="/tifton" className="text-primary-600 hover:text-primary-700 hover:underline">Tifton Office</Link>
+            <span className="text-gray-400">&gt;</span>
             <span className="text-gray-600">Residential</span>
           </nav>
         </div>
