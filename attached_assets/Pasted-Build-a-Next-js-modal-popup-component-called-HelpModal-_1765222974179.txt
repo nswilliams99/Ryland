@@ -1,0 +1,144 @@
+Build a Next.js modal popup component called "HelpModal" with a "Need Help?" button that triggers it.
+
+**Modal behavior:**
+- Opens centered on screen with dark overlay behind it
+- X button to close in top right
+- Clicking outside modal closes it
+- Back button on each step to return to previous screen
+- Mobile responsive
+
+**Initial screen shows 4 buttons:**
+1. My cart is broken
+2. My cart is missing or destroyed
+3. My trash didn't get picked up
+4. My cart stinks
+
+---
+
+**Flow for "My cart is broken":**
+- Checkboxes: Wheels, Cart body, Lid (select all that apply)
+- Photo upload (optional, multiple images allowed)
+- What size cart do you have? (64-gallon / 96-gallon / Not sure)
+- Is this a recurring issue? (Yes / No)
+- Form fields: Name (required), Address with Google Places autocomplete (required), Email (optional), Mobile Phone (required, formatted as (xxx) xxx-xxxx)
+- Dropdown for town (grouped by area—see list below)
+- Preferred contact method: Checkboxes for Email / Phone / Text (optional, can select multiple)
+- Submit button
+
+---
+
+**Flow for "My cart is missing or destroyed":**
+- Text area: "Please explain what happened"
+- Warning notice: "Replacement carts may incur a fee if damaged due to misuse or negligence."
+- Photo upload (optional, multiple images allowed)
+- What size cart do you need? (64-gallon / 96-gallon)
+- Form fields: Name (required), Address with autocomplete (required), Email (optional), Mobile Phone (required)
+- Dropdown for town
+- Preferred contact method: Checkboxes (optional)
+- Submit button
+
+---
+
+**Flow for "My trash didn't get picked up":**
+
+**Step 1:** "Are you current on your trash bill?"
+- Yes → Continue to step 2
+- No → Show message: "Your service may be suspended due to a past-due balance." with button "Pay My Bill" that links to /pay-my-bill page
+
+**Step 2:** Date picker: "What day was your scheduled pickup?"
+
+**Step 3: Dynamic holiday check**
+Build logic that checks if the selected pickup date falls within 7 days before or after any of these holidays:
+
+*Holidays that DELAY pickup by one day:*
+- New Year's Day (January 1)
+- Memorial Day (Last Monday in May)
+- Thanksgiving (Fourth Thursday in November)
+- Christmas Day (December 25)
+
+*Holidays with NORMAL pickup:*
+- Martin Luther King Jr. Day (3rd Monday in January)
+- Presidents' Day (3rd Monday in February)
+- Juneteenth (June 19)
+- Independence Day (July 4)
+- Labor Day (1st Monday in September)
+- Columbus Day (2nd Monday in October)
+- Veterans Day (November 11)
+
+**If near a holiday that DELAYS pickup:**
+Show message: "Pickup was delayed one day after [Holiday Name]. If your normal day was [Day], your pickup moved to [Next Day]. Did you put your cart out on the correct delayed day?"
+- Yes, I had it out on the right day → Continue to step 4
+- No, I missed the delay → Show message: "That's likely why your trash wasn't picked up. Your next regular pickup will be [date]. Would you like us to return this week for a $25 fee?" with options to pay or wait.
+
+**If near a holiday with NORMAL pickup:**
+Show message: "We operated on a normal schedule for [Holiday Name]. Did you have your cart out by 6:30 AM?"
+- Yes → Continue to step 4
+- No → Show return trip options
+
+**If NOT near any holiday:**
+Show: "Was your cart at the curb by 6:30 AM?"
+- Yes → Continue to step 4
+- No → Show return trip options
+
+**Step 4:**
+- What type of service was missed? (Trash / Recycling / Yard waste)
+- Was anything blocking access to your cart? (No / Parked car / Construction / Other with text field)
+- Is this a recurring issue? (Yes / No)
+- Form fields: Name (required), Address with autocomplete (required), Email (optional), Mobile Phone (required)
+- Town dropdown
+- Preferred contact method checkboxes (optional)
+- Submit
+
+**Return trip options (when user admits cart wasn't out):**
+- "Pay $25 for return trip" → leads to form
+- "Wait until next week" → shows confirmation message and closes modal
+
+---
+
+**Flow for "My cart stinks":**
+- No form, just display cleaning tips:
+  - Always bag your trash
+  - Rinse inside with garden hose
+  - Spray with 1:10 bleach-water mix (1 part bleach, 10 parts water)
+  - Let dry in sun with lid open
+  - Sprinkle baking soda in bottom between cleanings
+  - For best results, clean monthly during summer
+- "Got it" button to close modal
+
+---
+
+**Town dropdown grouped by area:**
+- Augusta Area: Augusta, Evans, Martinez, Grovetown, Waynesboro
+- Baxley Area: Baxley, Jesup, Vidalia
+- Dublin Area: Dublin, Eastman
+- Houston County: Warner Robins, Perry, Centerville
+- Macon Area: Macon, Forsyth
+- Milledgeville Area: Milledgeville, Sandersville
+- Savannah Area: Savannah, Pooler, Rincon, Richmond Hill, Statesboro, Garden City
+- Tifton: Tifton
+- Waycross: Waycross
+
+---
+
+**Form validation:**
+- Required fields marked with red asterisk
+- Name, Address, Mobile Phone are required
+- Email is optional
+- Mobile phone auto-formats to (xxx) xxx-xxxx
+- Show inline error messages below invalid fields
+
+**On submit:**
+- Show loading spinner on submit button
+- Send email to support@rylandenv.com
+- Subject line format: "[Town] - [Issue Type]"
+- Body includes all form data and links to uploaded photos
+- Save submission to Supabase database as backup
+- Generate reference number (format: RYL-XXXXX)
+- Show success message: "Your request #RYL-XXXXX has been submitted. We'll contact you within 1 business day."
+- Send confirmation email to customer with their submission details and reference number
+- If submission fails, show error: "Something went wrong. Please call us at (229) 382-4411."
+
+**Styling:**
+- Use Tailwind CSS
+- Match Ryland Environmental branding (green and white color scheme)
+- Clean, professional look
