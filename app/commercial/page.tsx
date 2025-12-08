@@ -173,6 +173,41 @@ export default function CommercialPage() {
         </div>
       </section>
 
+      {/* Recycling Partnerships */}
+      <section className="py-12 bg-primary-600">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/recycling-partnership-school.png"
+                alt="Ryland Environmental and Laurens County School Systems partnering for recycling"
+                width={600}
+                height={700}
+                className="w-full h-96 object-cover"
+              />
+            </div>
+            <div className="text-white text-center lg:text-left">
+              <span className="inline-block px-4 py-1 bg-primary-400 rounded-full text-sm font-semibold mb-4">
+                Recycling Partnerships
+              </span>
+              <h2 className="text-3xl font-bold mb-4">Let's Partner to Increase Recycling in Your Community</h2>
+              <p className="text-xl text-primary-100 mb-4">
+                Schools, municipalities, and organizations across Georgia partner with Ryland Environmental to make their communities cleaner and greener.
+              </p>
+              <p className="text-primary-200 mb-6">
+                We work with you to create custom recycling programs that fit your organization's needs. Together, we can make a real difference for the environment.
+              </p>
+              <a
+                href="tel:229-382-4411"
+                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-lg font-bold text-primary-700 shadow-lg hover:bg-gray-100 transition-colors"
+              >
+                Call to Partner: (229) 382-4411
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Compactor in Service */}
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
