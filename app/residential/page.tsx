@@ -200,21 +200,21 @@ export default function ResidentialPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Individual Subscription */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-t-4 border-primary-500">
+            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-t-4 border-primary-500 flex flex-col">
               <div className="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Individual Subscription</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                 Weekly curbside trash and recycling pickup for individual homeowners. Sign up online and get started quickly.
               </p>
               <a
                 href="https://go.trashjoes.com/ryland-environmental/app/select-services"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full rounded-full bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors"
+                className="inline-flex items-center justify-center w-full rounded-full bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors mt-auto"
               >
                 Start Service
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -224,17 +224,17 @@ export default function ResidentialPage() {
             </div>
 
             {/* HOA Partnerships */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-t-4 border-primary-500">
+            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-t-4 border-primary-500 flex flex-col">
               <div className="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">HOA Partnerships</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                 Streamlined waste management for homeowners associations. One contract, consistent service for your entire community.
               </p>
-              <a href="#contact-form" className="inline-flex items-center justify-center w-full rounded-full bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors">
+              <a href="#contact-form" className="inline-flex items-center justify-center w-full rounded-full bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors mt-auto">
                 Contact Us
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -243,17 +243,17 @@ export default function ResidentialPage() {
             </div>
 
             {/* Municipal Contracts */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-t-4 border-primary-500">
+            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-t-4 border-primary-500 flex flex-col">
               <div className="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Contract Towns</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
                 Municipal waste services for cities and towns. We partner with local governments to provide reliable community-wide service.
               </p>
-              <a href="#contact-form" className="inline-flex items-center justify-center w-full rounded-full bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors">
+              <a href="#contact-form" className="inline-flex items-center justify-center w-full rounded-full bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors mt-auto">
                 Contact Us
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
