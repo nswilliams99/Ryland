@@ -33,6 +33,10 @@ const faqCategories = [
         answer: "Rate adjustments may occur due to fuel surcharges, disposal cost changes, or annual rate updates. If you have questions about a specific charge, please contact our customer service team or check your invoice for detailed line items.",
       },
       {
+        question: "How does Ryland handle rate changes for contracted towns?",
+        answer: "Ryland Environmental is proactive and transparent about rate changes. For contracted towns and municipalities, we announce any rate increases in advance and work directly with local officials. Rate adjustments are typically tied to the Consumer Price Index to reflect actual cost changes. We value our partnerships and strive to work collaboratively with all parties to ensure fair, sustainable service. If you have questions about rates, please contact your local Ryland office.",
+      },
+      {
         question: "Can I get a refund if I cancel service?",
         answer: "If you prepaid for services and cancel before the service period ends, you may be eligible for a prorated refund. Please contact our customer service team to discuss your specific situation.",
       },
