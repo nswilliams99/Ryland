@@ -287,6 +287,39 @@ export default function RollOffPage() {
             </div>
           </div>
 
+          {/* We Go Anywhere - Barge Image */}
+          <div className="mb-12 bg-primary-800 rounded-xl overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              <div className="p-8 text-white flex flex-col justify-center">
+                <h3 className="text-2xl font-bold mb-4">We Go Wherever You Need Us</h3>
+                <p className="text-primary-100 mb-4">
+                  Construction sites, remote locations, waterfront projects—if you need a roll-off dumpster, we'll get it there. No job is too challenging.
+                </p>
+                <ul className="space-y-2 text-primary-100">
+                  <li className="flex items-center gap-2">
+                    <span className="text-white">✓</span>
+                    Marine and waterfront construction
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-white">✓</span>
+                    Barge and boat delivery available
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-white">✓</span>
+                    Remote job sites
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <img 
+                  src="/images/rolloff-on-barge.png" 
+                  alt="Ryland Environmental roll-off dumpster on a barge for waterfront construction" 
+                  className="w-full h-64 lg:h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Trade Show / Partnership Image */}
           <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
             <img 

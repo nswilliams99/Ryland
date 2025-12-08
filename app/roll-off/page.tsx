@@ -136,6 +136,47 @@ export default function RollOffPage() {
         </div>
       </section>
 
+      {/* We Go Anywhere Section */}
+      <section className="py-12 bg-primary-700">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="text-white">
+              <h2 className="text-3xl font-bold mb-4">We Literally Go Wherever You Need Us</h2>
+              <p className="text-xl text-primary-100 mb-6">
+                Construction sites, remote locations, waterfront projects—if you need a roll-off dumpster, we'll get it there. No job is too challenging.
+              </p>
+              <ul className="space-y-3 text-primary-100">
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Marine and waterfront construction
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Barge and boat delivery available
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Remote job sites across Georgia
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Industrial and commercial projects
+                </li>
+              </ul>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/rolloff-on-barge.png"
+                alt="Ryland Environmental roll-off dumpster on a barge for waterfront construction project"
+                width={800}
+                height={600}
+                className="w-full h-80 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
