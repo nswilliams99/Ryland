@@ -72,6 +72,59 @@ export default function CommercialPage() {
         </div>
       </section>
 
+      {/* We Handle Any Size Job */}
+      <section className="py-12 bg-primary-700">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="text-white">
+              <h2 className="text-3xl font-bold mb-4">We Can Handle Any Size Commercial Job</h2>
+              <p className="text-xl text-primary-100 mb-6">
+                From a single dumpster for a small office to multiple containers for large commercial developments—we've got you covered.
+              </p>
+              <ul className="space-y-3 text-primary-100 mb-6">
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Multiple container deployments
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Flexible pickup schedules
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Commercial developments & construction sites
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-white text-xl">✓</span>
+                  Retail centers, hotels, & industrial facilities
+                </li>
+              </ul>
+              <a
+                href="tel:229-382-4411"
+                className="inline-flex items-center justify-center bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Get a Commercial Quote
+              </a>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/commercial-8yard-dumpsters.png"
+                alt="Multiple Ryland Environmental 8-yard commercial dumpsters ready for delivery"
+                width={800}
+                height={600}
+                className="w-full h-80 object-cover"
+                priority
+              />
+              <div className="bg-gray-900 px-4 py-3">
+                <p className="text-white text-center text-sm">
+                  <strong>8-Yard Front-Load Dumpsters</strong> — Our largest commercial containers, perfect for high-volume businesses
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Dumpster Sizes */}
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
