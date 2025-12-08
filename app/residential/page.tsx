@@ -256,8 +256,50 @@ export default function ResidentialPage() {
             </div>
           </div>
 
-          {/* Trade Show / Partnership Image */}
-          <div className="mt-10 rounded-xl overflow-hidden shadow-lg">
+        </div>
+      </section>
+
+      {/* Press Conference Section */}
+      <section className="py-12 bg-primary-700">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white mb-8">
+            <h2 className="text-3xl font-bold mb-4">When We Say We'll Go Anywhere, We Mean It</h2>
+            <p className="text-xl text-primary-100 max-w-3xl mx-auto">
+              We're so popular that our cans even have press conferences! Ryland Environmental partners with cities and counties across Georgia to bring reliable waste management to communities.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/ryland-cans-press-conference-1.png"
+                alt="Ryland Environmental trash and recycling cans featured at a city council meeting"
+                width={800}
+                height={450}
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/ryland-cans-press-conference-2.png"
+                alt="Ryland Environmental presenting new service to local government officials with media coverage"
+                width={800}
+                height={450}
+                className="w-full h-64 object-cover"
+              />
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <a href="#contact-form" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-semibold text-primary-700 shadow-sm hover:bg-gray-100 transition-colors">
+              Partner With Ryland
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Trade Show / Partnership Section */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl overflow-hidden shadow-lg">
             <Image
               src="/images/ryland-trade-show-booth.png"
               alt="Ryland Environmental trade show booth showcasing services for municipalities and HOAs"
