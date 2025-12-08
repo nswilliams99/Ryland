@@ -231,6 +231,12 @@ export default function ResidentialPage() {
             </div>
             <p className="text-gray-600 mt-4">Put cart out by <strong>6:00 AM</strong></p>
             
+            {/* When In Doubt Put It Out */}
+            <div className="mt-6 bg-primary-600 text-white rounded-xl p-5 shadow-lg">
+              <p className="text-2xl font-bold text-center">When In Doubt, Put It Out!</p>
+              <p className="text-primary-100 text-center mt-2">Not sure if it's your pickup day? Put your cart out anyway - better safe than sorry!</p>
+            </div>
+            
             {/* Zone Map */}
             <div className="mt-6">
               <h4 className="text-lg font-semibold text-gray-900 mb-3">Find Your Zone on the Map</h4>

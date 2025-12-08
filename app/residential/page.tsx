@@ -494,6 +494,14 @@ export default function ResidentialPage() {
         </div>
       </section>
 
+      {/* When In Doubt Put It Out */}
+      <section className="py-8 bg-primary-600">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-3xl font-bold text-white">When In Doubt, Put It Out!</p>
+          <p className="text-primary-100 mt-2 text-lg">Not sure if it's your pickup day? Put your cart out anyway - better safe than sorry!</p>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
