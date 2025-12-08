@@ -37,6 +37,38 @@ export default function Home() {
       {/* Find Your Local Office */}
       <OfficeLocations />
 
+      {/* 10 Year Celebration */}
+      <section className="py-12 bg-primary-700">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="text-white text-center lg:text-left">
+              <span className="inline-block px-4 py-1 bg-primary-500 rounded-full text-sm font-semibold mb-4">
+                August 20, 2024
+              </span>
+              <h2 className="text-3xl font-bold mb-4">Celebrating 10 Years!</h2>
+              <p className="text-xl text-primary-100 mb-4">
+                A decade of serving Georgia communities with reliable waste management and recycling services.
+              </p>
+              <p className="text-primary-200">
+                From our humble beginnings in 2014 to serving 10 offices across the state, we're grateful for every customer, employee, and community that's been part of our journey. Here's to the next 10 years!
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <img
+                src="/images/10-year-celebration.png"
+                alt="Ryland Environmental team celebrating 10 years in business - August 2024"
+                className="w-full h-72 object-cover"
+              />
+              <div className="bg-white px-4 py-3">
+                <p className="text-gray-700 text-center text-sm">
+                  <strong>The Ryland Environmental team</strong> celebrating 10 years of service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Need Help? Section */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
