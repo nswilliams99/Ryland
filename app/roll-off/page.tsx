@@ -212,6 +212,26 @@ export default function RollOffPage() {
         </div>
       </section>
 
+      {/* Driver / Team Image */}
+      <section className="py-8 bg-white">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/ryland-rolloff-driver.png"
+              alt="Ryland Environmental roll-off driver with truck ready for delivery"
+              width={800}
+              height={600}
+              className="w-full h-80 object-cover"
+            />
+            <div className="bg-gray-100 px-6 py-4">
+              <p className="text-gray-700 text-center text-sm">
+                <strong>Reliable service, friendly team.</strong> Our experienced drivers deliver roll-off dumpsters across Georgia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-12 bg-gray-50">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
