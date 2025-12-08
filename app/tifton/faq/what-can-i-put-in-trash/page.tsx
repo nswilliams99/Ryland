@@ -126,6 +126,47 @@ export default function WhatCanIPut() {
               </ul>
             </div>
 
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Not Accepted in Your Cart</h2>
+            <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h4 className="font-bold text-red-800 mb-2 flex items-center">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    Hazardous Materials
+                  </h4>
+                  <ul className="text-sm text-red-700 space-y-1">
+                    <li>• Paint, stains, solvents</li>
+                    <li>• Batteries (all types)</li>
+                    <li>• Motor oil, antifreeze</li>
+                    <li>• Pesticides, chemicals</li>
+                    <li>• Propane tanks</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-bold text-red-800 mb-2 flex items-center">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    Large Items & Electronics
+                  </h4>
+                  <ul className="text-sm text-red-700 space-y-1">
+                    <li>• TVs, computers, monitors</li>
+                    <li>• Appliances (refrigerators, etc.)</li>
+                    <li>• Mattresses, large furniture</li>
+                    <li>• Tires</li>
+                    <li>• Construction debris</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-4 pt-4 border-t border-red-200">
+                <Link href="/tifton/faq/what-cant-go-in-trash" className="text-red-700 font-semibold hover:text-red-800 underline">
+                  See full list of prohibited items and disposal options →
+                </Link>
+              </div>
+            </div>
+
             <div className="border-t border-gray-200 pt-8">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Related Questions</h3>
               <div className="space-y-3">

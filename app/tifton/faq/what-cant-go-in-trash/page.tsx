@@ -115,29 +115,80 @@ export default function WhatCantGo() {
             </div>
 
             <div className="bg-primary-50 border border-primary-200 rounded-xl p-6 mb-8">
-              <h3 className="text-xl font-bold text-primary-800 mb-3">How to Dispose of These Items</h3>
-              <ul className="space-y-3 text-primary-700">
-                <li className="flex items-start">
-                  <span className="text-primary-600 mr-2 font-bold">•</span>
-                  <span><strong>Large items:</strong> Schedule a bulk pickup by calling our office</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-600 mr-2 font-bold">•</span>
-                  <span><strong>Construction debris:</strong> Rent a roll-off dumpster</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-600 mr-2 font-bold">•</span>
-                  <span><strong>Electronics:</strong> Take to a certified e-waste recycler</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-600 mr-2 font-bold">•</span>
-                  <span><strong>Hazardous waste:</strong> Contact Tift County for household hazardous waste collection events</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary-600 mr-2 font-bold">•</span>
-                  <span><strong>Tires:</strong> Take to a tire retailer or auto shop</span>
-                </li>
-              </ul>
+              <h3 className="text-xl font-bold text-primary-800 mb-4">How to Dispose of These Items</h3>
+              
+              <div className="space-y-6">
+                <div className="bg-white rounded-lg p-4 border border-primary-100">
+                  <h4 className="font-bold text-primary-800 mb-2">Paint, Stains & Solvents</h4>
+                  <ul className="text-primary-700 text-sm space-y-1 mb-3">
+                    <li>• <strong>Latex paint:</strong> Let dry completely (leave lid off), then dispose in regular trash</li>
+                    <li>• <strong>Oil-based paint:</strong> Take to a hazardous waste collection event</li>
+                    <li>• <strong>Speed drying:</strong> Add kitty litter or paint hardener to speed up drying</li>
+                  </ul>
+                  <p className="text-sm text-primary-600">Many hardware stores accept leftover paint for recycling.</p>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-primary-100">
+                  <h4 className="font-bold text-primary-800 mb-2">Batteries</h4>
+                  <ul className="text-primary-700 text-sm space-y-1 mb-3">
+                    <li>• <strong>Alkaline batteries (AA, AAA, C, D):</strong> Place tape over terminals, dispose in trash</li>
+                    <li>• <strong>Rechargeable/lithium batteries:</strong> Take to Best Buy, Home Depot, or Lowe's for recycling</li>
+                    <li>• <strong>Car batteries:</strong> Return to auto parts stores (AutoZone, O'Reilly) - most offer rebates</li>
+                  </ul>
+                  <p className="text-sm text-primary-600">Never throw lithium batteries in trash - they can cause fires!</p>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-primary-100">
+                  <h4 className="font-bold text-primary-800 mb-2">Motor Oil & Antifreeze</h4>
+                  <ul className="text-primary-700 text-sm space-y-1">
+                    <li>• <strong>Used motor oil:</strong> Auto parts stores (AutoZone, O'Reilly, Advance Auto) accept used oil for free</li>
+                    <li>• <strong>Antifreeze:</strong> Take to an auto shop or hazardous waste event</li>
+                    <li>• <strong>Tip:</strong> Store in original container or clean plastic jug with tight lid</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-primary-100">
+                  <h4 className="font-bold text-primary-800 mb-2">Electronics (E-Waste)</h4>
+                  <ul className="text-primary-700 text-sm space-y-1">
+                    <li>• <strong>TVs & monitors:</strong> Best Buy accepts up to 3 items per day (may charge fee for TVs over 32")</li>
+                    <li>• <strong>Computers & phones:</strong> Staples, Best Buy, and cell phone stores accept these for free</li>
+                    <li>• <strong>Tip:</strong> Wipe personal data before recycling electronics</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-primary-100">
+                  <h4 className="font-bold text-primary-800 mb-2">Propane Tanks</h4>
+                  <ul className="text-primary-700 text-sm space-y-1">
+                    <li>• <strong>Small camping propane:</strong> Blue Rhino exchange locations at Walmart, Lowe's, Home Depot</li>
+                    <li>• <strong>Large grill tanks:</strong> Exchange at hardware stores or take to propane dealers</li>
+                    <li>• <strong>Never:</strong> Put propane tanks in trash - explosion hazard!</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-primary-100">
+                  <h4 className="font-bold text-primary-800 mb-2">Large Items & Appliances</h4>
+                  <ul className="text-primary-700 text-sm space-y-1">
+                    <li>• <strong>Bulk pickup:</strong> Call us at (229) 382-4411 to schedule</li>
+                    <li>• <strong>Working appliances:</strong> Consider donating to Habitat ReStore or Goodwill</li>
+                    <li>• <strong>Refrigerators/AC:</strong> Must be emptied of freon by certified technician before disposal</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 border border-primary-100">
+                  <h4 className="font-bold text-primary-800 mb-2">Household Hazardous Waste Events</h4>
+                  <p className="text-primary-700 text-sm mb-2">
+                    Tift County hosts periodic hazardous waste collection days where you can drop off:
+                  </p>
+                  <ul className="text-primary-700 text-sm space-y-1">
+                    <li>• Pesticides, herbicides, fertilizers</li>
+                    <li>• Pool chemicals</li>
+                    <li>• Cleaning solvents</li>
+                    <li>• Fluorescent bulbs</li>
+                    <li>• Mercury thermometers</li>
+                  </ul>
+                  <p className="text-sm text-primary-600 mt-2">Check with Tift County Extension Office at (229) 386-3407 for upcoming dates.</p>
+                </div>
+              </div>
             </div>
 
             <div className="border-t border-gray-200 pt-8">
