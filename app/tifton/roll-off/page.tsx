@@ -300,6 +300,49 @@ export default function RollOffPage() {
             </div>
           </div>
 
+          {/* Full Compactor Equipment Services */}
+          <div className="mb-12 bg-gray-100 rounded-xl overflow-hidden border border-gray-200">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              <div className="p-8 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Provide All the Equipment You Need</h3>
+                <p className="text-gray-700 mb-4">
+                  Ryland Environmental provides all of the equipment needed for your compactors. We install, lease, and can set up agreements to make it affordable for your business.
+                </p>
+                <ul className="space-y-2 text-gray-700 mb-6">
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Full installation services
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Flexible lease options
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    Affordable payment agreements
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-primary-600">✓</span>
+                    On-site consultations
+                  </li>
+                </ul>
+                <p className="text-gray-900 font-semibold mb-4">
+                  Call today so we can come see your site and give you the best option to meet your needs.
+                </p>
+                <a href="tel:229-382-4411" className="inline-flex items-center justify-center bg-accent-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-700 transition-colors w-fit">
+                  Call (229) 382-4411
+                </a>
+              </div>
+              <div className="bg-gray-200">
+                <img 
+                  src="/images/compactor-equipment-installed.png" 
+                  alt="Ryland Environmental compactor power unit installed at customer facility" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* We Go Anywhere - Barge Image */}
           <div className="mb-12 bg-primary-800 rounded-xl overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
