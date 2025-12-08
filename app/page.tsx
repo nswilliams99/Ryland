@@ -40,25 +40,29 @@ export default function Home() {
       {/* Safety First Section */}
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="text-center mb-8">
+            <span className="inline-block px-4 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-4">
+              Safety First
+            </span>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Everyone Home Safe, Every Night</h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              We hold regular safety meetings for all of our employees—for them and for you. Our goal is simple: everyone goes home safe every night. This commitment extends to our Ryland team and the communities we serve.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-xl overflow-hidden shadow-lg">
               <img
                 src="/images/ryland-safety-meeting.png"
                 alt="Ryland Environmental team at a safety meeting"
-                className="w-full h-80 object-cover"
+                className="w-full h-64 object-cover"
               />
             </div>
-            <div className="text-center lg:text-left">
-              <span className="inline-block px-4 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-4">
-                Safety First
-              </span>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Everyone Home Safe, Every Night</h2>
-              <p className="text-lg text-gray-700 mb-4">
-                We hold regular safety meetings for all of our employees—for them and for you. Our goal is simple: everyone goes home safe every night.
-              </p>
-              <p className="text-gray-600">
-                This commitment extends to our Ryland team and the communities we serve. When our drivers are well-trained and safety-focused, everyone benefits.
-              </p>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img
+                src="/images/ryland-safety-meeting-2.png"
+                alt="Ryland Environmental employees attending safety training session"
+                className="w-full h-64 object-cover"
+              />
             </div>
           </div>
         </div>
