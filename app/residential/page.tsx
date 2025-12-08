@@ -264,8 +264,11 @@ export default function ResidentialPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white mb-8">
             <h2 className="text-3xl font-bold mb-4">When We Say We'll Go Anywhere, We Mean It</h2>
-            <p className="text-xl text-primary-100 max-w-3xl mx-auto">
+            <p className="text-xl text-primary-100 max-w-3xl mx-auto mb-4">
               We're so popular that our cans even have press conferences! Ryland Environmental partners with cities and counties across Georgia to bring reliable waste management to communities.
+            </p>
+            <p className="text-primary-200 max-w-3xl mx-auto">
+              Pictured: Macon-Bibb County's announcement in October 2021 that Ryland Environmental would provide solid waste services for the county's 155,000+ residents starting January 2022.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
