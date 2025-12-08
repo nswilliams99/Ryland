@@ -98,6 +98,10 @@ const faqCategories = [
         question: "How do I schedule a bulk item pickup?",
         answer: "Contact your local Ryland Environmental office to schedule a bulk item pickup. Additional fees may apply depending on the item. Please describe the items when calling so we can provide accurate pricing.",
       },
+      {
+        question: "What happens during hurricanes or severe weather?",
+        answer: "During hurricanes and severe weather events, Ryland Environmental prioritizes the safety of our employees. We will stop operations when conditions are dangerous and resume service as soon as it is safe to do so. Our goal is to get caught up within one week when possible. We monitor forecasts closely and stay in contact with local officials. Please be patient during storm events—we appreciate your understanding as we work to restore normal service.",
+      },
     ],
   },
   {

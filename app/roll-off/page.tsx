@@ -50,6 +50,19 @@ export default function RollOffPage() {
         { label: "Roll-Off Dumpsters" },
       ]} />
       
+      {/* Hurricane Notice */}
+      <section className="bg-amber-500 text-white py-3">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-left">
+            <span className="font-bold">Hurricane Delays:</span>
+            <span>We stop operations when dangerous for our staff. Service resumes with delays—goal to catch up within a week.</span>
+            <a href="tel:229-382-4411" className="underline font-semibold hover:text-amber-100 whitespace-nowrap">
+              Call to order: (229) 382-4411
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-600 to-primary-700 text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
