@@ -230,6 +230,22 @@ export default function ResidentialPage() {
               </div>
             </div>
             <p className="text-gray-600 mt-4">Put cart out by <strong>6:00 AM</strong></p>
+            
+            {/* Zone Map */}
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Find Your Zone on the Map</h4>
+              <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                <iframe 
+                  src="https://www.google.com/maps/d/embed?mid=1sF9JOLMVpwRYR97VpLes2f-R7KssY8I&ehbc=2E312F&ll=31.474215,-83.537457&z=13" 
+                  width="100%"
+                  height="480"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  title="City of Tifton Trash Pickup Zone Map"
+                />
+              </div>
+              <p className="text-sm text-gray-500 mt-2">Click the map to zoom in and find your street's pickup day.</p>
+            </div>
           </div>
 
           {/* How to Position Your Cart */}
