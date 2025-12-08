@@ -1,0 +1,365 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
+
+export const metadata: Metadata = {
+  title: "Residential Waste Services | Ryland Environmental Georgia",
+  description: "Residential garbage and recycling services across Georgia. HOA contracts, subscription service, and municipal partnerships. Serving Augusta, Macon, Savannah, Tifton, and more.",
+  keywords: "residential trash service Georgia, HOA waste management, garbage pickup Georgia, recycling service, Ryland Environmental",
+};
+
+const serviceAreas = [
+  {
+    office: "Augusta Area",
+    towns: ["Augusta", "Evans", "Martinez", "Grovetown", "Waynesboro"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+  },
+  {
+    office: "Baxley Area",
+    towns: ["Baxley", "Jesup", "Vidalia"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+  },
+  {
+    office: "Dublin Area",
+    towns: ["Dublin", "Eastman"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+  },
+  {
+    office: "Houston County",
+    towns: ["Warner Robins", "Perry", "Centerville"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+  },
+  {
+    office: "Macon Area",
+    towns: ["Macon", "Forsyth"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+  },
+  {
+    office: "Milledgeville Area",
+    towns: ["Milledgeville", "Sandersville"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+  },
+  {
+    office: "Savannah Area",
+    towns: ["Pooler", "Rincon", "Richmond Hill", "Statesboro", "Garden City"],
+    services: ["Commercial Dumpsters", "Roll-Off Dumpsters", "Portable Toilets", "Transfer Station"],
+  },
+  {
+    office: "Tifton Area",
+    towns: ["Tifton", "Tift County"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+    link: "/tifton",
+  },
+  {
+    office: "Waycross Area",
+    towns: ["Waycross"],
+    services: ["Residential Waste Removal", "Recycling", "Commercial Dumpsters", "Roll-Off Dumpsters"],
+  },
+];
+
+const faqs = [
+  {
+    question: "What day is my trash pickup?",
+    answer: "Pickup days vary by location. Enter your address in the search bar above to find your specific pickup schedule, or contact your local Ryland office.",
+  },
+  {
+    question: "How should I place my cart for pickup?",
+    answer: "Place carts 3-5 feet from the roadway and 3-5 feet from any obstructions such as poles, mailboxes, cars, or other carts. Handles should face the house with arrows on the lid facing toward the curb.",
+  },
+  {
+    question: "What time should my cart be out?",
+    answer: "Carts must be at the curb by 6:00 AM on your pickup day. We recommend placing them out the night before.",
+  },
+  {
+    question: "Can I schedule bulky item pickup?",
+    answer: "Yes! Each customer can schedule 2 bulky items per week as part of standard residential service. Bulky items include furniture and appliances. Construction debris and extra garbage bags are not covered.",
+  },
+  {
+    question: "Do I need to bag my trash?",
+    answer: "Yes, please bag all trash to help prevent litter and keep your cart clean.",
+  },
+  {
+    question: "How do I start residential service?",
+    answer: "Enter your address in the search bar to check availability in your area. For HOAs and contract towns, contact us directly for partnership information.",
+  },
+];
+
+export default function ResidentialPage() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Residential Services" },
+      ]} />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-700 text-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+              Residential Waste Services
+            </h1>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
+              Your home's waste management heroes. Weekly curbside trash and recycling pickup across Georgia.
+            </p>
+            
+            {/* Address Search */}
+            <div className="mt-8 max-w-2xl mx-auto">
+              <p className="text-sm text-primary-200 mb-3">Enter your address to check service availability</p>
+              <a
+                href="https://go.trashjoes.com/ryland-environmental/app/select-services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-white rounded-full px-6 py-4 text-gray-500 text-left hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <span className="flex items-center">
+                  <svg className="h-5 w-5 text-gray-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  Enter your address to start service...
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Types */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Individual Subscription */}
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Individual Subscription</h3>
+              <p className="text-gray-600 mb-4">
+                Weekly curbside trash and recycling pickup for individual homeowners. Sign up online and get started quickly.
+              </p>
+              <a
+                href="https://go.trashjoes.com/ryland-environmental/app/select-services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700"
+              >
+                Start Service
+                <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            {/* HOA Partnerships */}
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">HOA Partnerships</h3>
+              <p className="text-gray-600 mb-4">
+                Streamlined waste management for homeowners associations. One contract, consistent service for your entire community.
+              </p>
+              <a href="#contact-form" className="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700">
+                Contact Us
+                <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            {/* Municipal Contracts */}
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Contract Towns</h3>
+              <p className="text-gray-600 mb-4">
+                Municipal waste services for cities and towns. We partner with local governments to provide reliable community-wide service.
+              </p>
+              <a href="#contact-form" className="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700">
+                Contact Us
+                <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Areas We Serve</h2>
+            <p className="text-gray-600">Residential waste services across Georgia</p>
+          </div>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {serviceAreas.map((area, index) => (
+              <div key={index} className="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{area.office}</h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  {area.towns.join(", ")}
+                </p>
+                <div className="flex flex-wrap gap-1 mb-3">
+                  {area.services.slice(0, 2).map((service, i) => (
+                    <span key={i} className="text-xs bg-primary-50 text-primary-700 px-2 py-1 rounded">
+                      {service}
+                    </span>
+                  ))}
+                </div>
+                {area.link ? (
+                  <Link href={area.link} className="text-sm text-accent-600 font-medium hover:text-accent-700">
+                    View Details →
+                  </Link>
+                ) : (
+                  <span className="text-sm text-gray-400">Coming Soon</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form */}
+      <section id="contact-form" className="py-12 bg-white scroll-mt-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Contact Us</h2>
+            <p className="text-gray-600">
+              Interested in HOA or municipal partnership? Get in touch with our team.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 rounded-xl p-8">
+            <form className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-1">
+                  Organization / HOA Name
+                </label>
+                <input
+                  type="text"
+                  id="organization"
+                  name="organization"
+                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  placeholder="Your organization or HOA"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="service-type" className="block text-sm font-medium text-gray-700 mb-1">
+                  Service Type
+                </label>
+                <select
+                  id="service-type"
+                  name="service-type"
+                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                >
+                  <option value="">Select service type...</option>
+                  <option value="hoa">HOA Partnership</option>
+                  <option value="municipal">Municipal / Town Contract</option>
+                  <option value="subscription">Individual Subscription</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                  placeholder="Tell us about your needs..."
+                />
+              </div>
+              
+              <div className="text-center">
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center rounded-full bg-accent-600 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+            
+            <div className="mt-6 text-center">
+              <p className="text-gray-600">Or call us directly:</p>
+              <a href="tel:229-382-4411" className="text-xl font-semibold text-primary-600 hover:text-primary-700">
+                (229) 382-4411
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Frequently Asked Questions</h2>
+            <p className="text-gray-600">Common questions about residential trash service</p>
+          </div>
+          
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                <p className="text-gray-600">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link
+              href="/faq"
+              className="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700"
+            >
+              View All FAQs
+              <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

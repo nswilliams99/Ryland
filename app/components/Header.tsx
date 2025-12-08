@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { name: "Residential", href: "/tifton/residential" },
-  { name: "Commercial", href: "/tifton/commercial" },
-  { name: "Rolloffs", href: "/tifton/roll-off" },
+  { name: "Residential", href: "/residential" },
+  { name: "Commercial", href: "/commercial" },
+  { name: "Rolloffs", href: "/roll-off" },
   { name: "Locations", href: "/#office-locations" },
-  { name: "Contact", href: "/tifton#contact" },
+  { name: "Contact", href: "/residential#contact-form" },
   { name: "Order Service", href: "https://app.trashjoes.com/h/ryland", external: true },
   { name: "Pay My Bill", href: "/pay-my-bill" },
 ];

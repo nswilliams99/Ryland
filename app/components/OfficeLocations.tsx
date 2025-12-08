@@ -5,52 +5,62 @@ import Link from "next/link";
 const offices = [
   {
     name: "Tifton Office",
-    areas: "City of Tifton, Tift County",
+    areas: "Tifton, Tift County",
+    towns: ["City of Tifton", "Tift County"],
     href: "/tifton",
   },
   {
     name: "Augusta Office",
-    areas: "Augusta, Evans, Martinez, Grovetown, Waynesboro",
+    areas: "Augusta Metro Area",
+    towns: ["Augusta", "Evans", "Martinez", "Grovetown", "Waynesboro"],
     href: "/",
   },
   {
     name: "Baxley Office",
-    areas: "Baxley, Jesup, Vidalia",
+    areas: "Baxley Area",
+    towns: ["Baxley", "Jesup", "Vidalia"],
     href: "/",
   },
   {
     name: "Dublin Office",
-    areas: "Dublin, Eastman",
+    areas: "Dublin Area",
+    towns: ["Dublin", "Eastman"],
     href: "/",
   },
   {
     name: "Houston County Office",
-    areas: "Warner Robins, Perry, Centerville",
+    areas: "Houston County",
+    towns: ["Warner Robins", "Perry", "Centerville"],
     href: "/",
   },
   {
     name: "Macon Office",
-    areas: "Macon, Forsyth",
+    areas: "Macon Area",
+    towns: ["Macon", "Forsyth"],
     href: "/",
   },
   {
     name: "Milledgeville Office",
-    areas: "Milledgeville",
+    areas: "Milledgeville Area",
+    towns: ["Milledgeville", "Sandersville"],
     href: "/",
   },
   {
     name: "Sandersville Office",
-    areas: "Sandersville (Transfer Station only)",
+    areas: "Washington County",
+    towns: ["Sandersville (Transfer Station)"],
     href: "/",
   },
   {
     name: "Savannah Office",
-    areas: "Savannah, Pooler, Rincon, Richmond Hill, Statesboro, Garden City",
+    areas: "Coastal Georgia",
+    towns: ["Pooler", "Rincon", "Richmond Hill", "Statesboro", "Garden City"],
     href: "/",
   },
   {
     name: "Waycross Office",
-    areas: "Waycross",
+    areas: "Waycross Area",
+    towns: ["Waycross"],
     href: "/",
   },
 ];
@@ -70,14 +80,17 @@ export default function OfficeLocations() {
               key={index}
               className="bg-white rounded-xl border border-gray-200 p-5 hover:border-primary-300 hover:shadow-md transition-all"
             >
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
+              <div className="flex flex-col">
+                <div className="flex-1 mb-3">
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">{office.name}</h3>
-                  <p className="text-sm text-gray-600">{office.areas}</p>
+                  <p className="text-sm text-gray-500 mb-2">{office.areas}</p>
+                  <p className="text-sm text-gray-600">
+                    {office.towns.join(", ")}
+                  </p>
                 </div>
                 <Link
                   href={office.href}
-                  className="ml-4 inline-flex items-center justify-center rounded-full bg-accent-600 px-4 py-2 text-sm font-semibold text-white hover:bg-accent-700 transition-colors whitespace-nowrap"
+                  className="inline-flex items-center justify-center rounded-full bg-accent-600 px-4 py-2 text-sm font-semibold text-white hover:bg-accent-700 transition-colors"
                 >
                   Location Details
                 </Link>
