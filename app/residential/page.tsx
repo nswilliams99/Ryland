@@ -264,6 +264,39 @@ export default function ResidentialPage() {
         </div>
       </section>
 
+      {/* Kids Love Trash Day */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-2xl max-w-md">
+                <Image
+                  src="/images/ryland-kid-driveway.webp"
+                  alt="Young child watching a Ryland Environmental garbage truck from their driveway"
+                  width={500}
+                  height={600}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">The Best Part of Trash Day</h2>
+              <p className="text-xl text-gray-700 mb-6">
+                We're not just a truck driving by—we're the highlight of the week for your little ones.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Every week, our drivers get a wave from the driveway. And they wave back. That's the kind of neighborhood service you get when you choose a family-owned company.
+              </p>
+              <div className="bg-primary-50 rounded-xl p-6 border border-primary-200">
+                <p className="text-primary-800 font-medium text-lg">
+                  Stop by any Ryland office to pick up a free Ryland Trash Truck toy for your little fan!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Press Conference Section */}
       <section className="py-12 bg-primary-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
