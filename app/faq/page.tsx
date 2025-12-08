@@ -4,129 +4,220 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "FAQs | Ryland Environmental",
-  description: "Frequently asked questions about Ryland Environmental waste management services. Learn about residential trash pickup, recycling, dumpster rental, and more.",
-  keywords: "trash service FAQ, recycling questions, dumpster rental FAQ, Ryland Environmental",
+  description: "Frequently asked questions about Ryland Environmental waste management services. Learn about residential trash pickup, recycling, dumpster rental, billing, and more.",
+  keywords: "trash service FAQ, recycling questions, dumpster rental FAQ, Ryland Environmental, waste management questions",
 };
 
 const faqCategories = [
   {
-    category: "Residential Service",
-    faqs: [
-      {
-        question: "What day is my trash pickup?",
-        answer: "Pickup days vary by location. Use our address search on the residential page to find your specific pickup schedule, or contact your local Ryland office.",
-      },
-      {
-        question: "How should I place my cart for pickup?",
-        answer: "Place carts 3-5 feet from the roadway and 3-5 feet from any obstructions such as poles, mailboxes, cars, or other carts. Handles should face the house with arrows on the lid facing toward the curb.",
-      },
-      {
-        question: "What time should my cart be out?",
-        answer: "Carts must be at the curb by 6:00 AM on your pickup day. We recommend placing them out the night before to ensure they're ready when our trucks arrive.",
-      },
-      {
-        question: "Can I schedule bulky item pickup?",
-        answer: "Yes! Each customer can schedule 2 bulky items per week as part of standard residential service. Bulky items include furniture and appliances. Construction debris and extra garbage bags are not included.",
-      },
-      {
-        question: "Do I need to bag my trash?",
-        answer: "Yes, please bag all trash to help prevent litter and keep your cart clean. This also helps our automated trucks operate efficiently.",
-      },
-      {
-        question: "How do I start residential service?",
-        answer: "Visit our residential page and enter your address to check availability in your area. You can sign up online or contact your local office for assistance.",
-      },
-      {
-        question: "What if my trash wasn't picked up?",
-        answer: "First, verify it was your scheduled pickup day. If so, contact your local Ryland office. Common reasons for missed pickups include blocked access, carts not at the curb by 6 AM, or holiday schedule changes.",
-      },
-      {
-        question: "Do you offer recycling service?",
-        answer: "Yes, recycling is available at most locations. Check with your local office for recycling guidelines and pickup schedules in your area.",
-      },
-    ],
-  },
-  {
-    category: "Commercial Dumpsters",
-    faqs: [
-      {
-        question: "What size dumpsters are available for businesses?",
-        answer: "We offer 4, 6, and 8 cubic yard front-load dumpsters for commercial customers. Larger roll-off containers are also available for businesses with higher waste volumes.",
-      },
-      {
-        question: "How often will my dumpster be emptied?",
-        answer: "Pickup frequency depends on your business needs. We offer weekly, bi-weekly, or custom schedules. Contact us to determine the best pickup schedule for your waste volume.",
-      },
-      {
-        question: "Can I change my pickup schedule?",
-        answer: "Yes, we can adjust your pickup schedule as your business needs change. Contact your local office to modify your service.",
-      },
-      {
-        question: "What can I put in a commercial dumpster?",
-        answer: "Commercial dumpsters are for general business waste. Hazardous materials, liquids, electronics, and certain other items are prohibited. Contact us for a complete list of accepted materials.",
-      },
-    ],
-  },
-  {
-    category: "Roll-Off Dumpsters",
-    faqs: [
-      {
-        question: "What sizes of roll-off containers do you offer?",
-        answer: "We offer 20, 30, and 40 cubic yard roll-off containers for construction, demolition, and large cleanout projects.",
-      },
-      {
-        question: "How long can I keep a roll-off dumpster?",
-        answer: "Standard rental periods vary. Contact us to discuss your project timeline and we'll work with you on a rental period that fits your needs.",
-      },
-      {
-        question: "How do I order a roll-off dumpster?",
-        answer: "You can order online at app.trashjoes.com/h/ryland or call us at (229) 382-4411. We'll schedule delivery based on your project start date.",
-      },
-      {
-        question: "What can I put in a roll-off dumpster?",
-        answer: "Roll-offs accept construction debris, demolition materials, furniture, appliances, and general cleanout waste. Hazardous materials, tires, batteries, and certain other items are prohibited.",
-      },
-      {
-        question: "Do you offer same-day delivery?",
-        answer: "Same-day delivery may be available depending on location and container availability. Call us to check availability for your area.",
-      },
-    ],
-  },
-  {
-    category: "Billing & Account",
+    category: "Billing & Payments",
     faqs: [
       {
         question: "How do I pay my bill?",
-        answer: "You can pay online through our customer portal at rylandenvironmental-portal.amcsplatform.com, or call our office to pay by phone.",
+        answer: "You can pay your bill online through your My Account portal at any time. We also accept payments by phone, by mail, or in person at any of our local office locations. For your convenience, we offer autopay options to ensure you never miss a payment.",
       },
       {
-        question: "When is my payment due?",
-        answer: "Payment terms vary by service type. Check your invoice or customer portal for your specific due date.",
+        question: "How do I set up autopay?",
+        answer: "Log in to your My Account portal and navigate to the payment settings section. From there, you can enter your preferred payment method and enable automatic payments. Your account will be charged automatically each billing cycle.",
       },
       {
-        question: "How do I update my account information?",
-        answer: "Log into the customer portal to update your contact information, or call your local Ryland office for assistance.",
+        question: "When is my bill due?",
+        answer: "Bills are due on the date printed on your invoice, typically 30 days from the billing date. Late payments may result in service interruption or additional fees. We recommend setting up autopay to avoid any missed payments.",
       },
       {
-        question: "How do I cancel service?",
-        answer: "Contact your local Ryland office to cancel or suspend service. We'll coordinate cart pickup if applicable.",
+        question: "What payment methods do you accept?",
+        answer: "We accept all major credit cards (Visa, MasterCard, American Express, Discover), debit cards, electronic checks (ACH), and personal checks. Cash payments can be made in person at our local offices.",
+      },
+      {
+        question: "Why did my bill increase?",
+        answer: "Rate adjustments may occur due to fuel surcharges, disposal cost changes, or annual rate updates. If you have questions about a specific charge, please contact our customer service team or check your invoice for detailed line items.",
+      },
+      {
+        question: "Can I get a refund if I cancel service?",
+        answer: "If you prepaid for services and cancel before the service period ends, you may be eligible for a prorated refund. Please contact our customer service team to discuss your specific situation.",
+      },
+      {
+        question: "Do you offer senior or military discounts?",
+        answer: "Discount availability varies by service area. Please contact your local Ryland Environmental office to inquire about available discounts in your community.",
       },
     ],
   },
   {
-    category: "HOA & Municipal Services",
+    category: "Account Management",
     faqs: [
       {
-        question: "Do you offer HOA waste management contracts?",
-        answer: "Yes! We partner with homeowners associations to provide community-wide trash and recycling service. Contact us to discuss your HOA's needs.",
+        question: "How do I start new service?",
+        answer: "Starting service is easy! Complete our online Service Agreement Form on our website, or call your local Ryland Environmental office. We'll set up your account and schedule your first pickup, typically within a few business days.",
       },
       {
-        question: "Can our town contract with Ryland for residential service?",
-        answer: "Absolutely. We work with municipalities and towns across Georgia to provide residential waste services. Contact us to learn more about municipal partnerships.",
+        question: "How do I cancel my service?",
+        answer: "To cancel service, please contact our customer service team at least one week before your next scheduled pickup. You'll need to return any Ryland Environmental containers and ensure your account balance is paid in full.",
       },
       {
-        question: "What are the benefits of an HOA or municipal contract?",
-        answer: "Contract customers benefit from consistent community-wide service, simplified billing, dedicated support, and often competitive pricing.",
+        question: "How do I update my contact information?",
+        answer: "Log in to your My Account portal to update your phone number, email address, or mailing address. You can also call our customer service team to make changes over the phone.",
+      },
+      {
+        question: "How do I access my account online?",
+        answer: "Visit the My Account portal link at the top of our website. If you're a new user, you'll need to register using your account number found on your invoice. Existing users can log in with their email and password.",
+      },
+      {
+        question: "Can I transfer my service to a new address?",
+        answer: "Yes! If you're moving within our service area, contact us to transfer your service to your new address. We'll coordinate container pickup at your old address and delivery to your new location.",
+      },
+      {
+        question: "How do I request an additional cart or larger container?",
+        answer: "Contact our customer service team to request additional or larger containers. Additional containers may result in an adjusted service rate. We offer various cart sizes to meet your household needs.",
+      },
+    ],
+  },
+  {
+    category: "Pickup Schedule & Service",
+    faqs: [
+      {
+        question: "What day is my trash pickup?",
+        answer: "Your pickup day depends on your location and service type. Log in to your My Account portal to view your schedule, or contact your local office. New customers receive their pickup day during service setup.",
+      },
+      {
+        question: "What time should I have my cart out?",
+        answer: "Place your cart at the curb by 6:00 AM on your scheduled pickup day. Drivers may arrive at any time during the day, and carts placed out late may be missed.",
+      },
+      {
+        question: "What if my trash wasn't picked up?",
+        answer: "If your trash wasn't collected on your scheduled day, first verify it was a regular pickup day (not a holiday). Then contact our customer service team to report the missed pickup. We'll work to resolve the issue promptly.",
+      },
+      {
+        question: "Do you pick up on holidays?",
+        answer: "We observe major holidays and adjust pickup schedules accordingly. Check our Holiday Schedule page on our website for specific dates and schedule changes. Generally, if your pickup falls on a holiday, collection moves to the next business day.",
+      },
+      {
+        question: "What if I have extra trash that doesn't fit in my cart?",
+        answer: "Occasional overflow can often be placed in bags next to your cart. For regular overages, consider upgrading to a larger cart or adding a second container. Contact us to discuss the best option for your needs.",
+      },
+      {
+        question: "How do I schedule a bulk item pickup?",
+        answer: "Contact your local Ryland Environmental office to schedule a bulk item pickup. Additional fees may apply depending on the item. Please describe the items when calling so we can provide accurate pricing.",
+      },
+    ],
+  },
+  {
+    category: "Recycling",
+    faqs: [
+      {
+        question: "What items can I recycle?",
+        answer: "Accepted recyclables typically include paper, cardboard, plastic bottles and containers (#1-7), aluminum and steel cans, and glass bottles and jars. Please rinse containers and keep materials loose (not bagged) in your recycling cart.",
+      },
+      {
+        question: "What items are NOT recyclable?",
+        answer: "Do not place plastic bags, Styrofoam, food-contaminated items, electronics, batteries, hazardous materials, or yard waste in your recycling cart. When in doubt, throw it out—contamination affects the entire recycling stream.",
+      },
+      {
+        question: "Do I need to separate my recyclables?",
+        answer: "No, we offer single-stream recycling. Simply place all accepted recyclable materials loose in your recycling cart. Our facilities sort materials after collection.",
+      },
+      {
+        question: "Why is recycling important?",
+        answer: "Recycling conserves natural resources, reduces landfill waste, saves energy, and decreases pollution. By recycling with Ryland Environmental, you're helping protect Georgia's environment for future generations.",
+      },
+    ],
+  },
+  {
+    category: "Residential Service",
+    faqs: [
+      {
+        question: "What size carts do you offer?",
+        answer: "We offer residential carts in multiple sizes to fit your household needs. Standard options include 65-gallon and 95-gallon carts. Contact us to discuss which size is right for your family.",
+      },
+      {
+        question: "How should I position my cart for pickup?",
+        answer: "Place your cart at the curb with the lid opening facing the street. Keep carts at least 3 feet away from mailboxes, vehicles, and other obstacles. This allows our automated trucks to safely empty your container.",
+      },
+      {
+        question: "What if my cart is damaged or missing?",
+        answer: "Report damaged or missing carts to our customer service team immediately. We'll arrange for repair or replacement, typically within a few business days at no charge for normal wear and tear.",
+      },
+      {
+        question: "Can I use my own trash cans instead of your carts?",
+        answer: "Our service requires the use of Ryland Environmental carts, which are designed for our automated collection trucks. Using our carts ensures safe, efficient pickup and protects our drivers from injury.",
+      },
+    ],
+  },
+  {
+    category: "Commercial & Roll-Off Dumpster Service",
+    faqs: [
+      {
+        question: "What size dumpsters do you offer for businesses?",
+        answer: "We offer commercial dumpsters ranging from 2-yard to 8-yard containers, suitable for restaurants, retail stores, offices, and other businesses. Our team will help you select the right size based on your waste volume.",
+      },
+      {
+        question: "How often can I schedule commercial pickups?",
+        answer: "Commercial pickup frequency is customized to your business needs—from once weekly to multiple times per day. We'll work with you to create a schedule that keeps your property clean and compliant.",
+      },
+      {
+        question: "What size roll-off dumpsters are available?",
+        answer: "Our industrial roll-off dumpsters range from 20-yard to 40-yard containers, perfect for construction projects, renovations, cleanouts, and large-scale waste disposal needs.",
+      },
+      {
+        question: "How do I rent a roll-off dumpster?",
+        answer: "Contact your local Ryland Environmental office to schedule roll-off delivery. We'll discuss your project, recommend the appropriate size, and arrange delivery and pickup dates that work for your timeline.",
+      },
+      {
+        question: "What can I put in a roll-off dumpster?",
+        answer: "Roll-off dumpsters accept construction debris, furniture, appliances (with doors removed), yard waste, and general household junk. Hazardous materials, tires, batteries, and certain electronics are prohibited. Ask us about specific items.",
+      },
+      {
+        question: "How long can I keep a roll-off dumpster?",
+        answer: "Standard rental periods vary by location and project type. Contact us to discuss your timeline—we offer flexible rental periods to accommodate your needs.",
+      },
+    ],
+  },
+  {
+    category: "Special Items & Hazardous Waste",
+    faqs: [
+      {
+        question: "Do you pick up appliances?",
+        answer: "Yes, we can pick up most large appliances including refrigerators, washers, dryers, and stoves. Refrigerators and freezers must have doors removed for safety. Additional fees may apply—contact us to schedule.",
+      },
+      {
+        question: "How do I dispose of electronics?",
+        answer: "Electronics like TVs, computers, and monitors require special handling and are not accepted in regular trash or recycling. Contact your local office for e-waste disposal options or local drop-off events.",
+      },
+      {
+        question: "Where can I dispose of hazardous waste?",
+        answer: "Household hazardous waste (paint, chemicals, batteries, motor oil) cannot be placed in regular trash. Check with your local Georgia county for hazardous waste collection events and permanent drop-off locations.",
+      },
+      {
+        question: "Do you pick up yard waste?",
+        answer: "Yard waste services vary by location. Contact your local Ryland Environmental office to learn about yard waste collection options in your area, including seasonal programs.",
+      },
+      {
+        question: "Can I throw away furniture in my regular trash cart?",
+        answer: "Small items that fit in your cart with the lid closed can be disposed of normally. Large furniture items require a bulk pickup—contact us to schedule and get pricing.",
+      },
+    ],
+  },
+  {
+    category: "About Ryland Environmental",
+    faqs: [
+      {
+        question: "Is Ryland Environmental locally owned?",
+        answer: "Yes! Ryland Environmental is a true family-owned and locally operated company serving Georgia communities since 2014. Our team lives in the communities we serve—you're not just a number, you're our neighbor.",
+      },
+      {
+        question: "What areas do you serve?",
+        answer: "We proudly serve communities across Georgia including Augusta, Baxley, Dublin, Houston County, Macon, Milledgeville, Savannah, Tifton, Waycross, and surrounding areas. Visit our Locations page to find your local office.",
+      },
+      {
+        question: "How do I contact my local office?",
+        answer: "Visit our Locations page to find the Ryland Environmental branch serving your area. Each location has dedicated staff ready to assist with your waste management needs.",
+      },
+      {
+        question: "Are you hiring?",
+        answer: "We're always looking for great people to join our team! Visit our Careers page to view current job openings and apply online. We offer competitive pay and benefits.",
+      },
+      {
+        question: "Do you offer municipal services?",
+        answer: "Yes, we partner with cities and counties throughout Georgia to provide reliable municipal waste collection services. Contact us to learn how we can serve your community.",
       },
     ],
   },
@@ -161,7 +252,7 @@ export default function FAQPage() {
             {faqCategories.map((cat, index) => (
               <a
                 key={index}
-                href={`#${cat.category.toLowerCase().replace(/\s+/g, '-')}`}
+                href={`#${cat.category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')}`}
                 className="px-4 py-2 rounded-full bg-gray-100 text-gray-700 text-sm font-medium hover:bg-primary-50 hover:text-primary-700 transition-colors"
               >
                 {cat.category}
@@ -177,8 +268,8 @@ export default function FAQPage() {
           {faqCategories.map((category, catIndex) => (
             <div
               key={catIndex}
-              id={category.category.toLowerCase().replace(/\s+/g, '-')}
-              className="mb-12"
+              id={category.category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')}
+              className="mb-12 scroll-mt-20"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
                 {category.category}
@@ -206,7 +297,7 @@ export default function FAQPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Still Have Questions?</h2>
           <p className="text-gray-600 mb-6">
-            Can't find what you're looking for? Contact our team and we'll be happy to help.
+            Can&apos;t find what you&apos;re looking for? Contact our team and we&apos;ll be happy to help.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

@@ -171,8 +171,49 @@ export default function RollOffPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* FAQs */}
       <section className="py-12 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Roll-Off Dumpster FAQs</h2>
+            <p className="text-gray-600">Common questions about roll-off container rental</p>
+          </div>
+          
+          <div className="space-y-4">
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What size roll-off dumpsters are available?</h3>
+              <p className="text-gray-600">Our industrial roll-off dumpsters range from 20-yard to 40-yard containers, perfect for construction projects, renovations, cleanouts, and large-scale waste disposal needs.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I rent a roll-off dumpster?</h3>
+              <p className="text-gray-600">Contact your local Ryland Environmental office or order online to schedule roll-off delivery. We&apos;ll discuss your project, recommend the appropriate size, and arrange delivery and pickup dates that work for your timeline.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What can I put in a roll-off dumpster?</h3>
+              <p className="text-gray-600">Roll-off dumpsters accept construction debris, furniture, appliances (with doors removed), yard waste, and general household junk. Hazardous materials, tires, batteries, and certain electronics are prohibited.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">How long can I keep a roll-off dumpster?</h3>
+              <p className="text-gray-600">Standard rental periods vary by location and project type. Contact us to discuss your timeline—we offer flexible rental periods to accommodate your needs.</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link
+              href="/faq#commercial-and-roll-off-dumpster-service"
+              className="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700"
+            >
+              View All FAQs
+              <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-12 bg-gray-50">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready to Order?</h2>
           <p className="text-gray-600 mb-6">

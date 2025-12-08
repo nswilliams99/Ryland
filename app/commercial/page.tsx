@@ -259,8 +259,49 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* FAQs */}
       <section className="py-12 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Commercial Dumpster FAQs</h2>
+            <p className="text-gray-600">Common questions about business waste service</p>
+          </div>
+          
+          <div className="space-y-4">
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What size dumpsters do you offer for businesses?</h3>
+              <p className="text-gray-600">We offer commercial dumpsters ranging from 2-yard to 8-yard containers, suitable for restaurants, retail stores, offices, and other businesses. Our team will help you select the right size based on your waste volume.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">How often can I schedule commercial pickups?</h3>
+              <p className="text-gray-600">Commercial pickup frequency is customized to your business needs—from once weekly to multiple times per day. We&apos;ll work with you to create a schedule that keeps your property clean and compliant.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What can I put in a commercial dumpster?</h3>
+              <p className="text-gray-600">Commercial dumpsters are for general business waste. Hazardous materials, liquids, electronics, and certain other items are prohibited. Contact us for a complete list of accepted materials.</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I start commercial service?</h3>
+              <p className="text-gray-600">Starting service is easy! Complete our online Service Agreement Form on our website, or call your local Ryland Environmental office. We&apos;ll set up your account and schedule your first pickup, typically within a few business days.</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link
+              href="/faq#commercial-and-roll-off-dumpster-service"
+              className="inline-flex items-center text-accent-600 font-semibold hover:text-accent-700"
+            >
+              View All FAQs
+              <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-12 bg-gray-50">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-6">

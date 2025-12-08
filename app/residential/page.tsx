@@ -61,27 +61,27 @@ const serviceAreas = [
 const faqs = [
   {
     question: "What day is my trash pickup?",
-    answer: "Pickup days vary by location. Enter your address in the search bar above to find your specific pickup schedule, or contact your local Ryland office.",
+    answer: "Your pickup day depends on your location and service type. Log in to your My Account portal to view your schedule, or contact your local office. New customers receive their pickup day during service setup.",
   },
   {
-    question: "How should I place my cart for pickup?",
-    answer: "Place carts 3-5 feet from the roadway and 3-5 feet from any obstructions such as poles, mailboxes, cars, or other carts. Handles should face the house with arrows on the lid facing toward the curb.",
+    question: "What time should I have my cart out?",
+    answer: "Place your cart at the curb by 6:00 AM on your scheduled pickup day. Drivers may arrive at any time during the day, and carts placed out late may be missed.",
   },
   {
-    question: "What time should my cart be out?",
-    answer: "Carts must be at the curb by 6:00 AM on your pickup day. We recommend placing them out the night before.",
+    question: "How should I position my cart for pickup?",
+    answer: "Place your cart at the curb with the lid opening facing the street. Keep carts at least 3 feet away from mailboxes, vehicles, and other obstacles. This allows our automated trucks to safely empty your container.",
   },
   {
-    question: "Can I schedule bulky item pickup?",
-    answer: "Yes! Each customer can schedule 2 bulky items per week as part of standard residential service. Bulky items include furniture and appliances. Construction debris and extra garbage bags are not covered.",
+    question: "What if my trash wasn't picked up?",
+    answer: "If your trash wasn't collected on your scheduled day, first verify it was a regular pickup day (not a holiday). Then contact our customer service team to report the missed pickup. We'll work to resolve the issue promptly.",
   },
   {
-    question: "Do I need to bag my trash?",
-    answer: "Yes, please bag all trash to help prevent litter and keep your cart clean.",
+    question: "What size carts do you offer?",
+    answer: "We offer residential carts in multiple sizes to fit your household needs. Standard options include 65-gallon and 95-gallon carts. Contact us to discuss which size is right for your family.",
   },
   {
-    question: "How do I start residential service?",
-    answer: "Enter your address in the search bar to check availability in your area. For HOAs and contract towns, contact us directly for partnership information.",
+    question: "How do I schedule a bulk item pickup?",
+    answer: "Contact your local Ryland Environmental office to schedule a bulk item pickup. Additional fees may apply depending on the item. Please describe the items when calling so we can provide accurate pricing.",
   },
 ];
 
