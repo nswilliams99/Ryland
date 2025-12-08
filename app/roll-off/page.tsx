@@ -161,6 +161,40 @@ export default function RollOffPage() {
         </div>
       </section>
 
+      {/* Rain or Shine Section */}
+      <section className="py-12 bg-primary-700">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/rolloff-rain-mud-delivery.png"
+                alt="Ryland Environmental crew delivering roll-off container in muddy conditions"
+                width={800}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="text-white text-center md:text-left">
+              <h2 className="text-3xl font-bold mb-4">Rain or Shine, Ryland is There for You</h2>
+              <p className="text-xl text-primary-100 mb-4">
+                When you need a roll-off, we deliver—no matter the weather or conditions.
+              </p>
+              <p className="text-primary-200 mb-6">
+                Our experienced drivers and crews work through rain, mud, and tough terrain to make sure your project stays on schedule. That's the Ryland difference.
+              </p>
+              <a
+                href="https://app.trashjoes.com/h/ryland"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-accent-600 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors"
+              >
+                Order Your Roll-Off Today
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* We Go Anywhere Section */}
       <section className="py-12 bg-primary-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
