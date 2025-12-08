@@ -300,7 +300,7 @@ export default function ResidentialPage() {
           </div>
 
           {/* Holiday Schedule */}
-          <div className="mb-10 bg-gradient-to-r from-amber-100 via-amber-50 to-primary-50 rounded-2xl p-6 border-2 border-amber-300 shadow-lg">
+          <div className="mb-10 bg-gradient-to-r from-amber-100 via-amber-50 to-primary-50 rounded-2xl p-6 border-4 border-red-500 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <div className="bg-amber-500 text-white p-3 rounded-full">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
