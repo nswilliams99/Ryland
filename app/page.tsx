@@ -15,15 +15,26 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-600 to-primary-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Waste Management & Recycling Services
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
-              Family owned since 2014. You're not just a number, you're our neighbor.
-            </p>
-            <HeroButtons />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+                Waste Management & Recycling Services
+              </h1>
+              <p className="mt-4 text-lg text-primary-100">
+                Family owned since 2014. You're not just a number, you're our neighbor.
+              </p>
+              <HeroButtons />
+            </div>
+            <div className="hidden lg:flex justify-center">
+              <div className="rounded-xl overflow-hidden shadow-2xl max-w-sm">
+                <img
+                  src="/images/ryland-dogs-best-friend.png"
+                  alt="Ryland Environmental driver greeting a friendly dog - we're part of your neighborhood"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
