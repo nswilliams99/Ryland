@@ -100,6 +100,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Kids Love Trash Trucks */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="flex justify-center">
+              <div className="rounded-xl overflow-hidden shadow-lg max-w-sm">
+                <img
+                  src="/images/ryland-kids-love-trucks.png"
+                  alt="Young child watching a Ryland Environmental truck drive by"
+                  className="w-full h-96 object-cover"
+                />
+              </div>
+            </div>
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">The Kids Can't Get Enough</h2>
+              <p className="text-xl text-gray-700 mb-4">
+                Every week, our drivers get a little fan club waiting at the driveway.
+              </p>
+              <p className="text-gray-600 mb-6">
+                You can expect your trashman to give a wave—and hope to see your little one next week. It's the small moments that make our job special.
+              </p>
+              <div className="bg-primary-50 rounded-lg p-4 border border-primary-200">
+                <p className="text-primary-800 font-medium">
+                  Stop by any of our offices to pick up a free Ryland Trash Truck toy for your little one!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 10 Year Celebration */}
       <section className="py-12 bg-primary-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
