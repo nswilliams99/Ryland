@@ -80,17 +80,29 @@ export default function RollOffPage() {
         </div>
       </section>
 
-      {/* Featured Truck Image */}
+      {/* Featured Images */}
       <section className="py-8 bg-white">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
-            <Image
-              src="/images/rolloff-truck-dublin.png"
-              alt="Ryland Environmental roll-off truck delivering container in Dublin, Georgia"
-              fill
-              className="object-cover"
-              priority
-            />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/rolloff-truck-dublin.png"
+                alt="Ryland Environmental roll-off truck delivering container in Dublin, Georgia"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/rolloff-construction-site.png"
+                alt="Ryland Environmental roll-off dumpster at commercial construction site"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

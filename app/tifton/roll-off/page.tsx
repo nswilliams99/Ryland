@@ -79,6 +79,19 @@ export default function RollOffPage() {
         </div>
       </section>
 
+      {/* Construction Site Image */}
+      <section className="py-8 bg-gray-50">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src="/images/rolloff-construction-site.png" 
+              alt="Ryland Environmental roll-off dumpster at commercial construction site in Georgia" 
+              className="w-full h-64 md:h-80 object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* 3 Simple Steps */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
