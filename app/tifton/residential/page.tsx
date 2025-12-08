@@ -278,6 +278,23 @@ export default function ResidentialPage() {
                   <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
                   <p className="text-gray-700"><strong>Out by 6:00 AM</strong> - Drivers may arrive at any time during the day</p>
                 </div>
+                
+                {/* What Can/Can't Go In Trash Link */}
+                <Link 
+                  href="/tifton/faq/what-can-i-put-in-trash"
+                  className="block mt-6 bg-primary-50 border-2 border-primary-200 rounded-xl p-4 hover:bg-primary-100 hover:border-primary-300 transition-colors"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">🗑️</span>
+                    <div>
+                      <p className="font-bold text-primary-800">What Can & Can't Go In Your Trash Cart?</p>
+                      <p className="text-primary-600 text-sm">Learn what items are accepted and what to avoid</p>
+                    </div>
+                    <svg className="w-5 h-5 text-primary-600 ml-auto flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
