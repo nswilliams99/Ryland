@@ -123,6 +123,7 @@ export default function CommercialPage() {
                   alt="Stationary Compactor"
                   fill
                   className="object-contain p-4"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-6">
@@ -146,6 +147,7 @@ export default function CommercialPage() {
                   alt="Self-Contained Compactor"
                   fill
                   className="object-contain p-4"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-6">
@@ -160,6 +162,68 @@ export default function CommercialPage() {
                   Get A Quote
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Transfer Station Section */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">How a Transfer Station Works</h2>
+            <p className="text-gray-600">Efficient waste consolidation for your community</p>
+          </div>
+          
+          <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200">
+            <div className="relative w-full h-48 md:h-64 mb-8 bg-white rounded-lg overflow-hidden">
+              <Image
+                src="/images/transfer-station-diagram.png"
+                alt="Transfer station process diagram showing waste flow from Your Town to landfill"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 800px"
+              />
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">What is a Transfer Station?</h3>
+                <p className="text-gray-600 mb-4">
+                  A transfer station is a facility where waste from your town and surrounding municipalities is collected and consolidated before being transported to its final destination - whether that&apos;s a county landfill, alternative landfill, or materials recovery facility (MRF).
+                </p>
+                <p className="text-gray-600">
+                  This system allows for more efficient waste transportation by combining smaller loads into larger, more cost-effective shipments.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">The Process</h3>
+                <ol className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                    <span className="text-gray-600"><strong>Collection:</strong> City haulers collect commercial and residential waste from your town</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                    <span className="text-gray-600"><strong>Consolidation:</strong> Waste is brought to the local transfer station where it&apos;s consolidated</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                    <span className="text-gray-600"><strong>Transport:</strong> Private haulers transport larger loads to the county landfill or recycling facility</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            
+            <div className="mt-6 pt-6 border-t border-gray-200 text-center">
+              <p className="text-gray-600 mb-4">Ryland Environmental operates transfer stations in select Georgia locations.</p>
+              <a
+                href="tel:229-382-4411"
+                className="inline-flex items-center justify-center rounded-full bg-primary-700 px-6 py-2 text-sm font-semibold text-white hover:bg-primary-800 transition-colors"
+              >
+                Contact Us for Details
+              </a>
             </div>
           </div>
         </div>
