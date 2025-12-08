@@ -376,6 +376,16 @@ export default function ResidentialPage() {
           </div>
         </div>
       </section>
+
+      {/* SEO Service Area Text */}
+      <section className="py-8 bg-white border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-semibold text-gray-900 mb-3">Residential Trash Service Across Georgia</h2>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Ryland Environmental provides residential waste removal and recycling services throughout Georgia. Our <strong>Augusta office</strong> serves Augusta, Evans, Martinez, Grovetown, and Waynesboro. The <strong>Baxley office</strong> covers Baxley, Jesup, and Vidalia. Our <strong>Dublin office</strong> serves Dublin and Eastman. The <strong>Houston County office</strong> provides service to Warner Robins, Perry, and Centerville. Our <strong>Macon office</strong> serves Macon and Forsyth. The <strong>Milledgeville office</strong> covers Milledgeville and Sandersville. Our <strong>Savannah office</strong> serves Pooler, Rincon, Richmond Hill, Statesboro, and Garden City with commercial and roll-off services. The <strong>Tifton office</strong> provides service to Tifton and Tift County. Our <strong>Waycross office</strong> serves the Waycross area. Contact your local office for residential trash pickup, recycling services, and weekly curbside collection.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

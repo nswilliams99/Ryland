@@ -282,6 +282,16 @@ export default function CommercialPage() {
           </div>
         </div>
       </section>
+
+      {/* SEO Service Area Text */}
+      <section className="py-8 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-semibold text-gray-900 mb-3">Commercial Dumpster Service Across Georgia</h2>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Ryland Environmental provides commercial dumpster rental and business waste management throughout Georgia. Our <strong>Augusta office</strong> serves Augusta, Evans, Martinez, Grovetown, and Waynesboro. The <strong>Baxley office</strong> covers Baxley, Jesup, and Vidalia. Our <strong>Dublin office</strong> serves Dublin and Eastman. The <strong>Houston County office</strong> provides service to Warner Robins, Perry, and Centerville. Our <strong>Macon office</strong> serves Macon and Forsyth. The <strong>Milledgeville office</strong> covers Milledgeville and Sandersville. Our <strong>Savannah office</strong> serves Savannah, Pooler, Rincon, Richmond Hill, Statesboro, and Garden City. The <strong>Tifton office</strong> provides commercial dumpster service to Tifton and Tift County. Our <strong>Waycross office</strong> serves the Waycross area. We offer 4-yard, 6-yard, and 8-yard front-load containers, industrial compactors, and transfer station services for businesses of all sizes.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
