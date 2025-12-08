@@ -26,13 +26,13 @@ const containers = [
     size: "20 Yard",
     dimensions: "15' L x 8' W x 4' H",
     ideal: "Small cleanouts, bathroom renovations, garage cleanups",
-    image: "/images/20-yard-rolloff.jpg",
+    image: "/images/20-yard-container-branded.png",
   },
   {
     size: "30 Yard",
     dimensions: "22' L x 8' W x 6' H",
     ideal: "Medium construction projects, roofing, home renovations",
-    image: "/images/30-yard-rolloff.jpg",
+    image: "/images/30-yard-container-branded.png",
   },
   {
     size: "40 Yard",
@@ -76,6 +76,21 @@ export default function RollOffPage() {
                 Call (229) 382-4411
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Truck Image */}
+      <section className="py-8 bg-white">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/rolloff-truck-dublin.png"
+              alt="Ryland Environmental roll-off truck delivering container in Dublin, Georgia"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>

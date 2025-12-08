@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
@@ -120,6 +121,21 @@ export default function ResidentialPage() {
                 </span>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Image Section */}
+      <section className="py-8 bg-white">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/residential-carts-neighborhood.png"
+              alt="Ryland Environmental residential trash carts lined up for pickup in a Georgia neighborhood"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
@@ -102,6 +103,64 @@ export default function CommercialPage() {
             >
               Get a Quote
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Industrial Compactors */}
+      <section className="py-12 bg-gray-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Industrial Compactors</h2>
+            <p className="text-gray-600">High-volume waste solutions for large businesses</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              <div className="relative h-56 bg-gray-800">
+                <Image
+                  src="/images/stationary-compactor.png"
+                  alt="Stationary Compactor"
+                  fill
+                  className="object-contain p-4"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Stationary Compactors</h3>
+                <p className="text-gray-600 mb-4">
+                  These compactors have a container attached to a compaction unit that is anchored to your property. When emptied, the rear of the container is open. Best for dry waste like cardboard and plastics. These work well for manufacturers.
+                </p>
+                <a
+                  href="tel:229-382-4411"
+                  className="inline-flex items-center justify-center rounded-full bg-primary-700 px-6 py-2 text-sm font-semibold text-white hover:bg-primary-800 transition-colors"
+                >
+                  Get A Quote
+                </a>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+              <div className="relative h-56 bg-gray-800">
+                <Image
+                  src="/images/self-contained-compactor.png"
+                  alt="Self-Contained Compactor"
+                  fill
+                  className="object-contain p-4"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Self-Contained Compactors</h3>
+                <p className="text-gray-600 mb-4">
+                  These compactors are an all in one unit. The whole unit is sealed and is taken to be emptied. Best for wet wastes like food, medical. These are the best option for businesses like grocery stores, malls, hospitals, etc.
+                </p>
+                <a
+                  href="tel:229-382-4411"
+                  className="inline-flex items-center justify-center rounded-full bg-primary-700 px-6 py-2 text-sm font-semibold text-white hover:bg-primary-800 transition-colors"
+                >
+                  Get A Quote
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
