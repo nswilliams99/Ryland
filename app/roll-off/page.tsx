@@ -265,6 +265,59 @@ export default function RollOffPage() {
         </div>
       </section>
 
+      {/* Residential Roll-Off Section */}
+      <section className="py-12 bg-gray-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="rounded-xl overflow-hidden shadow-xl">
+              <Image
+                src="/images/rolloff-residential-home.png"
+                alt="Ryland Environmental roll-off dumpster at residential home for renovation project"
+                width={800}
+                height={600}
+                className="w-full h-80 object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">When You Need a Roll-Off at Home</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Home renovations, cleanouts, roofing projects, or landscaping—we deliver roll-off dumpsters right to your driveway.
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-center gap-3">
+                  <span className="text-primary-600 text-xl">✓</span>
+                  Home renovations & remodeling
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-primary-600 text-xl">✓</span>
+                  Garage & basement cleanouts
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-primary-600 text-xl">✓</span>
+                  Roofing & siding projects
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-primary-600 text-xl">✓</span>
+                  Landscaping & yard debris
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-primary-600 text-xl">✓</span>
+                  Estate cleanouts & moving
+                </li>
+              </ul>
+              <a
+                href="https://app.trashjoes.com/h/ryland"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-accent-600 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors"
+              >
+                Order Your Dumpster
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Driver / Team Image */}
       <section className="py-8 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
