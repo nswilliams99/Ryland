@@ -52,7 +52,7 @@ export default function HolidaySchedule() {
                   </svg>
                   <h3 className="text-lg font-bold text-amber-800">New Year's Day</h3>
                 </div>
-                <p className="text-amber-700 text-sm">January 1st</p>
+                <p className="text-amber-700 text-sm">January 1</p>
               </div>
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
                 <div className="flex items-center mb-3">
@@ -61,7 +61,7 @@ export default function HolidaySchedule() {
                   </svg>
                   <h3 className="text-lg font-bold text-amber-800">Memorial Day</h3>
                 </div>
-                <p className="text-amber-700 text-sm">Last Monday of May</p>
+                <p className="text-amber-700 text-sm">Last Monday in May</p>
               </div>
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
                 <div className="flex items-center mb-3">
@@ -70,16 +70,54 @@ export default function HolidaySchedule() {
                   </svg>
                   <h3 className="text-lg font-bold text-amber-800">Thanksgiving</h3>
                 </div>
-                <p className="text-amber-700 text-sm">Fourth Thursday of November</p>
+                <p className="text-amber-700 text-sm">Fourth Thursday in November</p>
               </div>
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
                 <div className="flex items-center mb-3">
                   <svg className="w-8 h-8 text-amber-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  <h3 className="text-lg font-bold text-amber-800">Christmas</h3>
+                  <h3 className="text-lg font-bold text-amber-800">Christmas Day</h3>
                 </div>
-                <p className="text-amber-700 text-sm">December 25th</p>
+                <p className="text-amber-700 text-sm">December 25</p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Holidays with Regular Pickup</h2>
+            <p className="text-gray-700 mb-6">
+              We operate on a normal schedule for these federal holidays. Your trash will be picked up on your regular pickup day.
+            </p>
+            
+            <div className="bg-primary-50 border border-primary-200 rounded-xl p-6 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex justify-between items-center py-2 border-b border-primary-200 last:border-0">
+                  <span className="font-medium text-primary-800">Martin Luther King Jr. Day</span>
+                  <span className="text-primary-600 text-sm">3rd Monday in January</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-primary-200 last:border-0">
+                  <span className="font-medium text-primary-800">Presidents' Day</span>
+                  <span className="text-primary-600 text-sm">3rd Monday in February</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-primary-200 last:border-0">
+                  <span className="font-medium text-primary-800">Juneteenth</span>
+                  <span className="text-primary-600 text-sm">June 19</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-primary-200 last:border-0">
+                  <span className="font-medium text-primary-800">Independence Day</span>
+                  <span className="text-primary-600 text-sm">July 4</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-primary-200 last:border-0">
+                  <span className="font-medium text-primary-800">Labor Day</span>
+                  <span className="text-primary-600 text-sm">1st Monday in September</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-primary-200 last:border-0">
+                  <span className="font-medium text-primary-800">Columbus Day</span>
+                  <span className="text-primary-600 text-sm">2nd Monday in October</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-primary-200 last:border-0 sm:col-span-2">
+                  <span className="font-medium text-primary-800">Veterans Day</span>
+                  <span className="text-primary-600 text-sm">November 11</span>
+                </div>
               </div>
             </div>
 

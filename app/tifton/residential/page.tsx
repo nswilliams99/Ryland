@@ -302,13 +302,80 @@ export default function ResidentialPage() {
           {/* Holiday Schedule */}
           <div className="mb-10">
             <h3 className="text-xl font-bold text-gray-900 mb-4">Holiday Schedule</h3>
-            <p className="text-gray-600 mb-3">Pickup is delayed ONE day after:</p>
-            <div className="flex flex-wrap gap-3">
-              <span className="bg-white px-4 py-2 rounded-full text-gray-700 shadow-sm border border-gray-200">New Year's Day</span>
-              <span className="bg-white px-4 py-2 rounded-full text-gray-700 shadow-sm border border-gray-200">Memorial Day</span>
-              <span className="bg-white px-4 py-2 rounded-full text-gray-700 shadow-sm border border-gray-200">Thanksgiving</span>
-              <span className="bg-white px-4 py-2 rounded-full text-gray-700 shadow-sm border border-gray-200">Christmas</span>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Holidays We're Closed */}
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
+                <h4 className="font-bold text-amber-800 mb-3 flex items-center gap-2">
+                  <span className="text-xl">⚠️</span> Pickup Delayed ONE Day After:
+                </h4>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-amber-700">
+                    <span className="font-medium">New Year's Day</span>
+                    <span className="text-sm">January 1</span>
+                  </div>
+                  <div className="flex justify-between text-amber-700">
+                    <span className="font-medium">Memorial Day</span>
+                    <span className="text-sm">Last Monday in May</span>
+                  </div>
+                  <div className="flex justify-between text-amber-700">
+                    <span className="font-medium">Thanksgiving</span>
+                    <span className="text-sm">4th Thursday in November</span>
+                  </div>
+                  <div className="flex justify-between text-amber-700">
+                    <span className="font-medium">Christmas Day</span>
+                    <span className="text-sm">December 25</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Regular Schedule Holidays */}
+              <div className="bg-primary-50 border border-primary-200 rounded-xl p-5">
+                <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2">
+                  <span className="text-xl">✅</span> Regular Pickup Schedule:
+                </h4>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-primary-700">
+                    <span className="font-medium">MLK Jr. Day</span>
+                    <span className="text-sm">3rd Monday in January</span>
+                  </div>
+                  <div className="flex justify-between text-primary-700">
+                    <span className="font-medium">Presidents' Day</span>
+                    <span className="text-sm">3rd Monday in February</span>
+                  </div>
+                  <div className="flex justify-between text-primary-700">
+                    <span className="font-medium">Juneteenth</span>
+                    <span className="text-sm">June 19</span>
+                  </div>
+                  <div className="flex justify-between text-primary-700">
+                    <span className="font-medium">Independence Day</span>
+                    <span className="text-sm">July 4</span>
+                  </div>
+                  <div className="flex justify-between text-primary-700">
+                    <span className="font-medium">Labor Day</span>
+                    <span className="text-sm">1st Monday in September</span>
+                  </div>
+                  <div className="flex justify-between text-primary-700">
+                    <span className="font-medium">Columbus Day</span>
+                    <span className="text-sm">2nd Monday in October</span>
+                  </div>
+                  <div className="flex justify-between text-primary-700">
+                    <span className="font-medium">Veterans Day</span>
+                    <span className="text-sm">November 11</span>
+                  </div>
+                </div>
+              </div>
             </div>
+            
+            <Link 
+              href="/tifton/faq/holiday-pickup-schedule" 
+              className="inline-flex items-center gap-1 text-primary-600 font-semibold hover:text-primary-700 mt-4"
+            >
+              See full holiday schedule details
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
 
           {/* Service Area Note */}
