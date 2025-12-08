@@ -300,14 +300,21 @@ export default function ResidentialPage() {
           </div>
 
           {/* Holiday Schedule */}
-          <div className="mb-10">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Holiday Schedule</h3>
+          <div className="mb-10 bg-gradient-to-r from-amber-100 via-amber-50 to-primary-50 rounded-2xl p-6 border-2 border-amber-300 shadow-lg">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="bg-amber-500 text-white p-3 rounded-full">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900">Holiday Schedule</h3>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Holidays We're Closed */}
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
-                <h4 className="font-bold text-amber-800 mb-3 flex items-center gap-2">
-                  <span className="text-xl">⚠️</span> Pickup Delayed ONE Day After:
+              <div className="bg-white border-2 border-amber-400 rounded-xl p-5 shadow-md">
+                <h4 className="font-bold text-amber-800 mb-3 flex items-center gap-2 text-lg">
+                  <span className="text-2xl">⚠️</span> Pickup Delayed ONE Day After:
                 </h4>
                 <div className="space-y-2">
                   <div className="flex justify-between text-amber-700">
@@ -330,9 +337,9 @@ export default function ResidentialPage() {
               </div>
 
               {/* Regular Schedule Holidays */}
-              <div className="bg-primary-50 border border-primary-200 rounded-xl p-5">
-                <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2">
-                  <span className="text-xl">✅</span> Regular Pickup Schedule:
+              <div className="bg-white border-2 border-primary-400 rounded-xl p-5 shadow-md">
+                <h4 className="font-bold text-primary-800 mb-3 flex items-center gap-2 text-lg">
+                  <span className="text-2xl">✅</span> Regular Pickup Schedule:
                 </h4>
                 <div className="space-y-2">
                   <div className="flex justify-between text-primary-700">
