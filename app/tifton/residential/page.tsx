@@ -232,9 +232,13 @@ export default function ResidentialPage() {
             <p className="text-gray-600 mt-4">Put cart out by <strong>6:00 AM</strong></p>
             
             {/* When In Doubt Put It Out */}
-            <div className="mt-6 bg-primary-600 text-white rounded-xl p-5 shadow-lg">
-              <p className="text-2xl font-bold text-center">When In Doubt, Put It Out!</p>
-              <p className="text-primary-100 text-center mt-2">Not sure if it's your pickup day? Put your cart out anyway - better safe than sorry!</p>
+            <div className="mt-6 bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white rounded-xl p-6 shadow-xl border-4 border-yellow-300 transform hover:scale-[1.02] transition-transform">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <span className="text-4xl">🗑️</span>
+                <p className="text-3xl font-black text-center uppercase tracking-wide drop-shadow-lg">When In Doubt, Put It Out!</p>
+                <span className="text-4xl">🗑️</span>
+              </div>
+              <p className="text-white text-center text-lg font-medium">Not sure if it's your pickup day? Put your cart out anyway - better safe than sorry!</p>
             </div>
             
             {/* Zone Map */}
