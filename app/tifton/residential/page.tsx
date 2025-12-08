@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
@@ -231,6 +232,40 @@ export default function ResidentialPage() {
             <p className="text-gray-600 mt-4">Put cart out by <strong>6:00 AM</strong></p>
           </div>
 
+          {/* How to Position Your Cart */}
+          <div className="mb-10">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">How to Position Your Cart</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/cart-placement.png"
+                  alt="Diagram showing proper cart placement at curb - wheels against curb, lid facing street, 3 feet from obstacles"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                  <p className="text-gray-700"><strong>Wheels against the curb</strong> - Position cart with wheels touching the curb edge</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                  <p className="text-gray-700"><strong>Lid opening facing street</strong> - Our automated trucks need to grab the cart from the front</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                  <p className="text-gray-700"><strong>3 feet from obstacles</strong> - Keep clear of mailboxes, cars, poles, and other carts</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+                  <p className="text-gray-700"><strong>Out by 6:00 AM</strong> - Drivers may arrive at any time during the day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Holiday Schedule */}
           <div className="mb-10">
             <h3 className="text-xl font-bold text-gray-900 mb-4">Holiday Schedule</h3>
@@ -255,8 +290,53 @@ export default function ResidentialPage() {
         </div>
       </section>
 
+      {/* Part of Your Neighborhood */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Part of Your Neighborhood</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Our drivers aren't just passing through—they're part of the community. They know your street, wave to your kids, and even make friends along the way.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/images/ryland-kid-driveway.webp"
+                alt="Young child watching a Ryland Environmental garbage truck from their driveway in a Georgia neighborhood"
+                width={500}
+                height={600}
+                className="w-full h-80 object-cover"
+              />
+              <div className="bg-gray-50 p-4">
+                <p className="text-gray-700 font-medium text-center">The best part of trash day for the little ones!</p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/images/ryland-dogs-best-friend.png"
+                alt="Ryland Environmental driver greeting a friendly dog next to a red Ryland trash cart"
+                width={500}
+                height={600}
+                className="w-full h-80 object-cover"
+              />
+              <div className="bg-gray-50 p-4">
+                <p className="text-gray-700 font-medium text-center">We're a dog's best friend. Just think what we can do for you!</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <div className="bg-primary-50 rounded-xl p-6 border border-primary-200 inline-block">
+              <p className="text-primary-800 font-medium text-lg">
+                Stop by our Tifton office to pick up a free Ryland Trash Truck toy for your little fan!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Link */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-gray-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Have Questions?</h2>
           <p className="text-gray-600 mb-6">Find answers about pickup schedules, billing, cart placement, and more.</p>
