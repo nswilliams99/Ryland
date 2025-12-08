@@ -206,6 +206,22 @@ export default function ResidentialPage() {
               </a>
             </div>
           </div>
+
+          {/* Trade Show / Partnership Image */}
+          <div className="mt-10 rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/ryland-trade-show-booth.png"
+              alt="Ryland Environmental trade show booth showcasing services for municipalities and HOAs"
+              width={1200}
+              height={400}
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="bg-gray-100 px-6 py-4">
+              <p className="text-gray-700 text-center text-sm">
+                <strong>Ryland Environmental</strong> — Your one-stop for solid waste collection, disposal, and recycling needs. Partnering with municipalities, HOAs, and communities across Georgia since 1964.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

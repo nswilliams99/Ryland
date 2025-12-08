@@ -287,6 +287,20 @@ export default function RollOffPage() {
             </div>
           </div>
 
+          {/* Trade Show / Partnership Image */}
+          <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src="/images/ryland-trade-show-booth.png" 
+              alt="Ryland Environmental trade show booth showcasing industrial waste services, residential carts, and commercial dumpsters" 
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="bg-gray-100 px-6 py-4">
+              <p className="text-gray-700 text-center text-sm">
+                <strong>Ryland Environmental</strong> — Your one-stop for solid waste collection, disposal, and recycling needs. Proudly serving Georgia communities since 1964.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-primary-600 rounded-xl p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-4">Need Industrial or Compactor Service?</h3>
             <p className="text-primary-100 mb-6">Call us to discuss your specific needs. We'll design a custom solution for your operation.</p>
