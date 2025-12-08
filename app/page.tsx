@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import ServicesCarousel from "./components/ServicesCarousel";
 import MyRylandSection from "./components/MyRylandSection";
 import OfficeLocations from "./components/OfficeLocations";
@@ -174,8 +175,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Need Help? Section */}
+      {/* Google Reviews Section */}
       <section className="py-12 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+            <p className="text-lg text-gray-600">See why Georgia families and businesses choose Ryland Environmental</p>
+          </div>
+          <Script src="https://static.elfsight.com/platform/platform.js" strategy="lazyOnload" />
+          <div className="elfsight-app-0c95dd6e-620c-4ffb-a584-f7180d8a80fe" data-elfsight-app-lazy></div>
+        </div>
+      </section>
+
+      {/* Need Help? Section */}
+      <section className="py-12 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Need Help?</h2>
           <p className="text-gray-600 mb-6">
