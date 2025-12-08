@@ -68,6 +68,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Dogs Best Friend */}
+      <section className="py-12 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="order-2 lg:order-1 text-center lg:text-left">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">We're a Dog's Best Friend</h2>
+              <p className="text-xl text-gray-700 mb-4">
+                Just think what we can do for you!
+              </p>
+              <p className="text-gray-600 mb-6">
+                Our drivers are part of your neighborhood. They know the routes, the families, and yes—even the friendly dogs along the way. That's the difference when you choose a family-owned company that treats you like a neighbor, not a number.
+              </p>
+              <a
+                href="tel:229-382-4411"
+                className="inline-flex items-center justify-center rounded-full bg-accent-600 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-accent-700 transition-colors"
+              >
+                Call Us Today
+              </a>
+            </div>
+            <div className="order-1 lg:order-2 flex justify-center">
+              <div className="rounded-xl overflow-hidden shadow-lg max-w-sm">
+                <img
+                  src="/images/ryland-dogs-best-friend.png"
+                  alt="Ryland Environmental driver greeting a friendly dog on his route"
+                  className="w-full h-96 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 10 Year Celebration */}
       <section className="py-12 bg-primary-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
