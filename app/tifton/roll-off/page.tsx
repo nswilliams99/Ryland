@@ -243,11 +243,11 @@ export default function RollOffPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Compactors */}
             <div className="bg-gray-50 rounded-xl overflow-hidden border border-gray-200">
-              <div className="bg-gray-900 p-4">
+              <div className="bg-gray-100 p-0">
                 <img 
-                  src="/images/rolloff/stationary-compactor.png" 
-                  alt="Stationary Compactor for industrial waste management" 
-                  className="w-full h-48 object-contain"
+                  src="/images/compactor-in-service.png" 
+                  alt="Ryland Environmental compactor in service at industrial facility" 
+                  className="w-full h-48 object-cover"
                 />
               </div>
               <div className="p-8">

@@ -160,6 +160,26 @@ export default function CommercialPage() {
         </div>
       </section>
 
+      {/* Compactor in Service */}
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/compactor-in-service.png"
+              alt="Ryland Environmental compactor in service at industrial facility"
+              width={1000}
+              height={500}
+              className="w-full h-72 object-cover"
+            />
+            <div className="bg-primary-700 px-6 py-4">
+              <p className="text-white text-center">
+                <strong>Compactors in Action</strong> — Reducing waste volume up to 75% for warehouses, manufacturing, and high-volume operations across Georgia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Industrial Compactors */}
       <section className="py-12 bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
