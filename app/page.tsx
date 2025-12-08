@@ -27,12 +27,12 @@ export default function Home() {
               </p>
               <HeroButtons />
             </div>
-            <div className="hidden lg:flex justify-center">
-              <div className="rounded-xl overflow-hidden shadow-2xl max-w-sm">
+            <div className="hidden md:flex justify-center">
+              <div className="rounded-xl overflow-hidden shadow-2xl">
                 <img
                   src="/images/ryland-dogs-best-friend.png"
-                  alt="Ryland Environmental driver greeting a friendly dog - we're part of your neighborhood"
-                  className="w-full h-80 object-cover"
+                  alt="Ryland Environmental waste management driver in safety vest greeting friendly white dog next to red Ryland trash cart in Georgia neighborhood"
+                  className="w-80 lg:w-96 h-auto object-cover"
                 />
               </div>
             </div>
