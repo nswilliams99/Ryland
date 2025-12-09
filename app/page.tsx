@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 to-primary-700 text-white overflow-hidden">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-10">
+      <section className="relative bg-gradient-to-br from-primary-600 to-primary-700 text-white overflow-hidden min-h-[400px] md:min-h-[450px]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
           <div className="lg:max-w-xl">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center lg:text-left">
               Waste Management & Recycling Services
@@ -27,12 +27,13 @@ export default function Home() {
             <HeroButtons />
           </div>
         </div>
-        <div className="hidden md:block absolute top-0 right-0 h-full w-1/2 lg:w-[45%]">
+        <div className="hidden md:block absolute top-0 right-0 h-full w-[65%] lg:w-[60%]">
           <img
             src="/images/ryland-dogs-best-friend.png"
             alt="Ryland Environmental waste management driver in safety vest greeting friendly white dog next to red Ryland trash cart in Georgia neighborhood"
-            className="h-full w-full object-cover object-left"
+            className="h-full w-full object-cover object-[85%_center]"
           />
+          <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-primary-600 to-transparent"></div>
         </div>
       </section>
 
