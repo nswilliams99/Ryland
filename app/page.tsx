@@ -15,28 +15,24 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 to-primary-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-                Waste Management & Recycling Services
-              </h1>
-              <p className="mt-4 text-lg text-primary-100">
-                Family owned since 2014. You're not just a number, you're our neighbor.
-              </p>
-              <HeroButtons />
-            </div>
-            <div className="hidden md:flex justify-center">
-              <div className="rounded-xl overflow-hidden shadow-2xl">
-                <img
-                  src="/images/ryland-dogs-best-friend.png"
-                  alt="Ryland Environmental waste management driver in safety vest greeting friendly white dog next to red Ryland trash cart in Georgia neighborhood"
-                  className="w-80 lg:w-96 h-auto object-cover"
-                />
-              </div>
-            </div>
+      <section className="relative bg-gradient-to-br from-primary-600 to-primary-700 text-white overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-10">
+          <div className="lg:max-w-xl">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center lg:text-left">
+              Waste Management & Recycling Services
+            </h1>
+            <p className="mt-4 text-lg text-primary-100 text-center lg:text-left">
+              Family owned since 2014. You're not just a number, you're our neighbor.
+            </p>
+            <HeroButtons />
           </div>
+        </div>
+        <div className="hidden md:block absolute top-0 right-0 h-full w-1/2 lg:w-[45%]">
+          <img
+            src="/images/ryland-dogs-best-friend.png"
+            alt="Ryland Environmental waste management driver in safety vest greeting friendly white dog next to red Ryland trash cart in Georgia neighborhood"
+            className="h-full w-full object-cover object-left"
+          />
         </div>
       </section>
 
