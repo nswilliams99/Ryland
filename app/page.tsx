@@ -18,7 +18,7 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-primary-600 to-primary-700 text-white overflow-hidden min-h-[400px] md:min-h-[450px]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
           <div className="lg:max-w-xl">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center lg:text-left">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center lg:text-left text-white">
               Georgia's Family-Owned Waste Management & Recycling Company
             </h1>
             <p className="mt-4 text-lg text-primary-100 text-center lg:text-left">
