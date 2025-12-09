@@ -19,10 +19,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
           <div className="lg:max-w-xl">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center lg:text-left">
-              Waste Management & Recycling Services
+              Georgia's Family-Owned Waste Management & Recycling Company
             </h1>
             <p className="mt-4 text-lg text-primary-100 text-center lg:text-left">
-              Family owned since 2014. You're not just a number, you're our neighbor.
+              Residential trash pickup, commercial dumpsters, and roll-off rentals across 10 Georgia communities since 2014.
             </p>
             <HeroButtons />
           </div>
