@@ -1,12 +1,34 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.SUPABASE_URL!;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+const supabaseUrl = process.env.SUPABASE_URL || '';
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || '';
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+let _supabase: SupabaseClient | null = null;
+let _supabaseAdmin: SupabaseClient | null = null;
 
-export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+export function getSupabase(): SupabaseClient | null {
+  if (!supabaseUrl || !supabaseAnonKey) {
+    return null;
+  }
+  if (!_supabase) {
+    _supabase = createClient(supabaseUrl, supabaseAnonKey);
+  }
+  return _supabase;
+}
+
+export function getSupabaseAdmin(): SupabaseClient | null {
+  if (!supabaseUrl || !supabaseServiceKey) {
+    return null;
+  }
+  if (!_supabaseAdmin) {
+    _supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
+  }
+  return _supabaseAdmin;
+}
+
+export const supabase = supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null;
+export const supabaseAdmin = supabaseUrl && supabaseServiceKey ? createClient(supabaseUrl, supabaseServiceKey) : null;
 
 export type Office = {
   id: string;

@@ -1,0 +1,76 @@
+09:58:42.194 Running build in Washington, D.C., USA (East) – iad1
+09:58:42.194 Build machine configuration: 4 cores, 8 GB
+09:58:42.425 Cloning github.com/nswilliams99/Ryland (Branch: main, Commit: 01ed5b7)
+09:58:45.293 Cloning completed: 2.868s
+09:58:45.471 Restored build cache from previous deployment (FTgMTxkUmeSue2LJN8HoXJggqJze)
+09:58:45.867 Running "vercel build"
+09:58:46.295 Vercel CLI 49.1.2
+09:58:46.888 Installing dependencies...
+09:58:48.174 
+09:58:48.174 added 10 packages in 1s
+09:58:48.174 
+09:58:48.174 19 packages are looking for funding
+09:58:48.174   run `npm fund` for details
+09:58:48.206 Detected Next.js version: 16.0.7
+09:58:48.209 Running "npm run build"
+09:58:48.325 
+09:58:48.325 > ryland-environmental@1.0.0 build
+09:58:48.325 > next build
+09:58:48.325 
+09:58:49.420    ▲ Next.js 16.0.7 (Turbopack)
+09:58:49.421 
+09:58:49.463    Creating an optimized production build ...
+09:58:55.204  ✓ Compiled successfully in 5.1s
+09:58:55.204    Running TypeScript ...
+09:59:01.486    Collecting page data using 3 workers ...
+09:59:01.934 Error: supabaseUrl is required.
+09:59:01.935     at r.validateSupabaseUrl (.next/server/chunks/_7e217752._.js:24:44499)
+09:59:01.936     at new r.default (.next/server/chunks/_7e217752._.js:37:41774)
+09:59:01.936     at r.createClient (.next/server/chunks/_7e217752._.js:37:46801)
+09:59:01.936     at module evaluation (.next/server/chunks/_7e217752._.js:37:48357)
+09:59:01.938     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.938     at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+09:59:01.939     at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+09:59:01.939     at module evaluation (.next/server/chunks/[root-of-the-server]__4e3e1724._.js:1:1280)
+09:59:01.939     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.939     at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+09:59:01.966 Error: supabaseUrl is required.
+09:59:01.967     at r.validateSupabaseUrl (.next/server/chunks/_7e217752._.js:24:44499)
+09:59:01.967     at new r.default (.next/server/chunks/_7e217752._.js:37:41774)
+09:59:01.967     at r.createClient (.next/server/chunks/_7e217752._.js:37:46801)
+09:59:01.967     at module evaluation (.next/server/chunks/_7e217752._.js:37:48357)
+09:59:01.968     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.968     at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+09:59:01.968     at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+09:59:01.968     at module evaluation (.next/server/chunks/[root-of-the-server]__4e3e1724._.js:1:1280)
+09:59:01.969     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.969     at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+09:59:01.975 Error: supabaseUrl is required.
+09:59:01.975     at r.validateSupabaseUrl (.next/server/chunks/_7e217752._.js:24:44499)
+09:59:01.975     at new r.default (.next/server/chunks/_7e217752._.js:37:41774)
+09:59:01.975     at r.createClient (.next/server/chunks/_7e217752._.js:37:46801)
+09:59:01.976     at module evaluation (.next/server/chunks/_7e217752._.js:37:48357)
+09:59:01.976     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.976     at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+09:59:01.976     at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+09:59:01.977     at module evaluation (.next/server/chunks/[root-of-the-server]__62da9cca._.js:1:1280)
+09:59:01.977     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.977     at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+09:59:01.977 Error: supabaseUrl is required.
+09:59:01.977     at r.validateSupabaseUrl (.next/server/chunks/_7e217752._.js:24:44499)
+09:59:01.978     at new r.default (.next/server/chunks/_7e217752._.js:37:41774)
+09:59:01.978     at r.createClient (.next/server/chunks/_7e217752._.js:37:46801)
+09:59:01.978     at module evaluation (.next/server/chunks/_7e217752._.js:37:48357)
+09:59:01.978     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.979     at getOrInstantiateModuleFromParent (.next/server/chunks/[turbopack]_runtime.js:738:12)
+09:59:01.979     at Context.esmImport [as i] (.next/server/chunks/[turbopack]_runtime.js:228:20)
+09:59:01.979     at module evaluation (.next/server/chunks/[root-of-the-server]__e505118f._.js:1:1280)
+09:59:01.979     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+09:59:01.980     at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+09:59:02.441 
+09:59:02.441 > Build error occurred
+09:59:02.443 Error: Failed to collect page data for /api/contact
+09:59:02.444     at ignore-listed frames {
+09:59:02.444   type: 'Error'
+09:59:02.444 }
+09:59:02.487 Error: Command "npm run build" exited with 1

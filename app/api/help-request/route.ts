@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabase';
+import { getSupabaseAdmin } from '@/lib/supabase';
 
 function generateReferenceNumber(): string {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -44,6 +44,11 @@ export async function POST(request: Request) {
     }
 
     const referenceNumber = generateReferenceNumber();
+
+    const supabaseAdmin = getSupabaseAdmin();
+    if (!supabaseAdmin) {
+      return NextResponse.json({ error: 'Database not configured' }, { status: 503 });
+    }
 
     const issueTypeLabels: Record<string, string> = {
       broken: 'Broken Cart',

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabase';
+import { getSupabaseAdmin } from '@/lib/supabase';
 
 export async function POST(request: Request) {
   try {
@@ -21,6 +21,11 @@ export async function POST(request: Request) {
         { error: 'Name and email are required' },
         { status: 400 }
       );
+    }
+
+    const supabaseAdmin = getSupabaseAdmin();
+    if (!supabaseAdmin) {
+      return NextResponse.json({ error: 'Database not configured' }, { status: 503 });
     }
 
     const { data, error } = await supabaseAdmin

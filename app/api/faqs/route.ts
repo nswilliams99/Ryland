@@ -1,8 +1,13 @@
 import { NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { getSupabase } from '@/lib/supabase';
 
 export async function GET(request: Request) {
   try {
+    const supabase = getSupabase();
+    if (!supabase) {
+      return NextResponse.json({ error: 'Database not configured' }, { status: 503 });
+    }
+
     const { searchParams } = new URL(request.url);
     const category = searchParams.get('category');
     const officeSlug = searchParams.get('office');
